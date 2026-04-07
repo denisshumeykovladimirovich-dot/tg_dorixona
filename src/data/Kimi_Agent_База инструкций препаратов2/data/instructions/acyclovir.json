@@ -1,0 +1,574 @@
+{
+  "id": "acyclovir",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Ацикловир",
+    "uz": "Ацикловир",
+    "en": "Acyclovir"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Ацикловир",
+      "uz": "Ацикловир",
+      "en": "Acyclovir"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 200 мг",
+      "таблетки 400 мг",
+      "таблетки 800 мг"
+    ],
+    "strengths": [
+      "200 мг",
+      "400 мг",
+      "800 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Ацикловир - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Инфекции кожи и слизистых оболочек, вызванные вирусом Herpes simplex типов 1 и 2",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acyclovir-indications-ru-0"
+        },
+        {
+          "content": "Генитальный герпес (первичный и рецидивирующий)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acyclovir-indications-ru-1"
+        },
+        {
+          "content": "Опоясывающий лишай (герпес зостер)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acyclovir-indications-ru-2"
+        },
+        {
+          "content": "Ветряная оспа (варицелла)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acyclovir-indications-ru-3"
+        },
+        {
+          "content": "Профилактика инфекций, вызванных вирусом Herpes simplex у иммунокомпрометированных пациентов",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acyclovir-indications-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acyclovir-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Инфекции кожи и слизистых оболочек, вызванные вирусом Herpes simplex типов 1 и 2",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Генитальный герпес (первичный и рецидивирующий)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Опоясывающий лишай (герпес зостер)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Ветряная оспа (варицелла)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Профилактика инфекций, вызванных вирусом Herpes simplex у иммунокомпрометированных пациентов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к ацикловиру или валацикловиру",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acyclovir-contraindications-ru-0"
+        },
+        {
+          "content": "Тяжелые нарушения функции почек (для высоких доз)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acyclovir-contraindications-ru-1"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acyclovir-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к ацикловиру или валацикловиру",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелые нарушения функции почек (для высоких доз)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "При инфекциях, вызванных Herpes simplex: по 200 мг 5 раз в сутки в течение 5 дней",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acyclovir-dosage-adults-ru-0"
+          },
+          {
+            "content": "При генитальном герпесе: по 200 мг 5 раз в сутки в течение 5-10 дней",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acyclovir-dosage-adults-ru-1"
+          },
+          {
+            "content": "При опоясывающем лишае: по 800 мг 5 раз в сутки в течение 7-10 дней",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acyclovir-dosage-adults-ru-2"
+          },
+          {
+            "content": "Таблетки принимать внутрь, запивая водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acyclovir-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям при ветряной оспе: по 20 мг/кг (максимум 800 мг) 4 раза в сутки в течение 5 дней",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acyclovir-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям до 2 лет: дозу снижают вдвое",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acyclovir-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "acyclovir-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При инфекциях, вызванных Herpes simplex: по 200 мг 5 раз в сутки в течение 5 дней",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При генитальном герпесе: по 200 мг 5 раз в сутки в течение 5-10 дней",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При опоясывающем лишае: по 800 мг 5 раз в сутки в течение 7-10 дней",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь, запивая водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям при ветряной оспе: по 20 мг/кг (максимум 800 мг) 4 раза в сутки в течение 5 дней",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 2 лет: дозу снижают вдвое",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЖКТ: тошната, рвота, диарея, боли в животе",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acyclovir-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЦНС: головная боль, головокружение, сонливость, спутанность сознания",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acyclovir-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acyclovir-sideEffects-ru-2"
+        },
+        {
+          "content": "Повышение креатинина, нарушения функции почек",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acyclovir-sideEffects-ru-3"
+        },
+        {
+          "content": "Лейкопения, тромбоцитопения",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acyclovir-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acyclovir-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошната, рвота, диарея, боли в животе",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: головная боль, головокружение, сонливость, спутанность сознания",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Повышение креатинина, нарушения функции почек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acyclovir-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Лейкопения, тромбоцитопения",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "acyclovir-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acyclovir-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "acyclovir-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acyclovir-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "acyclovir-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acyclovir-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aciklovir-4580",
+            "title": "Ацикловир - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Противовирусное",
+      "uz": "Virusga qarshi"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Противовирусное. Прочее.",
+      "uz": "Virusga qarshi. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

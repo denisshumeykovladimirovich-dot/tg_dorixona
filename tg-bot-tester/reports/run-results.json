@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Start flow",
+    "input": "/start | Проверить лекарства | 5 лет",
+    "expected": "бот должен перевести в wizard и запросить ввод симптомов после возраста",
+    "actual": "Выберите возраст кнопкой ниже.\n12:40\n0–5\n5–10\n10–15\n15–60\n60+\nВвести точно",
+    "errors": [
+      "Step failed (send): Telegram input not found",
+      "Expected tokens not found in bot response: коротко напиши симптомы"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/start_flow.png"
+  },
+  {
+    "name": "Symptom flow: кашель",
+    "input": "/start | Проверить лекарства | 5 лет | кашель",
+    "expected": "бот должен принять симптом \"кашель\" и запросить список лекарств",
+    "actual": "Выберите возраст кнопкой ниже.\n12:41\n0–5\n5–10\n10–15\n15–60\n60+\nВвести точно",
+    "errors": [
+      "Expected tokens not found in bot response: теперь введи лекарства через запятую"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/symptom_flow_кашель.png"
+  },
+  {
+    "name": "Symptom flow: температура",
+    "input": "/start | Проверить лекарства | 5 лет | температура",
+    "expected": "бот должен принять симптом \"температура\" и запросить список лекарств",
+    "actual": "Выберите возраст кнопкой ниже.\n12:41\n0–5\n5–10\n10–15\n15–60\n60+\nВвести точно",
+    "errors": [
+      "Expected tokens not found in bot response: теперь введи лекарства через запятую"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/symptom_flow_температура.png"
+  },
+  {
+    "name": "Single medication: панадол",
+    "input": "/start | Проверить лекарства | 5 лет | кашель | панадол",
+    "expected": "бот должен корректно обработать alias \"панадол\" и выдать карточку анализа",
+    "actual": "Выберите возраст кнопкой ниже.\n12:41\n0–5\n5–10\n10–15\n15–60\n60+\nВвести точно",
+    "errors": [
+      "Expected tokens not found in bot response: проверены основные риски, перед применением обязательно проконсультируйтесь с врачом"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/single_medication_панадол.png"
+  },
+  {
+    "name": "Single medication: ибупрофен",
+    "input": "/start | Проверить лекарства | 5 лет | температура | ибупрофен",
+    "expected": "бот должен обработать canonical \"ибупрофен\" и выдать карточку анализа",
+    "actual": "Нажмите «Проверить лекарства», чтобы начать проверку.\n12:41",
+    "errors": [
+      "Expected tokens not found in bot response: проверены основные риски, перед применением обязательно проконсультируйтесь с врачом"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/single_medication_ибупрофен.png"
+  },
+  {
+    "name": "Completion command: 1 препарат",
+    "input": "/start | Проверить лекарства | 5 лет | кашель | панадол | 1 препарат",
+    "expected": "команда \"1 препарат\" после выбора должна завершать ввод и запускать анализ",
+    "actual": "Выберите возраст кнопкой ниже.\n12:42\n0–5\n5–10\n10–15\n15–60\n60+\nВвести точно",
+    "errors": [
+      "Expected tokens not found in bot response: добавлено: панадол, проверены основные риски"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/completion_command_1_препарат.png"
+  },
+  {
+    "name": "Unknown medication: анзибел",
+    "input": "/start | Проверить лекарства | 5 лет | кашель | анзибел",
+    "expected": "неизвестный препарат должен уйти в локальный/fallback путь без падения сценария",
+    "actual": "Выберите возраст кнопкой ниже.\n12:42\n0–5\n5–10\n10–15\n15–60\n60+\nВвести точно",
+    "errors": [
+      "Expected tokens not found in bot response: препарат не найден в локальной базе"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/unknown_medication_анзибел.png"
+  },
+  {
+    "name": "Multi-medication flow",
+    "input": "/start | Проверить лекарства | 5 лет | температура | нурофен, парацетамол",
+    "expected": "бот должен обработать список из двух лекарств и выдать объединенный анализ",
+    "actual": "Выберите возраст кнопкой ниже.\n12:42\n0–5\n5–10\n10–15\n15–60\n60+\nВвести точно",
+    "errors": [
+      "Expected tokens not found in bot response: проверены основные риски, лекарства:"
+    ],
+    "status": "FAILED",
+    "screenshot": "reports/screenshots/multi_medication_flow.png"
+  }
+]

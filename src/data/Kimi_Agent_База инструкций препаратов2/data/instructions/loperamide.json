@@ -1,0 +1,592 @@
+{
+  "id": "loperamide",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Лоперамид",
+    "uz": "Лоперамид",
+    "en": "Loperamide"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Лоперамид",
+      "uz": "Лоперамид",
+      "en": "Loperamide"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "капсулы 2 мг",
+      "сироп"
+    ],
+    "strengths": [
+      "2 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Лоперамид - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Острая и хроническая диарея различного происхождения",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loperamide-indications-ru-0"
+        },
+        {
+          "content": "Аллергическая диарея",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loperamide-indications-ru-1"
+        },
+        {
+          "content": "Диарея при изменении режима питания",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loperamide-indications-ru-2"
+        },
+        {
+          "content": "Диарея при приеме лекарственных средств",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loperamide-indications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loperamide-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Острая и хроническая диарея различного происхождения",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергическая диарея",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Диарея при изменении режима питания",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Диарея при приеме лекарственных средств",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к лоперамиду",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loperamide-contraindications-ru-0"
+        },
+        {
+          "content": "Острый дизентерийный колит",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loperamide-contraindications-ru-1"
+        },
+        {
+          "content": "Псевдомембранозный колит",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loperamide-contraindications-ru-2"
+        },
+        {
+          "content": "Обструкция кишечника",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loperamide-contraindications-ru-3"
+        },
+        {
+          "content": "Расширение кишечника",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loperamide-contraindications-ru-4"
+        },
+        {
+          "content": "Детский возраст до 6 лет (для капсул), до 2 лет (для сиропа)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loperamide-contraindications-ru-5"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loperamide-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к лоперамиду",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Острый дизентерийный колит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Псевдомембранозный колит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Обструкция кишечника",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-contraindications-ru-4",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Расширение кишечника",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-contraindications-ru-5",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 6 лет (для капсул), до 2 лет (для сиропа)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым: начальная доза 2 капсулы (4 мг), затем по 1 капсуле (2 мг) после каждого акта дефекации",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loperamide-dosage-adults-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 8 капсул (16 мг)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loperamide-dosage-adults-ru-1"
+          },
+          {
+            "content": "Капсулы принимать внутрь, запивая водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loperamide-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 6-12 лет: по 1 капсуле (2 мг) после первого акта дефекации, затем по 1 капсуле после каждого следующего",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loperamide-dosage-children-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 4 капсулы (8 мг)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loperamide-dosage-children-ru-1"
+          },
+          {
+            "content": "Детям 2-5 лет: сироп по 1 мерной ложке (2 мг) 2-3 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loperamide-dosage-children-ru-2"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "loperamide-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым: начальная доза 2 капсулы (4 мг), затем по 1 капсуле (2 мг) после каждого акта дефекации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 8 капсул (16 мг)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Капсулы принимать внутрь, запивая водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6-12 лет: по 1 капсуле (2 мг) после первого акта дефекации, затем по 1 капсуле после каждого следующего",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 4 капсулы (8 мг)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-dosage-children-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 2-5 лет: сироп по 1 мерной ложке (2 мг) 2-3 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЖКТ: запор, вздутие живота, тошната, рвота",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "loperamide-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЦНС: сонливость, головокружение",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "loperamide-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, зуд",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "loperamide-sideEffects-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loperamide-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: запор, вздутие живота, тошната, рвота",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: сонливость, головокружение",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loperamide-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, зуд",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "loperamide-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loperamide-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "loperamide-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loperamide-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "loperamide-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loperamide-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loperamid-4574",
+            "title": "Лоперамид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Противодиарейное",
+      "uz": "Diareyaga qarshi"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Противодиарейное. Прочее.",
+      "uz": "Diareyaga qarshi. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

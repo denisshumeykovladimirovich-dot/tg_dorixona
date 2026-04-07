@@ -1,0 +1,1296 @@
+﻿# Symptom-Drug QA Report (project data only)
+
+Generated: 2026-04-01
+
+## 1. Executive summary
+- Drugs in source-of-truth DB (`src/data/drugDatabase.json`): **101**
+- Symptoms in `symptom_tags.json`: **32**
+- Drug-symptom mapping records (`drugSymptomMappings`): **57**
+- Confidence split: high=3, medium=54
+- Mapped by symptoms (unique drugs): **67**; unmapped drugs: **34**
+- Age data present: 100/101; contraindication signals present: 0/101
+
+Readiness: **partial**. Symptom map is usable for many cases, but contraindication layer is effectively empty and runtime uses only part of the mapping stack.
+
+## 2. Symptom -> Drug map
+
+### Symptom: `abdominal-pain` (боль в животе)
+- Category: `pain`
+- Aliases (ru): живот, боли в животе, абдоминальная боль
+- Aliases (uz): qorin og'rig'i, qorin ogrigi
+- Drugs:
+  - Diclofenac (`diclofenac`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|KIDNEY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=HIGH
+  - Drotaverine (`drotaverine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=MEDIUM
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|PRESSURE|KIDNEY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `allergy` (аллергия)
+- Category: `allergy`
+- Aliases (ru): аллергическая реакция, аллергическое состояние
+- Aliases (uz): allergik reaksiya, allergik holat
+- Drugs:
+  - Cetirizine (`cetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Chloropyramine (`chloropyramine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Desloratadine (`desloratadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Diphenhydramine (`diphenhydramine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=7+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Fexofenadine (`fexofenadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Ketotifen (`ketotifen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Levocetirizine (`levocetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Loratadine (`loratadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+
+### Symptom: `bacterial-infection` (бактериальная инфекция)
+- Category: `infection`
+- Aliases (ru): бактериальное заболевание, инфекция бактериальная
+- Aliases (uz): bakterial infeksiya, bakteriya infeksiyasi
+- Drugs:
+  - Amoxicillin (`amoxicillin`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|LIVER; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Amoxicillin Clavulanate (`amoxicillin-clavulanate`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|LIVER; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Azithromycin (`azithromycin`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Cefuroxime (`cefuroxime`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|KIDNEY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Ciprofloxacin (`ciprofloxacin`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=18+; mode=adult-only/child-unknown
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Clarithromycin (`clarithromycin`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Mupirocin (`mupirocin`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=LOW
+
+### Symptom: `bloating` (вздутие)
+- Category: `digestive`
+- Aliases (ru): метеоризм, газы, вздутие живота
+- Aliases (uz): qorin shishishi, gaz, meteorizm
+- Drugs:
+  - Activated Charcoal (`activated-charcoal`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=SORBENT_GROUP; riskPriority=LOW
+  - Pancreatin (`pancreatin`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI; duplicateTherapyGroups=OTHER_GROUP; riskPriority=MEDIUM
+  - Simethicone (`simethicone`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=MEDIUM
+
+### Symptom: `burns` (ожог)
+- Category: `skin`
+- Aliases (ru): термический ожог, химический ожог, ожог кожи
+- Aliases (uz): kuyish, kuygan joy
+- Drugs:
+  - Dexpanthenol (`dexpanthenol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=LOW
+  - Hydrocortisone (`hydrocortisone`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=CORTICOSTEROID_GROUP; riskPriority=MEDIUM
+
+### Symptom: `constipation` (запор)
+- Category: `digestive`
+- Aliases (ru): затрудненный стул, проблемы со стулом
+- Aliases (uz): qabziyat, ich qatishi
+- Drugs:
+  - Bisacodyl (`bisacodyl`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=MEDIUM
+  - Lactulose (`lactulose`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=MEDIUM
+  - Macrogol (`macrogol`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=MEDIUM
+
+### Symptom: `cough` (кашель)
+- Category: `respiratory`
+- Aliases (ru): кашляет, кашлевой рефлекс, покашливание
+- Aliases (uz): yo'tal, yotal
+- Drugs:
+  - Acetylcysteine (`acetylcysteine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Ambroxol (`ambroxol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Bromhexine (`bromhexine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Butamirate (`butamirate`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTITUSSIVE_GROUP; riskPriority=MEDIUM
+  - Carbocisteine (`carbocisteine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Dextromethorphan (`dextromethorphan`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTITUSSIVE_GROUP; riskPriority=MEDIUM
+  - Guaifenesin (`guaifenesin`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Oseltamivir (`oseltamivir`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+  - Umifenovir (`umifenovir`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|LIVER; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+
+### Symptom: `diarrhea` (диарея)
+- Category: `digestive`
+- Aliases (ru): понос, расстройство желудка, жидкий стул
+- Aliases (uz): ishal, suyuq ich, oshqozon buzilishi
+- Drugs:
+  - Diosmectite (`diosmectite`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=SORBENT_GROUP; riskPriority=LOW
+  - Loperamide (`loperamide`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|GI|ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=MEDIUM
+  - Polymethylsiloxane Polyhydrate (`polymethylsiloxane-polyhydrate`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=SORBENT_GROUP; riskPriority=LOW
+  - Saccharomyces Boulardii (`saccharomyces-boulardii`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=PROBIOTIC_GROUP; riskPriority=LOW
+
+### Symptom: `dry-cough` (сухой кашель)
+- Category: `respiratory`
+- Aliases (ru): непродуктивный кашель, кашель без мокроты
+- Aliases (uz): quruq yotal, quruq yotalish
+- Drugs:
+  - Butamirate (`butamirate`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTITUSSIVE_GROUP; riskPriority=MEDIUM
+  - Dextromethorphan (`dextromethorphan`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTITUSSIVE_GROUP; riskPriority=MEDIUM
+
+### Symptom: `fever` (лихорадка)
+- Category: `general`
+- Aliases (ru): жар, лихорадочное состояние, озноб
+- Aliases (uz): qizish, titroq, issiq
+- Drugs:
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=18+; mode=adult-only/child-unknown
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY|LIVER; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|PRESSURE|KIDNEY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+  - Nimesulide (`nimesulide`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|GI|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `fungal-infection` (грибковая инфекция)
+- Category: `infection`
+- Aliases (ru): микоз, грибок, грибковое заболевание
+- Aliases (uz): zamburug', mikoz, zamburug' infeksiyasi
+- Drugs:
+  - Clotrimazole (`clotrimazole`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTIFUNGAL_GROUP; riskPriority=LOW
+  - Fluconazole (`fluconazole`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIFUNGAL_GROUP; riskPriority=MEDIUM
+  - Terbinafine (`terbinafine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIFUNGAL_GROUP; riskPriority=MEDIUM
+
+### Symptom: `headache` (головная боль)
+- Category: `pain`
+- Aliases (ru): головная, боль в голове, мигрень, головные боли
+- Aliases (uz): bosh og'rig'i, bosh ogrigi, migren, bosh aghrishi
+- Drugs:
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=18+; mode=adult-only/child-unknown
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY|LIVER; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Diclofenac (`diclofenac`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|KIDNEY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=HIGH
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|PRESSURE|KIDNEY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+  - Naproxen (`naproxen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Nimesulide (`nimesulide`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|GI|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `heartburn` (изжога)
+- Category: `digestive`
+- Aliases (ru): жжение в желудке, кислотность
+- Aliases (uz): ko'ngil aynishi, oshqozon yonishi
+- Drugs:
+  - Famotidine (`famotidine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=PPI_GROUP; riskPriority=MEDIUM
+  - Omeprazole (`omeprazole`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|ALLERGY; duplicateTherapyGroups=PPI_GROUP; riskPriority=MEDIUM
+  - Pantoprazole (`pantoprazole`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|ALLERGY; duplicateTherapyGroups=PPI_GROUP; riskPriority=MEDIUM
+
+### Symptom: `itching` (зуд)
+- Category: `allergy`
+- Aliases (ru): кожный зуд, зуд кожи, чешется
+- Aliases (uz): qichishish, qichiydi, teri qichishishi
+- Drugs:
+  - Betamethasone (`betamethasone`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=CORTICOSTEROID_GROUP; riskPriority=LOW
+  - Cetirizine (`cetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Chloropyramine (`chloropyramine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Clotrimazole (`clotrimazole`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTIFUNGAL_GROUP; riskPriority=LOW
+  - Desloratadine (`desloratadine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Diphenhydramine (`diphenhydramine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=7+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Fexofenadine (`fexofenadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Hydrocortisone (`hydrocortisone`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=CORTICOSTEROID_GROUP; riskPriority=MEDIUM
+  - Levocetirizine (`levocetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Loratadine (`loratadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Terbinafine (`terbinafine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIFUNGAL_GROUP; riskPriority=MEDIUM
+
+### Symptom: `joint-pain` (боль в суставах)
+- Category: `pain`
+- Aliases (ru): артралгия, суставные боли, боли в суставах
+- Aliases (uz): bo'g'im og'rig'i, bog'im ogrigi
+- Drugs:
+  - Diclofenac (`diclofenac`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|KIDNEY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=HIGH
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Ketoprofen (`ketoprofen`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=15+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Meloxicam (`meloxicam`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=15+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Naproxen (`naproxen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Nimesulide (`nimesulide`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|GI|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+
+### Symptom: `malaise` (недомогание)
+- Category: `general`
+- Aliases (ru): плохое самочувствие, дискомфорт
+- Aliases (uz): yaxshi emas, noqulaylik
+- Drugs:
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `muscle-pain` (мышечная боль)
+- Category: `pain`
+- Aliases (ru): боль в мышцах, миалгия, мышечные боли
+- Aliases (uz): mushak og'rig'i, mushak aghrishi
+- Drugs:
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=18+; mode=adult-only/child-unknown
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY|LIVER; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Diclofenac (`diclofenac`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|KIDNEY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=HIGH
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Ketoprofen (`ketoprofen`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=15+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Meloxicam (`meloxicam`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=15+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|PRESSURE|KIDNEY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+  - Naproxen (`naproxen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Nimesulide (`nimesulide`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|GI|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `nasal-congestion` (заложенность носа)
+- Category: `respiratory`
+- Aliases (ru): закладывает нос, заложен нос, насморк с заложенностью
+- Aliases (uz): burun bitishi, burun yopilishi
+- Drugs:
+  - Naphazoline (`naphazoline`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+  - Oxymetazoline (`oxymetazoline`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+  - Phenylephrine (`phenylephrine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+  - Xylometazoline (`xylometazoline`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+
+### Symptom: `nausea` (тошнота)
+- Category: `digestive`
+- Aliases (ru): тошнит, тошнотное состояние
+- Aliases (uz): ko'ngil aynadi, ko'ngil aynishi
+- Drugs:
+  - Domperidone (`domperidone`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=5+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=PROKINETIC_GROUP; riskPriority=MEDIUM
+  - Metoclopramide (`metoclopramide`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=PROKINETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `rash` (сыпь)
+- Category: `skin`
+- Aliases (ru): кожная сыпь, высыпания, крапивница
+- Aliases (uz): to'shma, teri to'shmalari
+- Drugs:
+  - Acyclovir (`acyclovir`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=KIDNEY|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+  - Betamethasone (`betamethasone`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=CORTICOSTEROID_GROUP; riskPriority=LOW
+  - Cetirizine (`cetirizine`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Chloropyramine (`chloropyramine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Clotrimazole (`clotrimazole`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTIFUNGAL_GROUP; riskPriority=LOW
+  - Dexpanthenol (`dexpanthenol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=LOW
+  - Diphenhydramine (`diphenhydramine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=7+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Hydrocortisone (`hydrocortisone`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=CORTICOSTEROID_GROUP; riskPriority=MEDIUM
+  - Loratadine (`loratadine`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Valacyclovir (`valacyclovir`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=KIDNEY|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+
+### Symptom: `runny-nose` (насморк)
+- Category: `respiratory`
+- Aliases (ru): ринорея, выделения из носа, сопли
+- Aliases (uz): burun oqishi, tomchi tomchi
+- Drugs:
+  - Cetirizine (`cetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Loratadine (`loratadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Naphazoline (`naphazoline`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+  - Oxymetazoline (`oxymetazoline`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+  - Phenylephrine (`phenylephrine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+  - Xylometazoline (`xylometazoline`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=VASOCONSTRICTOR_GROUP; riskPriority=MEDIUM
+
+### Symptom: `sneezing` (чихание)
+- Category: `allergy`
+- Aliases (ru): чихает, чихать
+- Aliases (uz): aksirish, aksiradi
+- Drugs:
+  - Cetirizine (`cetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Desloratadine (`desloratadine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Fexofenadine (`fexofenadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Levocetirizine (`levocetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Loratadine (`loratadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+
+### Symptom: `sore-throat` (боль в горле)
+- Category: `pain`
+- Aliases (ru): горло болит, ангина, фарингит, боль в горле
+- Aliases (uz): tomoq og'rig'i, tomoq ogrigi, angina
+- Drugs:
+  - Amoxicillin (`amoxicillin`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|LIVER; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Amoxicillin Clavulanate (`amoxicillin-clavulanate`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|LIVER; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Анзибел (`anzibel`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=unknown; mode=unknown
+    - absolute contraindications: none_in_data
+    - caution: unknown
+  - Azithromycin (`azithromycin`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Cefuroxime (`cefuroxime`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|KIDNEY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Chlorhexidine (`chlorhexidine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTISEPTIC_GROUP; riskPriority=LOW
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Miramistin (`miramistin`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTISEPTIC_GROUP; riskPriority=LOW
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `temperature` (температура)
+- Category: `general`
+- Aliases (ru): жар, лихорадка, повышенная температура, высокая температура, температура тела
+- Aliases (uz): issiq, qizish, yuqori harorat, harorat ko'tarilishi
+- Drugs:
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=18+; mode=adult-only/child-unknown
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY|LIVER; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Amoxicillin (`amoxicillin`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|LIVER; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Amoxicillin Clavulanate (`amoxicillin-clavulanate`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|LIVER; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Azithromycin (`azithromycin`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Cefuroxime (`cefuroxime`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|GI|KIDNEY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Ciprofloxacin (`ciprofloxacin`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=18+; mode=adult-only/child-unknown
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=MEDIUM
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|PRESSURE|KIDNEY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+  - Nimesulide (`nimesulide`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|GI|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Oseltamivir (`oseltamivir`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+  - Umifenovir (`umifenovir`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|LIVER; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+
+### Symptom: `throat-irritation` (раздражение горла)
+- Category: `respiratory`
+- Aliases (ru): першение в горле, дискомфорт в горле, горло першит
+- Aliases (uz): tomoqni razdrazh qilish, tomoq qichishishi, tomoq qichish
+- Drugs:
+  - Анзибел (`anzibel`)
+    - relation: **direct**
+    - source: drugSymptomMappings(official_instruction; confidence=high); symptoms.relatedDrugs
+    - age: min=unknown; mode=unknown
+    - absolute contraindications: none_in_data
+    - caution: unknown
+  - Chlorhexidine (`chlorhexidine`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTISEPTIC_GROUP; riskPriority=LOW
+  - Miramistin (`miramistin`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTISEPTIC_GROUP; riskPriority=LOW
+
+### Symptom: `toothache` (зубная боль)
+- Category: `pain`
+- Aliases (ru): боль в зубе, зубная, зубные боли
+- Aliases (uz): tish og'rig'i, tish ogrigi, tish aghrishi
+- Drugs:
+  - Diclofenac (`diclofenac`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|LIVER|KIDNEY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=HIGH
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|PRESSURE|KIDNEY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+  - Naproxen (`naproxen`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `viral-infection` (вирусная инфекция)
+- Category: `infection`
+- Aliases (ru): вирус, вирусное заболевание, вирусная
+- Aliases (uz): virusli, virus, virusli kasallik
+- Drugs:
+  - Acyclovir (`acyclovir`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=KIDNEY|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+  - Inosine Pranobex (`inosine-pranobex`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=3+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+  - Oseltamivir (`oseltamivir`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+  - Umifenovir (`umifenovir`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY|LIVER; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+  - Valacyclovir (`valacyclovir`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=12+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=KIDNEY|ALLERGY; duplicateTherapyGroups=ANTIVIRAL_GROUP; riskPriority=MEDIUM
+
+### Symptom: `vomiting` (рвота)
+- Category: `digestive`
+- Aliases (ru): рвет, рвотный рефлекс
+- Aliases (uz): qusish, qusadi
+- Drugs:
+  - Domperidone (`domperidone`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=5+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=PRESSURE|ALLERGY; duplicateTherapyGroups=PROKINETIC_GROUP; riskPriority=MEDIUM
+  - Metoclopramide (`metoclopramide`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|PRESSURE|ALLERGY; duplicateTherapyGroups=PROKINETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `watery-eyes` (слезотечение)
+- Category: `allergy`
+- Aliases (ru): слезятся глаза, глаза слезятся
+- Aliases (uz): ko'z yoshlanadi, ko'z yosh
+- Drugs:
+  - Cetirizine (`cetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Desloratadine (`desloratadine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Fexofenadine (`fexofenadine`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=6+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Levocetirizine (`levocetirizine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+  - Loratadine (`loratadine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=SEDATION|ALLERGY; duplicateTherapyGroups=ANTIHISTAMINE_GROUP; riskPriority=MEDIUM
+
+### Symptom: `weakness` (слабость)
+- Category: `general`
+- Aliases (ru): утомляемость, малопригодность, общая слабость
+- Aliases (uz): xotirjam emaslik, holdan toyish, umumiy zaiflik
+- Drugs:
+  - Ibuprofen (`ibuprofen`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|KIDNEY|ALLERGY; duplicateTherapyGroups=NSAID_GROUP; riskPriority=MEDIUM
+  - Paracetamol (`paracetamol`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=LIVER|ALLERGY; duplicateTherapyGroups=ANTIPYRETIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `wet-cough` (мокрый кашель)
+- Category: `respiratory`
+- Aliases (ru): влажный кашель, продуктивный кашель, кашель с мокротой
+- Aliases (uz): nam yotal, yotalish
+- Drugs:
+  - Acetylcysteine (`acetylcysteine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Ambroxol (`ambroxol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Bromhexine (`bromhexine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Carbocisteine (`carbocisteine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+  - Guaifenesin (`guaifenesin`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=2+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=GI|ALLERGY; duplicateTherapyGroups=MUCOLYTIC_GROUP; riskPriority=MEDIUM
+
+### Symptom: `wounds` (раны)
+- Category: `skin`
+- Aliases (ru): порез, садина, травма кожи
+- Aliases (uz): jarohat, kesik, sadana
+- Drugs:
+  - Chlorhexidine (`chlorhexidine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTISEPTIC_GROUP; riskPriority=LOW
+  - Dexpanthenol (`dexpanthenol`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=OTHER_GROUP; riskPriority=LOW
+  - Hydrogen Peroxide (`hydrogen-peroxide`)
+    - relation: **direct**
+    - source: symptoms.relatedDrugs
+    - age: min=0+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTISEPTIC_GROUP; riskPriority=LOW
+  - Mupirocin (`mupirocin`)
+    - relation: **indirect**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium)
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTIBIOTIC_GROUP; riskPriority=LOW
+  - Povidone Iodine (`povidone-iodine`)
+    - relation: **direct**
+    - source: drugSymptomMappings(drug_category_inference; confidence=medium); symptoms.relatedDrugs
+    - age: min=1+; mode=child-allowed
+    - absolute contraindications: none_in_data
+    - caution: mainRisks=ALLERGY; duplicateTherapyGroups=ANTISEPTIC_GROUP; riskPriority=LOW
+
+## 3. Symptom normalization hierarchy
+
+- `кашель` -> `cough`, `dry-cough`, `wet-cough`
+- `температура/лихорадка` -> `temperature`, `fever`
+- `аллергия` -> `allergy`, `itching`, `sneezing`, `watery-eyes`, `runny-nose`
+- `боль` -> `headache`, `muscle-pain`, `joint-pain`, `toothache`, `abdominal-pain`
+- `горло` -> `sore-throat`, `throat-irritation`
+- `ЖКТ` -> `nausea`, `vomiting`, `diarrhea`, `constipation`, `heartburn`, `bloating`
+- `инфекции` -> `bacterial-infection`, `viral-infection`, `fungal-infection`
+- `кожа/повреждения` -> `rash`, `burns`, `wounds`
+
+## 4. QA scenarios
+
+1. Happy path pediatric fever
+   - input: symptom=temperature, age=5
+   - expected: Expect mapped antipyretics with minAge <=5; reject age<allowed drugs
+   - logic: Checks base symptom->drug + age filter
+2. Age-based cough 2y
+   - input: symptom=dry-cough, age=2
+   - expected: Only drugs where minAge<=2 and pediatricUse=true
+   - logic: Verifies strict age filter by minAgeYears
+3. Adult-only exclusion
+   - input: symptom=joint-pain, age=6
+   - expected: Exclude drugs with minAge 12+/18+
+   - logic: Prevents unsafe pediatric suggestions
+4. Red flag high risk
+   - input: symptom=headache, age=14
+   - expected: Diclofenac only if age rule passes and flagged HIGH/GI/LIVER/KIDNEY
+   - logic: Checks risk flag visibility
+5. Absolute contraindication fallback
+   - input: symptom=allergy
+   - expected: System shows "contraindications unknown" when contraindicationSignals empty
+   - logic: Avoids false certainty
+6. Overmatching allergy
+   - input: symptom=allergy
+   - expected: Do not include antiinfectives without explicit mapping
+   - logic: Detects noisy class/synonym matching
+7. No mapping gap
+   - input: symptom not in map
+   - expected: Bot reports no exact match and requires manual input
+   - logic: Validates fallback path
+8. Duplicate therapy warning
+   - input: input includes same duplicateTherapyGroups
+   - expected: Expect caution about therapy duplication
+   - logic: Uses safety.duplicateTherapyGroups
+9. Two antihistamines
+   - input: input: cetirizine + loratadine
+   - expected: Expected caution in analyzeMedications
+   - logic: Regression check for engine rule
+10. Ibuprofen+paracetamol toddler
+   - input: age=2, meds=ibuprofen+paracetamol
+   - expected: Status escalates by pediatric override
+   - logic: Validates pediatric override logic
+11. Symptom hierarchy parent-child
+   - input: input=кашель vs сухой кашель
+   - expected: Child symptom prioritizes narrower set
+   - logic: Checks normalization depth
+12. Coverage audit smoke
+   - input: iterate all 32 symptoms
+   - expected: Each symptom returns deterministic list
+   - logic: Stability check
+
+## 5. Problems (hard findings)
+
+- Runtime mismatch: `src/index.ts` therapeutic-class symptom inference map covers only 2/101 drugs because DB classes are mostly `ANALGESIC/ANTIINFECTIVE/...` while code expects `NSAID/ANTITUSSIVE/...`.
+- Contraindication layer missing: `safety.contraindicationSignals` is empty for 101/101 drugs.
+- Instruction corpus not usable for red flags: in `instructions/*.json` structured/source fragments for indications/contraindications/warnings are 0 across all 30 files.
+- Partial mapping coverage: 34/101 drugs have no symptom link in `symptom_tags.json` + `drugSymptomMappings`.
+- Weak links dominate: 54/57 mapping records are `confidence=medium` from `drug_category_inference`; only 3 are high-confidence official links.
+- Encoding corruption in multilingual text (`Р...` mojibake) in several data files increases risk of matching loss and poor UX labels.
+- Age policy not enforced at symptom suggestion stage in runtime flow: age is collected, but symptom-based shortlist is not filtered by `minAgeYears` before presenting options.
+
+## 6. Recommendations
+
+1. Unify class taxonomies: align `drugDatabase.classification.therapeuticClass` with `THERAPEUTIC_CLASS_SYMPTOMS` keys or create adapter map.
+2. Enforce hard age filter before suggestion UI (`findSymptomMatches` output -> filter by `ageRestrictions`).
+3. Populate `contraindicationSignals` with structured absolute contraindications; keep current `mainRisks` as caution tier.
+4. Promote confidence model: keep `official_instruction` direct links separate from inferred links in runtime ranking.
+5. Fix encoding at source (`UTF-8`) for mapping/catalog labels and aliases.
+6. Add automated QA suite for the scenarios above and fail build on age/red-flag regressions.

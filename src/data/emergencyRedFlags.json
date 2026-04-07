@@ -1,0 +1,213 @@
+{
+  "version": "2026-04-01",
+  "lastUpdated": "2026-04-01",
+  "rules": [
+    {
+      "id": "infant_fever_under_3_months",
+      "label": "Температура/лихорадка у младенца до 3 месяцев",
+      "severity": "emergency",
+      "type": "age_condition",
+      "trigger": {
+        "anyKeywords": [
+          "температура",
+          "лихорадка",
+          "жар",
+          "высокая температура"
+        ],
+        "symptomIdsAny": [
+          "temperature",
+          "fever"
+        ],
+        "age": {
+          "maxYearsExclusive": 1
+        }
+      },
+      "userFacingMessage": "Температура или лихорадка у младенца требует срочной очной оценки врача.",
+      "recommendedAction": "seek_urgent_care",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "dyspnea_or_breathing_difficulty",
+      "label": "Одышка или затруднённое дыхание",
+      "severity": "emergency",
+      "type": "single_symptom",
+      "trigger": {
+        "anyKeywords": [
+          "одышка",
+          "затрудненное дыхание",
+          "затруднённое дыхание",
+          "тяжело дышать",
+          "не хватает воздуха",
+          "задыхаюсь"
+        ]
+      },
+      "userFacingMessage": "Затруднённое дыхание может быть признаком опасного состояния.",
+      "recommendedAction": "call_emergency",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "seizures",
+      "label": "Судороги",
+      "severity": "emergency",
+      "type": "single_symptom",
+      "trigger": {
+        "anyKeywords": [
+          "судороги",
+          "припадок",
+          "конвульсии"
+        ]
+      },
+      "userFacingMessage": "Судороги требуют срочной медицинской помощи.",
+      "recommendedAction": "call_emergency",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "blood_in_vomit",
+      "label": "Кровь в рвоте",
+      "severity": "emergency",
+      "type": "single_symptom",
+      "trigger": {
+        "anyKeywords": [
+          "кровь в рвоте",
+          "рвота с кровью",
+          "кровавая рвота",
+          "рвота кровью"
+        ]
+      },
+      "userFacingMessage": "Кровь в рвоте — потенциально опасный симптом.",
+      "recommendedAction": "seek_urgent_care",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "blood_in_stool",
+      "label": "Кровь в стуле",
+      "severity": "emergency",
+      "type": "single_symptom",
+      "trigger": {
+        "anyKeywords": [
+          "кровь в стуле",
+          "кровавый стул",
+          "кровь в кале",
+          "стул с кровью"
+        ]
+      },
+      "userFacingMessage": "Кровь в стуле требует очной медицинской оценки.",
+      "recommendedAction": "seek_urgent_care",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "severe_vomiting_with_dehydration",
+      "label": "Выраженная рвота с признаками обезвоживания",
+      "severity": "urgent",
+      "type": "symptom_combination",
+      "trigger": {
+        "keywordGroupsAll": [
+          [
+            "рвота",
+            "сильная рвота",
+            "частая рвота",
+            "неукротимая рвота"
+          ],
+          [
+            "обезвоживание",
+            "сухость во рту",
+            "мало мочи",
+            "редкое мочеиспускание",
+            "запавшие глаза"
+          ]
+        ]
+      },
+      "userFacingMessage": "Рвота с признаками обезвоживания требует срочной очной помощи.",
+      "recommendedAction": "seek_urgent_care",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "severe_allergic_reaction",
+      "label": "Опасная аллергическая реакция",
+      "severity": "emergency",
+      "type": "context_condition",
+      "trigger": {
+        "keywordGroupsAll": [
+          [
+            "аллергия",
+            "аллергическая реакция",
+            "крапивница"
+          ],
+          [
+            "отек лица",
+            "отек губ",
+            "отек языка",
+            "затрудненное дыхание",
+            "затруднённое дыхание",
+            "анафилак"
+          ]
+        ]
+      },
+      "userFacingMessage": "Аллергическая реакция с отёком или нарушением дыхания может быть жизнеугрожающей.",
+      "recommendedAction": "call_emergency",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "severe_chest_pain",
+      "label": "Сильная боль в груди",
+      "severity": "emergency",
+      "type": "single_symptom",
+      "trigger": {
+        "anyKeywords": [
+          "сильная боль в груди",
+          "боль в груди",
+          "давит в груди",
+          "жжение в груди с болью",
+          "острая боль в груди"
+        ]
+      },
+      "userFacingMessage": "Сильная боль в груди требует срочной медицинской помощи.",
+      "recommendedAction": "call_emergency",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "loss_of_consciousness_or_confusion",
+      "label": "Потеря сознания или выраженное нарушение сознания",
+      "severity": "emergency",
+      "type": "single_symptom",
+      "trigger": {
+        "anyKeywords": [
+          "потеря сознания",
+          "без сознания",
+          "обморок",
+          "спутанность сознания",
+          "не приходит в сознание"
+        ]
+      },
+      "userFacingMessage": "Нарушение сознания — повод для срочной медицинской помощи.",
+      "recommendedAction": "call_emergency",
+      "blockMedicationSuggestions": true
+    },
+    {
+      "id": "severe_unusual_headache",
+      "label": "Очень сильная или необычная головная боль",
+      "severity": "urgent",
+      "type": "context_condition",
+      "trigger": {
+        "keywordGroupsAll": [
+          [
+            "головная боль",
+            "сильная головная боль"
+          ],
+          [
+            "внезапная",
+            "самая сильная",
+            "необычная",
+            "резкая"
+          ]
+        ],
+        "symptomIdsAny": [
+          "headache"
+        ]
+      },
+      "userFacingMessage": "Очень сильная или необычная головная боль требует очной оценки врача.",
+      "recommendedAction": "seek_urgent_care",
+      "blockMedicationSuggestions": true
+    }
+  ]
+}

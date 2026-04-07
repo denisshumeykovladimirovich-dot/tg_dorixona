@@ -1,0 +1,219 @@
+{
+  "id": "550e8400-e29b-41d4-a716-446655440000",
+  "schemaVersion": "1.0.0",
+  "reviewStatus": "medically_verified",
+  "needsManualReview": false,
+  "canonicalName": {
+    "ru": "Парацетамол",
+    "uz": "Paratsetamol",
+    "en": "Paracetamol"
+  },
+  "identity": {
+    "activeSubstance": [
+      {
+        "name": "Парацетамол",
+        "nameEn": "Paracetamol",
+        "strength": "500",
+        "unit": "мг"
+      }
+    ],
+    "drugForm": "Таблетки",
+    "dosageForms": [
+      "tablet",
+      "syrup"
+    ],
+    "strengths": [
+      "200 мг",
+      "500 мг"
+    ],
+    "atcCodes": [
+      "N02BE01"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Инструкция по медицинскому применению лекарственного препарата Парацетамол",
+    "organization": "Минздрав России",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://grls.rosminzdrav.ru/",
+    "accessDate": "2024-01-10",
+    "publicationDate": "2023-06-15",
+    "evidenceLevel": "A"
+  },
+  "sections": {
+    "composition": {
+      "structured": [
+        {
+          "id": "comp-001",
+          "content": "Действующее вещество: парацетамол - 500 мг",
+          "contentType": "text",
+          "language": "ru",
+          "sourceRef": "frag-comp-001",
+          "confidence": 0.99
+        }
+      ],
+      "sourceFragments": [
+        {
+          "id": "frag-comp-001",
+          "text": "Состав: Действующее вещество: парацетамол - 500 мг. Вспомогательные вещества: крахмал картофельный, целлюлоза микрокристаллическая...",
+          "language": "ru",
+          "pageNumber": 1,
+          "sectionName": "Состав"
+        }
+      ]
+    },
+    "indications": {
+      "structured": [
+        {
+          "id": "ind-001",
+          "content": "Головная боль",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "frag-ind-001",
+          "confidence": 0.98
+        },
+        {
+          "id": "ind-002",
+          "content": "Мигрень",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "frag-ind-001",
+          "confidence": 0.95
+        }
+      ],
+      "sourceFragments": [
+        {
+          "id": "frag-ind-001",
+          "text": "Показания к применению: Средство для симптоматической терапии болевого синдрома слабой и средней интенсивности: головная боль, мигрень, зубная боль...",
+          "language": "ru",
+          "pageNumber": 2,
+          "sectionName": "Показания к применению"
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "id": "contra-001",
+          "content": "Повышенная чувствительность к парацетамолу",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "frag-contra-001",
+          "confidence": 0.99,
+          "metadata": {
+            "severity": "critical"
+          }
+        }
+      ],
+      "sourceFragments": [
+        {
+          "id": "frag-contra-001",
+          "text": "Противопоказания: Повышенная чувствительность к парацетамолу; тяжелые нарушения функции печени и/или почек...",
+          "language": "ru",
+          "pageNumber": 2,
+          "sectionName": "Противопоказания"
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": [
+        {
+          "id": "dos-001",
+          "content": "Взрослым и детям старше 12 лет: 500 мг 3-4 раза в сутки",
+          "contentType": "dosage_table",
+          "language": "ru",
+          "sourceRef": "frag-dos-001",
+          "confidence": 0.97,
+          "metadata": {
+            "ageGroup": "adult"
+          }
+        }
+      ],
+      "sourceFragments": [
+        {
+          "id": "frag-dos-001",
+          "text": "Способ применения и дозы: Внутрь. Взрослым и детям старше 12 лет - по 500 мг 3-4 раза в сутки...",
+          "language": "ru",
+          "pageNumber": 3,
+          "sectionName": "Способ применения и дозы"
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Жаропонижающее и обезболивающее",
+      "uz": "Isitma tushiruvchi va og'riq qoldiruvchi",
+      "en": "Fever reducer and pain reliever"
+    },
+    "symptoms": [
+      "головная боль",
+      "жар",
+      "боль",
+      "мигрень"
+    ],
+    "symptomTags": [
+      "головная-боль",
+      "жар",
+      "боль",
+      "мигрень"
+    ],
+    "commonUseCases": [
+      "Головная боль",
+      "Высокая температура",
+      "Зубная боль"
+    ],
+    "ageSummary": {
+      "adult": {
+        "approved": true,
+        "dosageAvailable": true
+      },
+      "child": {
+        "approved": true,
+        "dosageAvailable": true,
+        "requiresMonitoring": true
+      }
+    },
+    "riskSignals": [
+      {
+        "type": "contraindication",
+        "severity": "critical",
+        "description": "Повышенная чувствительность к парацетамолу",
+        "sourceRef": "frag-contra-001"
+      }
+    ],
+    "botSafeSummary": {
+      "ru": "Парацетамол - жаропонижающее и обезболивающее средство. Применяется при головной боли, жаре, мигрени. Противопоказан при аллергии на парацетамол.",
+      "uz": "Paratsetamol - isitma tushiruvchi va og'riq qoldiruvchi vosita. Bosh og'rig'i, isitma, migrenda qo'llaniladi. Paratsetamolga allergiya bo'lganda qo'llanilmaydi.",
+      "en": "Paracetamol is a fever reducer and pain reliever. Used for headache, fever, migraine. Contraindicated in case of paracetamol allergy."
+    },
+    "extractionMetadata": {
+      "model": "gpt-4",
+      "timestamp": "2024-01-10T12:00:00Z",
+      "confidence": 0.94,
+      "reviewed": true
+    }
+  },
+  "llmContextBlocks": [
+    {
+      "contextType": "general",
+      "content": "Парацетамол - неопиоидный анальгетик и антипиретик. Механизм действия связан с ингибированием синтеза простагландинов...",
+      "language": "ru",
+      "tokenCount": 450
+    },
+    {
+      "contextType": "safety",
+      "content": "Максимальная суточная доза для взрослых - 4 г. Передозировка может вызвать токсическое поражение печени...",
+      "language": "ru",
+      "tokenCount": 280
+    }
+  ],
+  "metadata": {
+    "createdAt": "2024-01-10T08:00:00Z",
+    "updatedAt": "2024-01-15T10:30:00Z",
+    "createdBy": "system",
+    "updatedBy": "medical_reviewer_1",
+    "version": 2
+  }
+}

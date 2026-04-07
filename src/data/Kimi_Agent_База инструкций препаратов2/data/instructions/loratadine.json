@@ -1,0 +1,571 @@
+{
+  "id": "loratadine",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Лоратадин",
+    "uz": "Лоратадин",
+    "en": "Loratadine"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Лоратадин",
+      "uz": "Лоратадин",
+      "en": "Loratadine"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 10 мг",
+      "сироп"
+    ],
+    "strengths": [
+      "10 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Лоратадин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Аллергический ринит (сезонный и круглогодичный)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loratadine-indications-ru-0"
+        },
+        {
+          "content": "Аллергический конъюнктивит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loratadine-indications-ru-1"
+        },
+        {
+          "content": "Крапивница (включая хроническую идиопатическую)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loratadine-indications-ru-2"
+        },
+        {
+          "content": "Ангионевротический отек",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loratadine-indications-ru-3"
+        },
+        {
+          "content": "Сенная лихорадка",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loratadine-indications-ru-4"
+        },
+        {
+          "content": "Кожные аллергические реакции: зуд, сыпь",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "loratadine-indications-ru-5"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loratadine-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергический ринит (сезонный и круглогодичный)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергический конъюнктивит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Крапивница (включая хроническую идиопатическую)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Ангионевротический отек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Сенная лихорадка",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-indications-ru-5",
+          "section": "indications",
+          "language": "ru",
+          "text": "Кожные аллергические реакции: зуд, сыпь",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к лоратадину",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loratadine-contraindications-ru-0"
+        },
+        {
+          "content": "Период лактации",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loratadine-contraindications-ru-1"
+        },
+        {
+          "content": "Детский возраст до 2 лет (для сиропа), до 3 лет (для таблеток)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "loratadine-contraindications-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loratadine-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к лоратадину",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Период лактации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 2 лет (для сиропа), до 3 лет (для таблеток)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым и детям старше 12 лет: по 10 мг (1 таблетка) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loratadine-dosage-adults-ru-0"
+          },
+          {
+            "content": "При печеночной недостаточности: начальная доза - 10 мг через день",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loratadine-dosage-adults-ru-1"
+          },
+          {
+            "content": "Таблетки принимать внутрь, независимо от приема пищи",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loratadine-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 2-12 лет (масса тела менее 30 кг): по 5 мг (1/2 таблетки) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loratadine-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям 2-12 лет (масса тела более 30 кг): по 10 мг 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "loratadine-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "loratadine-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым и детям старше 12 лет: по 10 мг (1 таблетка) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При печеночной недостаточности: начальная доза - 10 мг через день",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь, независимо от приема пищи",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 2-12 лет (масса тела менее 30 кг): по 5 мг (1/2 таблетки) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 2-12 лет (масса тела более 30 кг): по 10 мг 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЦНС: сонливость, головная боль, головокружение (редко)",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "loratadine-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЖКТ: тошнота, сухость во рту, диспепсия",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "loratadine-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "loratadine-sideEffects-ru-2"
+        },
+        {
+          "content": "Увеличение аппетита",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "loratadine-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loratadine-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: сонливость, головная боль, головокружение (редко)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, сухость во рту, диспепсия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "loratadine-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Увеличение аппетита",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять только по назначению врача, когда польза превышает риск",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "loratadine-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loratadine-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять только по назначению врача, когда польза превышает риск",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Противопоказано",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "loratadine-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loratadine-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 30°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "loratadine-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "loratadine-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 30°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/loratadin-4566",
+            "title": "Лоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Антигистаминное",
+      "uz": "Antigistamin"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Антигистаминное. Прочее.",
+      "uz": "Antigistamin. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

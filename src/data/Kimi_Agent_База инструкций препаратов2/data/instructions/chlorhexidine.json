@@ -1,0 +1,594 @@
+{
+  "id": "chlorhexidine",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Хлоргексидин",
+    "uz": "Хлоргексидин",
+    "en": "Chlorhexidine"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Хлоргексидин",
+      "uz": "Хлоргексидин",
+      "en": "Chlorhexidine"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "раствор 0,05%",
+      "раствор 0,5%",
+      "спиртовой раствор"
+    ],
+    "strengths": [
+      "0,05%",
+      "0,5%"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Хлоргексидин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Обработка кожи перед операцией и инъекциями",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-indications-ru-0"
+        },
+        {
+          "content": "Обработка ран, ожогов, ссадин",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-indications-ru-1"
+        },
+        {
+          "content": "Полоскание полости рта при стоматитах, гингивитах",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-indications-ru-2"
+        },
+        {
+          "content": "Обработка слизистых оболочек",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-indications-ru-3"
+        },
+        {
+          "content": "Гигиеническая обработка рук медицинского персонала",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-indications-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "chlorhexidine-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Обработка кожи перед операцией и инъекциями",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Обработка ран, ожогов, ссадин",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Полоскание полости рта при стоматитах, гингивитах",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Обработка слизистых оболочек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Гигиеническая обработка рук медицинского персонала",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к хлоргексидину",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-contraindications-ru-0"
+        },
+        {
+          "content": "Дерматиты",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-contraindications-ru-1"
+        },
+        {
+          "content": "Нарушение целостности кожи (для спиртовых растворов)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-contraindications-ru-2"
+        },
+        {
+          "content": "Не применять для обработки глаз и ушей",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-contraindications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "chlorhexidine-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к хлоргексидину",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Дерматиты",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Нарушение целостности кожи (для спиртовых растворов)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Не применять для обработки глаз и ушей",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Для полоскания полости рта: 15-20 мл 0,05% раствора в течение 30 секунд 2-3 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "chlorhexidine-dosage-adults-ru-0"
+          },
+          {
+            "content": "Для обработки кожи: 0,5% спиртовой или водный раствор нанести на кожу и дать высохнуть",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "chlorhexidine-dosage-adults-ru-1"
+          },
+          {
+            "content": "Для обработки ран: 0,05% раствор промыть рану",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "chlorhexidine-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям: применять с осторожностью, разбавляя водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "chlorhexidine-dosage-children-ru-0"
+          },
+          {
+            "content": "Для полоскания: разбавить 0,05% раствор водой 1:1",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "chlorhexidine-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "chlorhexidine-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для полоскания полости рта: 15-20 мл 0,05% раствора в течение 30 секунд 2-3 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для обработки кожи: 0,5% спиртовой или водный раствор нанести на кожу и дать высохнуть",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для обработки ран: 0,05% раствор промыть рану",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям: применять с осторожностью, разбавляя водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для полоскания: разбавить 0,05% раствор водой 1:1",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Сухость кожи",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-sideEffects-ru-0"
+        },
+        {
+          "content": "Раздражение кожи и слизистых оболочек",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-sideEffects-ru-2"
+        },
+        {
+          "content": "Пигментация зубов и языка при длительном полоскании",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-sideEffects-ru-3"
+        },
+        {
+          "content": "Нарушение вкуса",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "chlorhexidine-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Сухость кожи",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Раздражение кожи и слизистых оболочек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Пигментация зубов и языка при длительном полоскании",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "chlorhexidine-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Нарушение вкуса",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "chlorhexidine-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "chlorhexidine-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "chlorhexidine-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "chlorhexidine-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/hlorheksidin-4581",
+            "title": "Хлоргексидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Антисептик",
+      "uz": "Antiseptik"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Антисептик. Прочее.",
+      "uz": "Antiseptik. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

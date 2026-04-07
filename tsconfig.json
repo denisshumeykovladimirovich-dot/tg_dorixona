@@ -1,0 +1,19 @@
+﻿{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "src/data/Kimi_Agent_База инструкций препаратов2/tools/**/*",
+    "src/data/Kimi_Agent_Инструкции БД/tools/**/*"
+  ]
+}

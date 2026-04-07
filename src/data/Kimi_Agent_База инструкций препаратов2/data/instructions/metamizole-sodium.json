@@ -1,0 +1,580 @@
+{
+  "id": "metamizole-sodium",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Метамизол натрия",
+    "uz": "Метамизол натрия",
+    "en": "Metamizole Sodium"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Метамизол натрия (Анальгин)",
+      "uz": "Метамизол натрия (Анальгин)",
+      "en": "Metamizole Sodium"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "раствор для инъекций 50% 2 мл",
+      "таблетки 500 мг"
+    ],
+    "strengths": [
+      "500 мг/мл",
+      "500 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Боли различного происхождения (головная боль, зубная боль, дисальгоменорея, невралгии, артралгии, радикулиты, миалгии, почечная и печеночная колика, травмы, ожоги, после операций, опухолях)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-indications-ru-0"
+        },
+        {
+          "content": "Лихорадочный синдром при инфекционно-воспалительных заболеваниях (грипп, ОРВИ, ревматизм), при отсутствии эффекта от других жаропонижающих лекарственных средств",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-indications-ru-1"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "metamizole-sodium-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Боли различного происхождения (головная боль, зубная боль, дисальгоменорея, невралгии, артралгии, радикулиты, миалгии, почечная и печеночная колика, травмы, ожоги, после операций, опухолях)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лихорадочный синдром при инфекционно-воспалительных заболеваниях (грипп, ОРВИ, ревматизм), при отсутствии эффекта от других жаропонижающих лекарственных средств",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Повышенная чувствительность к производным пиразолона",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-contraindications-ru-0"
+        },
+        {
+          "content": "Выраженные нарушения функций печени и почек",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-contraindications-ru-1"
+        },
+        {
+          "content": "Дефицит глюкозо-6-фосфатдегидрогеназы",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-contraindications-ru-2"
+        },
+        {
+          "content": "Нарушение кроветворения (агранулоцитоз, нейтропения)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-contraindications-ru-3"
+        },
+        {
+          "content": "Возраст старше 60 лет",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-contraindications-ru-4"
+        },
+        {
+          "content": "Новорожденные в возрасте до 3-х месяцев или при массе тела менее 5 кг",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-contraindications-ru-5"
+        },
+        {
+          "content": "Беременность и период лактации",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-contraindications-ru-6"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "metamizole-sodium-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Повышенная чувствительность к производным пиразолона",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Выраженные нарушения функций печени и почек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Дефицит глюкозо-6-фосфатдегидрогеназы",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Нарушение кроветворения (агранулоцитоз, нейтропения)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-contraindications-ru-4",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Возраст старше 60 лет",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-contraindications-ru-5",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Новорожденные в возрасте до 3-х месяцев или при массе тела менее 5 кг",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-contraindications-ru-6",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Беременность и период лактации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым внутримышечно или внутривенно (при сильных болях) по 1-2 мл 50% раствора 2-3 раза в день",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "metamizole-sodium-dosage-adults-ru-0"
+          },
+          {
+            "content": "Максимальная разовая доза - 1 г, максимальная суточная - 2 г",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "metamizole-sodium-dosage-adults-ru-1"
+          },
+          {
+            "content": "Внутривенное введение следует проводить медленно (со скоростью не более 1 мл/мин), в горизонтальном положении",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "metamizole-sodium-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 3-12 месяцев (масса тела 5-9 кг): только внутримышечно, 50-100 мг на 10 кг массы тела (0,1-0,2 мл 50% раствора)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "metamizole-sodium-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям старше 12 месяцев: дозировка определяется врачом индивидуально",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "metamizole-sodium-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "metamizole-sodium-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым внутримышечно или внутривенно (при сильных болях) по 1-2 мл 50% раствора 2-3 раза в день",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная разовая доза - 1 г, максимальная суточная - 2 г",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Внутривенное введение следует проводить медленно (со скоростью не более 1 мл/мин), в горизонтальном положении",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 3-12 месяцев (масса тела 5-9 кг): только внутримышечно, 50-100 мг на 10 кг массы тела (0,1-0,2 мл 50% раствора)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям старше 12 месяцев: дозировка определяется врачом индивидуально",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Тошнота, рвота, анорексия, боли в эпигастральной области",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-sideEffects-ru-0"
+        },
+        {
+          "content": "Головная боль, головокружение, возбуждение",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-sideEffects-ru-1"
+        },
+        {
+          "content": "Кожная сыпь, отек Квинке, анафилактический шок",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-sideEffects-ru-2"
+        },
+        {
+          "content": "При длительном применении: лейкопения, агранулоцитоз, анемия",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "metamizole-sodium-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Тошнота, рвота, анорексия, боли в эпигастральной области",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Головная боль, головокружение, возбуждение",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Кожная сыпь, отек Квинке, анафилактический шок",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "metamizole-sodium-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "При длительном применении: лейкопения, агранулоцитоз, анемия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Противопоказан при беременности",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "metamizole-sodium-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Противопоказан при беременности",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Противопоказан в период лактации",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "metamizole-sodium-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Противопоказан в период лактации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить в защищенном от света месте, при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "metamizole-sodium-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "metamizole-sodium-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить в защищенном от света месте, при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/metamizol-natriya-1950",
+            "title": "Метамизол натрия (Анальгин) - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Жаропонижающее и спазмолитик",
+      "uz": "Isitma tushiruvchi va spazmolitik"
+    },
+    "symptoms": {
+      "ru": [
+        "повышенная температура",
+        "лихорадка",
+        "головная боль"
+      ],
+      "uz": []
+    },
+    "symptomTags": [
+      "температура",
+      "жар",
+      "боль"
+    ],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Жаропонижающее и спазмолитик. Жаропонижающее.",
+      "uz": "Isitma tushiruvchi va spazmolitik. Жаропонижающее."
+    }
+  },
+  "llmContextBlocks": []
+}

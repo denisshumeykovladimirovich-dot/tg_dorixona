@@ -1,0 +1,486 @@
+{
+  "id": "miramistin",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Мирамистин",
+    "uz": "Мирамистин",
+    "en": "Miramistin"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Мирамистин",
+      "uz": "Мирамистин",
+      "en": "Miramistin"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "раствор 0,01%"
+    ],
+    "strengths": [
+      "0,01%"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Мирамистин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Лечение ожогов II-III степени",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "miramistin-indications-ru-0"
+        },
+        {
+          "content": "Лечение гнойных ран",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "miramistin-indications-ru-1"
+        },
+        {
+          "content": "Профилактика инфекций при операциях",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "miramistin-indications-ru-2"
+        },
+        {
+          "content": "Лечение воспалительных заболеваний полости рта и глотки",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "miramistin-indications-ru-3"
+        },
+        {
+          "content": "Лечение гинекологических инфекций",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "miramistin-indications-ru-4"
+        },
+        {
+          "content": "Лечение уретритов",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "miramistin-indications-ru-5"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "miramistin-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лечение ожогов II-III степени",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лечение гнойных ран",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Профилактика инфекций при операциях",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лечение воспалительных заболеваний полости рта и глотки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лечение гинекологических инфекций",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-indications-ru-5",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лечение уретритов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к мирамистину",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "miramistin-contraindications-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "miramistin-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к мирамистину",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Для полоскания полости рта и глотки: 10-15 мл 0,01% раствора в течение 30 секунд 3-4 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "miramistin-dosage-adults-ru-0"
+          },
+          {
+            "content": "Для обработки ран и ожогов: 0,01% раствор нанести на пораженную поверхность 2-3 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "miramistin-dosage-adults-ru-1"
+          },
+          {
+            "content": "Для профилактики инфекций: обработать кожу 0,01% раствором перед операцией",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "miramistin-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям: применять с осторожностью",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "miramistin-dosage-children-ru-0"
+          },
+          {
+            "content": "Для полоскания: разбавить водой 1:1",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "miramistin-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "miramistin-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для полоскания полости рта и глотки: 10-15 мл 0,01% раствора в течение 30 секунд 3-4 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для обработки ран и ожогов: 0,01% раствор нанести на пораженную поверхность 2-3 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для профилактики инфекций: обработать кожу 0,01% раствором перед операцией",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям: применять с осторожностью",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для полоскания: разбавить водой 1:1",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Легкое жжение при применении",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "miramistin-sideEffects-ru-0"
+        },
+        {
+          "content": "Аллергические реакции (редко)",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "miramistin-sideEffects-ru-1"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "miramistin-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Легкое жжение при применении",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "miramistin-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции (редко)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "miramistin-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "miramistin-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "miramistin-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "miramistin-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "miramistin-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "miramistin-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/miramistin-4582",
+            "title": "Мирамистин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Антисептик",
+      "uz": "Antiseptik"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Антисептик. Прочее.",
+      "uz": "Antiseptik. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

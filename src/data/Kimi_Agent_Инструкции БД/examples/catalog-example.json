@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15T10:30:00Z",
+  "totalCount": 1,
+  "drugs": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "canonicalName": {
+        "ru": "Парацетамол",
+        "uz": "Paratsetamol",
+        "en": "Paracetamol"
+      },
+      "normalizedKey": "paracetamol",
+      "aliases": {
+        "ru": [
+          "Ацетаминофен"
+        ],
+        "uz": [
+          "Asetaminofen"
+        ],
+        "en": [
+          "Acetaminophen"
+        ],
+        "brands": [
+          "Tylenol",
+          "Panadol",
+          "Efferalgan"
+        ],
+        "transliterations": [
+          "Paracetamol"
+        ],
+        "commonMisspellings": [
+          "parasetamol"
+        ]
+      },
+      "searchTokens": [
+        "жар",
+        "боль",
+        "лихорадка",
+        "головная",
+        "зубная"
+      ],
+      "therapeuticClass": [
+        "N02BE01"
+      ],
+      "pharmacologicalClass": [
+        "Анальгетик",
+        "Антипиретик"
+      ],
+      "symptomTags": [
+        "головная-боль",
+        "жар",
+        "боль"
+      ],
+      "commonUseCases": [
+        "Головная боль",
+        "Высокая температура"
+      ],
+      "dosageForms": [
+        "tablet",
+        "syrup",
+        "suppository"
+      ],
+      "ageBucketsSupported": [
+        "infant",
+        "child",
+        "adult",
+        "elderly"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "p/paracetamol.json",
+      "sourcePriority": 9,
+      "reviewStatus": "medically_verified",
+      "needsManualReview": false,
+      "createdAt": "2024-01-10T08:00:00Z",
+      "updatedAt": "2024-01-15T10:30:00Z",
+      "version": 1
+    }
+  ]
+}

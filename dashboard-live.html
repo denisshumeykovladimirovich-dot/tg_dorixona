@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drug Audit Live Dashboard</title>
+    <style>
+      :root {
+        --bg: #f4f7f5;
+        --panel: #ffffff;
+        --ink: #13211b;
+        --muted: #5c6d64;
+        --line: #d8e2dc;
+        --accent: #1f7a4e;
+        --accent-soft: #e7f5ed;
+        --warn: #8a4b00;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: radial-gradient(1200px 700px at 85% -10%, #d9efe2 0%, transparent 60%), var(--bg);
+        color: var(--ink);
+        font: 15px/1.45 "Segoe UI", "Noto Sans", sans-serif;
+      }
+
+      .wrap {
+        max-width: 1100px;
+        margin: 24px auto 48px;
+        padding: 0 16px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+      }
+
+      .sub {
+        margin: 0 0 18px;
+        color: var(--muted);
+      }
+
+      .status {
+        margin: 0 0 18px;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: #f9fcfa;
+        color: var(--muted);
+      }
+
+      .warn {
+        color: var(--warn);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 12px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px;
+      }
+
+      .span-12 {
+        grid-column: span 12;
+      }
+
+      .span-6 {
+        grid-column: span 6;
+      }
+
+      @media (max-width: 900px) {
+        .span-6 {
+          grid-column: span 12;
+        }
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      .kpis {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      @media (max-width: 900px) {
+        .kpis {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .kpi {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 10px;
+        background: #fbfdfc;
+      }
+
+      .kpi .label {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .kpi .value {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 3px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 8px 6px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--muted);
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .step {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .pill {
+        background: var(--accent-soft);
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 2px 8px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .small {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .tools {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      button {
+        border: 1px solid var(--line);
+        background: #fff;
+        border-radius: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        border-color: #b8c8be;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Drug Audit Live Dashboard</h1>
+      <p class="sub">Источник: <code>data/analytics-events.jsonl</code>. Без сервера, без сборки, только live-данные.</p>
+      <div class="status" id="status">Загрузка данных...</div>
+
+      <div class="grid">
+        <section class="card span-12">
+          <h2>Conversion</h2>
+          <div class="kpis" id="kpis"></div>
+          <div class="tools">
+            <button id="reloadBtn" type="button">Обновить</button>
+            <button id="pickFileBtn" type="button">Выбрать JSONL вручную</button>
+            <input id="fileInput" type="file" accept=".jsonl,.txt" style="display: none" />
+          </div>
+          <p class="small">Если браузер блокирует чтение локального файла через <code>fetch</code>, нажмите «Выбрать JSONL вручную».</p>
+        </section>
+
+        <section class="card span-6">
+          <h2>Funnel</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Шаг</th>
+                <th>Сессий</th>
+                <th>Conversion от пред.</th>
+              </tr>
+            </thead>
+            <tbody id="funnelBody"></tbody>
+          </table>
+        </section>
+
+        <section class="card span-6">
+          <h2>Top Drugs</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Препарат</th>
+                <th>drug_selected</th>
+                <th>buy_clicked</th>
+                <th>Conversion</th>
+              </tr>
+            </thead>
+            <tbody id="drugsBody"></tbody>
+          </table>
+        </section>
+
+        <section class="card span-12">
+          <h2>Symptom → Drug</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Симптом</th>
+                <th>Препарат</th>
+                <th>Count</th>
+              </tr>
+            </thead>
+            <tbody id="matrixBody"></tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const LEGACY_TO_CANONICAL = {
+        start_bot: "session_started",
+        select_symptom: "symptom_selected",
+        enter_medication: "drug_selected",
+        analysis_view: "analysis_completed",
+        analysis_generated: "analysis_completed",
+        recommendation_shown: "brand_recommended",
+        recommendation_clicked: "brand_selected_after_analysis",
+        click_apteka: "buy_click",
+        buy_clicked: "buy_click",
+        flow_error: "analysis_failed",
+        callback_error: "analysis_failed",
+        product_error_logged: "analysis_failed"
+      };
+
+      const CANONICAL_TYPES = new Set([
+        "session_started",
+        "button_clicked",
+        "symptom_selected",
+        "drug_selected",
+        "analysis_completed",
+        "buy_click",
+        "analysis_failed",
+        "brand_recommended",
+        "brand_selected_after_analysis",
+        "analysis_generated",
+        "buy_clicked",
+        "product_error_logged"
+      ]);
+
+      const STEP_ORDER = ["session_started", "symptom_selected", "drug_selected", "analysis_completed", "buy_click"];
+      const PROJECT_TIMEZONE = "Asia/Tashkent";
+
+      const statusEl = document.getElementById("status");
+      const kpisEl = document.getElementById("kpis");
+      const funnelBodyEl = document.getElementById("funnelBody");
+      const drugsBodyEl = document.getElementById("drugsBody");
+      const matrixBodyEl = document.getElementById("matrixBody");
+      const reloadBtn = document.getElementById("reloadBtn");
+      const pickFileBtn = document.getElementById("pickFileBtn");
+      const fileInput = document.getElementById("fileInput");
+
+      function safeText(value) {
+        return typeof value === "string" ? value.trim() : "";
+      }
+
+      function percent(numerator, denominator) {
+        if (!denominator) return 0;
+        return Math.round((numerator / denominator) * 10000) / 100;
+      }
+
+      function eventSymptom(event) {
+        const p = event.payload || {};
+        return safeText(p.symptom) || safeText(p.value) || safeText(p.selectedSymptom);
+      }
+
+      function eventDrug(event) {
+        const p = event.payload || {};
+        return safeText(p.medication) || safeText(p.drugName) || safeText(p.selectedDrugName);
+      }
+
+      function canonicalizeEvent(raw) {
+        const payload = raw.payload && typeof raw.payload === "object" ? { ...raw.payload } : {};
+        const originalType = safeText(raw.type);
+        const canonicalType = LEGACY_TO_CANONICAL[originalType] || originalType;
+        if (!canonicalType) return null;
+
+        if (canonicalType !== originalType) payload.legacy_type = originalType;
+
+        const symptom = safeText(payload.symptom) || safeText(payload.value) || safeText(payload.selectedSymptom);
+        if (symptom) payload.symptom = symptom;
+        const medication = safeText(payload.medication) || safeText(payload.drugName) || safeText(payload.selectedDrugName);
+        if (medication) payload.medication = medication;
+
+        if (!Array.isArray(payload.drugs) && Array.isArray(payload.final_analysis_medications)) {
+          payload.drugs = payload.final_analysis_medications.filter((x) => typeof x === "string" && x.trim());
+        }
+        if (!safeText(payload.risk_level) && safeText(payload.status)) {
+          payload.risk_level = safeText(payload.status);
+        }
+
+        return {
+          id: safeText(raw.id) || `evt-${Math.random().toString(36).slice(2)}`,
+          type: canonicalType,
+          userId: safeText(raw.userId) || "unknown",
+          sessionId: safeText(raw.sessionId) || "unknown-session",
+          timestamp: Number.isFinite(raw.timestamp) ? raw.timestamp : Date.now(),
+          payload
+        };
+      }
+
+      function parseJsonl(text) {
+        return text
+          .split(/\r?\n/)
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .map((line) => {
+            try {
+              return JSON.parse(line);
+            } catch {
+              return null;
+            }
+          })
+          .filter((x) => x && typeof x === "object")
+          .map(canonicalizeEvent)
+          .filter((x) => x && CANONICAL_TYPES.has(x.type))
+          .sort((a, b) => a.timestamp - b.timestamp);
+      }
+
+      function dateKeyInTimezone(timestampMs, timezone) {
+        const parts = new Intl.DateTimeFormat("en-CA", {
+          timeZone: timezone,
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }).formatToParts(new Date(timestampMs));
+        const year = parts.find((p) => p.type === "year")?.value || "0000";
+        const month = parts.find((p) => p.type === "month")?.value || "00";
+        const day = parts.find((p) => p.type === "day")?.value || "00";
+        return `${year}-${month}-${day}`;
+      }
+
+      function filterToday(events) {
+        const todayKey = dateKeyInTimezone(Date.now(), PROJECT_TIMEZONE);
+        return events.filter((event) => dateKeyInTimezone(event.timestamp, PROJECT_TIMEZONE) === todayKey);
+      }
+
+      function bySession(events) {
+        const map = new Map();
+        for (const e of events) {
+          if (!map.has(e.sessionId)) map.set(e.sessionId, []);
+          map.get(e.sessionId).push(e);
+        }
+        for (const arr of map.values()) {
+          arr.sort((a, b) => a.timestamp - b.timestamp);
+        }
+        return map;
+      }
+
+      function aggregate(events) {
+        const sessions = bySession(events);
+        const stepSets = {
+          session_started: new Set(),
+          symptom_selected: new Set(),
+          drug_selected: new Set(),
+          analysis_generated: new Set(),
+          buy_clicked: new Set()
+        };
+
+        for (const [sid, arr] of sessions.entries()) {
+          for (const step of STEP_ORDER) {
+            if (arr.some((e) => e.type === step)) stepSets[step].add(sid);
+          }
+        }
+
+        const funnel = STEP_ORDER.map((step, idx) => {
+          const count = stepSets[step].size;
+          const prev = idx === 0 ? count : stepSets[STEP_ORDER[idx - 1]].size;
+          return { step, count, conv: idx === 0 ? 100 : percent(count, prev) };
+        });
+
+        const selectedByDrug = new Map();
+        const buysByDrug = new Map();
+        for (const e of events) {
+          const drug = eventDrug(e);
+          if (!drug) continue;
+          if (e.type === "drug_selected") selectedByDrug.set(drug, (selectedByDrug.get(drug) || 0) + 1);
+          if (e.type === "buy_clicked") buysByDrug.set(drug, (buysByDrug.get(drug) || 0) + 1);
+        }
+        const topDrugs = Array.from(selectedByDrug.entries())
+          .map(([drug, selected]) => {
+            const buys = buysByDrug.get(drug) || 0;
+            return { drug, selected, buys, conv: percent(buys, selected) };
+          })
+          .sort((a, b) => b.selected - a.selected)
+          .slice(0, 12);
+
+        const sessionSymptom = new Map();
+        const pairCount = new Map();
+        for (const e of events) {
+          if (e.type === "symptom_selected") {
+            const symptom = eventSymptom(e);
+            if (symptom) sessionSymptom.set(e.sessionId, symptom);
+          }
+          if (e.type === "drug_selected" || e.type === "buy_clicked") {
+            const symptom = sessionSymptom.get(e.sessionId);
+            const drug = eventDrug(e);
+            if (symptom && drug) {
+              const key = `${symptom}|||${drug}`;
+              pairCount.set(key, (pairCount.get(key) || 0) + 1);
+            }
+          }
+        }
+        const symptomDrug = Array.from(pairCount.entries())
+          .map(([key, count]) => {
+            const [symptom, drug] = key.split("|||");
+            return { symptom, drug, count };
+          })
+          .sort((a, b) => b.count - a.count)
+          .slice(0, 20);
+
+        const sessionsStarted = stepSets.session_started.size;
+        const sessionsDrug = stepSets.drug_selected.size;
+        const sessionsAnalysis = stepSets.analysis_generated.size;
+        const sessionsBuy = stepSets.buy_clicked.size;
+
+        return {
+          eventsTotal: events.length,
+          sessionsTotal: sessions.size,
+          funnel,
+          topDrugs,
+          symptomDrug,
+          conversion: {
+            sessionToBuy: percent(sessionsBuy, sessionsStarted),
+            drugToAnalysis: percent(sessionsAnalysis, sessionsDrug),
+            analysisToBuy: percent(sessionsBuy, sessionsAnalysis)
+          }
+        };
+      }
+
+      function render(summary) {
+        const now = new Date().toLocaleString();
+        statusEl.innerHTML = `Обновлено: <b>${now}</b> · Событий: <b>${summary.eventsTotal}</b> · Сессий: <b>${summary.sessionsTotal}</b>`;
+
+        kpisEl.innerHTML = "";
+        const kpis = [
+          { label: "Session → Buy", value: `${summary.conversion.sessionToBuy}%` },
+          { label: "Drug → Analysis", value: `${summary.conversion.drugToAnalysis}%` },
+          { label: "Analysis → Buy", value: `${summary.conversion.analysisToBuy}%` },
+          { label: "Buy Sessions", value: String(summary.funnel.find((x) => x.step === "buy_clicked")?.count || 0) }
+        ];
+        for (const k of kpis) {
+          const div = document.createElement("div");
+          div.className = "kpi";
+          div.innerHTML = `<div class="label">${k.label}</div><div class="value">${k.value}</div>`;
+          kpisEl.appendChild(div);
+        }
+
+        funnelBodyEl.innerHTML = "";
+        for (const row of summary.funnel) {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td><div class="step">${row.step}<span class="pill">${row.step.replace("_", " ")}</span></div></td>
+            <td>${row.count}</td>
+            <td>${row.conv}%</td>
+          `;
+          funnelBodyEl.appendChild(tr);
+        }
+
+        drugsBodyEl.innerHTML = "";
+        for (const row of summary.topDrugs) {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${row.drug}</td>
+            <td>${row.selected}</td>
+            <td>${row.buys}</td>
+            <td>${row.conv}%</td>
+          `;
+          drugsBodyEl.appendChild(tr);
+        }
+
+        matrixBodyEl.innerHTML = "";
+        for (const row of summary.symptomDrug) {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${row.symptom}</td>
+            <td>${row.drug}</td>
+            <td>${row.count}</td>
+          `;
+          matrixBodyEl.appendChild(tr);
+        }
+      }
+
+      async function loadByFetch() {
+        const response = await fetch("./data/analytics-events.jsonl", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.text();
+      }
+
+      async function refresh() {
+        statusEl.textContent = "Загрузка данных...";
+        try {
+          const text = await loadByFetch();
+          const events = filterToday(parseJsonl(text));
+          render(aggregate(events));
+        } catch (error) {
+          statusEl.innerHTML =
+            `<span class="warn">Автозагрузка не удалась (${String(error)}).</span> ` +
+            `Нажмите «Выбрать JSONL вручную».`;
+        }
+      }
+
+      reloadBtn.addEventListener("click", refresh);
+      pickFileBtn.addEventListener("click", () => fileInput.click());
+      fileInput.addEventListener("change", async (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const text = await file.text();
+        const events = filterToday(parseJsonl(text));
+        render(aggregate(events));
+      });
+
+      refresh();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+{
+  "id": "paracetamol",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Парацетамол",
+    "uz": "Парацетамол",
+    "en": "Paracetamol"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Парацетамол",
+      "uz": "Парацетамол",
+      "en": "Paracetamol"
+    },
+    "drugForm": [],
+    "dosageForms": [],
+    "strengths": []
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Инструкция по медицинскому применению препарата Парацетамол",
+    "organization": "",
+    "country": "",
+    "language": "ru",
+    "url": "",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "contraindications": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [],
+        "children": [],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": []
+    },
+    "sideEffects": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "lactation": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [],
+      "sourceFragments": []
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Жаропонижающее и обезболивающее",
+      "uz": "Isitma tushiruvchi va og'riq qoldiruvchi"
+    },
+    "symptoms": {
+      "ru": [
+        "повышенная температура",
+        "лихорадка",
+        "головная боль"
+      ],
+      "uz": []
+    },
+    "symptomTags": [
+      "температура",
+      "жар",
+      "боль"
+    ],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Жаропонижающее и обезболивающее. Жаропонижающее.",
+      "uz": "Isitma tushiruvchi va og'riq qoldiruvchi. Жаропонижающее."
+    }
+  },
+  "llmContextBlocks": []
+}

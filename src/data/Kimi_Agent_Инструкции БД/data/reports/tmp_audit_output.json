@@ -1,0 +1,892 @@
+{
+  "inspectedPaths": {
+    "root": "D:\\Дизайнер\\Основное\\Загрузки\\Manus\\0_tg_dorixona\\src\\data\\Kimi_Agent_Инструкции БД",
+    "instrDir": "D:\\Дизайнер\\Основное\\Загрузки\\Manus\\0_tg_dorixona\\src\\data\\Kimi_Agent_Инструкции БД\\data\\instructions",
+    "catalogPath": "D:\\Дизайнер\\Основное\\Загрузки\\Manus\\0_tg_dorixona\\src\\data\\Kimi_Agent_Инструкции БД\\data\\catalog\\catalog.json",
+    "registryPath": "D:\\Дизайнер\\Основное\\Загрузки\\Manus\\0_tg_dorixona\\src\\data\\Kimi_Agent_Инструкции БД\\data\\mappings\\source_registry.json"
+  },
+  "summary": {
+    "instructionFileCount": 30,
+    "catalogItemCount": 30,
+    "registrySourceCount": 55,
+    "issueCounts": {
+      "missing_source.url": 30,
+      "missing_source.organization": 30,
+      "missing_source.country": 30,
+      "empty_structured": 90,
+      "empty_sourceFragments": 90
+    },
+    "catalogMissingInstructionCount": 0,
+    "instructionMissingCatalogCount": 0,
+    "badInstructionPathsCount": 0,
+    "instructionSourceIdMissingCount": 30,
+    "instructionUnknownSourceIdCount": 0,
+    "verifiedButCriticalEmptyCount": 3,
+    "classificationCounts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 30
+    }
+  },
+  "rows": [
+    {
+      "file": "acetylcysteine.json",
+      "id": "acetylcysteine",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "acetylsalicylic-acid.json",
+      "id": "acetylsalicylic-acid",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "activated-charcoal.json",
+      "id": "activated-charcoal",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "acyclovir.json",
+      "id": "acyclovir",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "ambroxol.json",
+      "id": "ambroxol",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "amoxicillin.json",
+      "id": "amoxicillin",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "anzibel.json",
+      "id": "anzibel",
+      "reviewStatus": "draft_verified",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "azithromycin.json",
+      "id": "azithromycin",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "budesonide.json",
+      "id": "budesonide",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "cetirizine.json",
+      "id": "cetirizine",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "chlorhexidine.json",
+      "id": "chlorhexidine",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "desloratadine.json",
+      "id": "desloratadine",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "dextromethorphan.json",
+      "id": "dextromethorphan",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "diclofenac.json",
+      "id": "diclofenac",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "domperidone.json",
+      "id": "domperidone",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "drotaverine.json",
+      "id": "drotaverine",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "famotidine.json",
+      "id": "famotidine",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "fluconazole.json",
+      "id": "fluconazole",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "ibuprofen.json",
+      "id": "ibuprofen",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "loperamide.json",
+      "id": "loperamide",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "loratadine.json",
+      "id": "loratadine",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "metamizole-sodium.json",
+      "id": "metamizole-sodium",
+      "reviewStatus": "draft_verified",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "miramistin.json",
+      "id": "miramistin",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "naproxen.json",
+      "id": "naproxen",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "omeprazole.json",
+      "id": "omeprazole",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "oxymetazoline.json",
+      "id": "oxymetazoline",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "pantoprazole.json",
+      "id": "pantoprazole",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "paracetamol.json",
+      "id": "paracetamol",
+      "reviewStatus": "draft_verified",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "salbutamol.json",
+      "id": "salbutamol",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    },
+    {
+      "file": "xylometazoline.json",
+      "id": "xylometazoline",
+      "reviewStatus": "needs_manual_review",
+      "sourceId": null,
+      "missingSource": [
+        "url",
+        "organization",
+        "country"
+      ],
+      "emptySections": [],
+      "emptyStructured": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "emptySourceFragments": [
+        "indications",
+        "contraindications",
+        "dosageAndAdministration"
+      ],
+      "brokenRefs": [],
+      "fakeBotSummary": false,
+      "symptomTagsCount": 0,
+      "commonUseCasesCount": 0
+    }
+  ],
+  "catalogMissingInstruction": [],
+  "instructionMissingCatalog": [],
+  "badInstructionPaths": [],
+  "instructionSourceIdMissing": [
+    "acetylcysteine.json",
+    "acetylsalicylic-acid.json",
+    "activated-charcoal.json",
+    "acyclovir.json",
+    "ambroxol.json",
+    "amoxicillin.json",
+    "anzibel.json",
+    "azithromycin.json",
+    "budesonide.json",
+    "cetirizine.json",
+    "chlorhexidine.json",
+    "desloratadine.json",
+    "dextromethorphan.json",
+    "diclofenac.json",
+    "domperidone.json",
+    "drotaverine.json",
+    "famotidine.json",
+    "fluconazole.json",
+    "ibuprofen.json",
+    "loperamide.json",
+    "loratadine.json",
+    "metamizole-sodium.json",
+    "miramistin.json",
+    "naproxen.json",
+    "omeprazole.json",
+    "oxymetazoline.json",
+    "pantoprazole.json",
+    "paracetamol.json",
+    "salbutamol.json",
+    "xylometazoline.json"
+  ],
+  "instructionUnknownSourceId": [],
+  "verifiedButCriticalEmpty": [
+    "anzibel.json",
+    "metamizole-sodium.json",
+    "paracetamol.json"
+  ],
+  "classification": {
+    "A": [],
+    "B": [],
+    "C": [],
+    "D": [
+      "acetylcysteine.json",
+      "acetylsalicylic-acid.json",
+      "activated-charcoal.json",
+      "acyclovir.json",
+      "ambroxol.json",
+      "amoxicillin.json",
+      "anzibel.json",
+      "azithromycin.json",
+      "budesonide.json",
+      "cetirizine.json",
+      "chlorhexidine.json",
+      "desloratadine.json",
+      "dextromethorphan.json",
+      "diclofenac.json",
+      "domperidone.json",
+      "drotaverine.json",
+      "famotidine.json",
+      "fluconazole.json",
+      "ibuprofen.json",
+      "loperamide.json",
+      "loratadine.json",
+      "metamizole-sodium.json",
+      "miramistin.json",
+      "naproxen.json",
+      "omeprazole.json",
+      "oxymetazoline.json",
+      "pantoprazole.json",
+      "paracetamol.json",
+      "salbutamol.json",
+      "xylometazoline.json"
+    ]
+  }
+}

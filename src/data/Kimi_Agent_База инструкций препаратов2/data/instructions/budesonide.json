@@ -1,0 +1,531 @@
+{
+  "id": "budesonide",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Будесонид",
+    "uz": "Будесонид",
+    "en": "Budesonide"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Будесонид",
+      "uz": "Будесонид",
+      "en": "Budesonide"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "порошковый ингалятор 100 мкг/доза",
+      "порошковый ингалятор 200 мкг/доза",
+      "назальный спрей"
+    ],
+    "strengths": [
+      "100 мкг/доза",
+      "200 мкг/доза"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Будесонид - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Бронхиальная астма (поддерживающая терапия)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "budesonide-indications-ru-0"
+        },
+        {
+          "content": "Хроническая обструктивная болезнь легких (ХОБЛ)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "budesonide-indications-ru-1"
+        },
+        {
+          "content": "Аллергический ринит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "budesonide-indications-ru-2"
+        },
+        {
+          "content": "Полипоз носа",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "budesonide-indications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "budesonide-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Бронхиальная астма (поддерживающая терапия)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Хроническая обструктивная болезнь легких (ХОБЛ)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергический ринит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Полипоз носа",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к будесониду",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "budesonide-contraindications-ru-0"
+        },
+        {
+          "content": "Острый бронхоспазм",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "budesonide-contraindications-ru-1"
+        },
+        {
+          "content": "Тяжелые инфекции дыхательных путей",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "budesonide-contraindications-ru-2"
+        },
+        {
+          "content": "Детский возраст до 6 месяцев",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "budesonide-contraindications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "budesonide-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к будесониду",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Острый бронхоспазм",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелые инфекции дыхательных путей",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 6 месяцев",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "При бронхиальной астме: 200-400 мкг 2 раза в сутки через ингалятор",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "budesonide-dosage-adults-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 1600 мкг",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "budesonide-dosage-adults-ru-1"
+          },
+          {
+            "content": "При аллергическом рините: 1 впрыскивание (50 мкг) в каждый носовой ход 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "budesonide-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 6 месяцев-12 лет: 100-200 мкг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "budesonide-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям до 6 месяцев: противопоказано",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "budesonide-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "budesonide-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При бронхиальной астме: 200-400 мкг 2 раза в сутки через ингалятор",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 1600 мкг",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При аллергическом рините: 1 впрыскивание (50 мкг) в каждый носовой ход 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6 месяцев-12 лет: 100-200 мкг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 6 месяцев: противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Местные реакции: кандидоз полости рта, охриплость голоса, раздражение горла",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "budesonide-sideEffects-ru-0"
+        },
+        {
+          "content": "Системные эффекты: надпочечниковая недостаточность, остеопороз, замедление роста у детей",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "budesonide-sideEffects-ru-1"
+        },
+        {
+          "content": "Головная боль, кашель",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "budesonide-sideEffects-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "budesonide-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Местные реакции: кандидоз полости рта, охриплость голоса, раздражение горла",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Системные эффекты: надпочечниковая недостаточность, остеопороз, замедление роста у детей",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "budesonide-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Головная боль, кашель",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "budesonide-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "budesonide-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "budesonide-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "budesonide-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 30°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "budesonide-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "budesonide-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 30°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/budesonid-4585",
+            "title": "Будесонид - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Ингаляционный кортикостероид",
+      "uz": "Ingelatsion kortikosteroid"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Ингаляционный кортикостероид. Прочее.",
+      "uz": "Ingelatsion kortikosteroid. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

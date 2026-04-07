@@ -1,0 +1,1134 @@
+﻿# GOLDEN SYMPTOM MAP (20 symptoms)
+
+Generated: 2026-04-01
+
+## 1. Executive summary
+- Selected symptoms: **20/20** (all from recommended set; replacements not required).
+- Selection basis: high everyday frequency + clear symptom semantics + existing mapping support in `symptom_tags.json` + available age/risk fields in `drugDatabase.json`.
+- Runtime reality: bot currently builds symptom suggestions from `src/data/drugDatabase.json` in `src/index.ts`; `symptom_tags.json` is not directly consumed in runtime flow.
+- Source-of-truth used for this GOLDEN map: `src/data/drugDatabase.json` (drug age/safety), `.../mappings/symptom_tags.json` (symptom->drug links), runtime code constraints in `src/index.ts` and `src/core/analysisEngine.ts`.
+
+## 2. Golden symptom map
+
+### Symptom: `temperature` (температура)
+- category: `general`
+- aliases: жар, лихорадка, повышенная температура, высокая температура, температура тела
+- parentSymptom: `none`
+- childSymptoms: fever
+- primary drugs count: 5; all linked drugs: 12
+- drugs:
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|KIDNEY|PRESSURE|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Paracetamol (`paracetamol`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=18; pediatricAllowed=false; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Ibuprofen (`ibuprofen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Nimesulide (`nimesulide`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Amoxicillin (`amoxicillin`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Amoxicillin Clavulanate (`amoxicillin-clavulanate`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Azithromycin (`azithromycin`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Cefuroxime (`cefuroxime`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|KIDNEY|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Ciprofloxacin (`ciprofloxacin`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=18; pediatricAllowed=false; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|KIDNEY|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Oseltamivir (`oseltamivir`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIVIRAL_GROUP|GI|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Umifenovir (`umifenovir`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIVIRAL_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `fever` (лихорадка)
+- category: `general`
+- aliases: жар, лихорадочное состояние, озноб
+- parentSymptom: `temperature`
+- childSymptoms: none
+- primary drugs count: 3; all linked drugs: 5
+- drugs:
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|KIDNEY|PRESSURE|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Paracetamol (`paracetamol`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Ibuprofen (`ibuprofen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=18; pediatricAllowed=false; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Nimesulide (`nimesulide`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `headache` (головная боль)
+- category: `pain`
+- aliases: головная, боль в голове, мигрень, головные боли
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 7; all linked drugs: 7
+- drugs:
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|KIDNEY|PRESSURE|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Paracetamol (`paracetamol`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=18; pediatricAllowed=false; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Diclofenac (`diclofenac`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [GI|KIDNEY|LIVER|NSAID_GROUP|riskPriority:HIGH]
+    - includeInPrimaryOutput: `true`
+  - Ibuprofen (`ibuprofen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Naproxen (`naproxen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Nimesulide (`nimesulide`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `muscle-pain` (мышечная боль)
+- category: `pain`
+- aliases: боль в мышцах, миалгия, мышечные боли
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 5; all linked drugs: 9
+- drugs:
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|KIDNEY|PRESSURE|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Paracetamol (`paracetamol`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Diclofenac (`diclofenac`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [GI|KIDNEY|LIVER|NSAID_GROUP|riskPriority:HIGH]
+    - includeInPrimaryOutput: `true`
+  - Ibuprofen (`ibuprofen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Naproxen (`naproxen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Acetylsalicylic Acid (`acetylsalicylic-acid`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=18; pediatricAllowed=false; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Ketoprofen (`ketoprofen`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=15; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Meloxicam (`meloxicam`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=15; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Nimesulide (`nimesulide`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `toothache` (зубная боль)
+- category: `pain`
+- aliases: боль в зубе, зубная, зубные боли
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 2; all linked drugs: 5
+- drugs:
+  - Diclofenac (`diclofenac`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [GI|KIDNEY|LIVER|NSAID_GROUP|riskPriority:HIGH]
+    - includeInPrimaryOutput: `true`
+  - Ibuprofen (`ibuprofen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Metamizole Sodium (`metamizole-sodium`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|KIDNEY|PRESSURE|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Naproxen (`naproxen`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Paracetamol (`paracetamol`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `sore-throat` (боль в горле)
+- category: `pain`
+- aliases: горло болит, ангина, фарингит, боль в горле
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: ; all linked drugs: 9
+- drugs:
+  - Chlorhexidine (`chlorhexidine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTISEPTIC_GROUP|riskPriority:LOW]
+    - includeInPrimaryOutput: `true`
+  - Анзибел (`anzibel`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=unknown; pediatricAllowed=unknown; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: []
+    - includeInPrimaryOutput: `false`
+  - Amoxicillin (`amoxicillin`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Amoxicillin Clavulanate (`amoxicillin-clavulanate`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Azithromycin (`azithromycin`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Cefuroxime (`cefuroxime`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIBIOTIC_GROUP|GI|KIDNEY|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Ibuprofen (`ibuprofen`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|KIDNEY|NSAID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Miramistin (`miramistin`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTISEPTIC_GROUP|riskPriority:LOW]
+    - includeInPrimaryOutput: `false`
+  - Paracetamol (`paracetamol`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIPYRETIC_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `throat-irritation` (раздражение горла)
+- category: `respiratory`
+- aliases: першение в горле, дискомфорт в горле, горло першит
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 0; all linked drugs: 3
+- drugs:
+  - Анзибел (`anzibel`)
+    - relationType: `direct_official`
+    - matchSource: drugSymptomMappings:official_instruction:high; symptoms.relatedDrugs
+    - age: minAgeYears=unknown; pediatricAllowed=unknown; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: []
+    - includeInPrimaryOutput: `false`
+  - Chlorhexidine (`chlorhexidine`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTISEPTIC_GROUP|riskPriority:LOW]
+    - includeInPrimaryOutput: `false`
+  - Miramistin (`miramistin`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTISEPTIC_GROUP|riskPriority:LOW]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `cough` (кашель)
+- category: `respiratory`
+- aliases: кашляет, кашлевой рефлекс, покашливание
+- parentSymptom: `none`
+- childSymptoms: dry-cough, wet-cough
+- primary drugs count: 6; all linked drugs: 9
+- drugs:
+  - Acetylcysteine (`acetylcysteine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Ambroxol (`ambroxol`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Bromhexine (`bromhexine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Butamirate (`butamirate`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTITUSSIVE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Dextromethorphan (`dextromethorphan`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTITUSSIVE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Guaifenesin (`guaifenesin`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Carbocisteine (`carbocisteine`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Oseltamivir (`oseltamivir`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIVIRAL_GROUP|GI|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+  - Umifenovir (`umifenovir`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIVIRAL_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `dry-cough` (сухой кашель)
+- category: `respiratory`
+- aliases: непродуктивный кашель, кашель без мокроты
+- parentSymptom: `cough`
+- childSymptoms: none
+- primary drugs count: 2; all linked drugs: 2
+- drugs:
+  - Butamirate (`butamirate`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTITUSSIVE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Dextromethorphan (`dextromethorphan`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTITUSSIVE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `wet-cough` (мокрый кашель)
+- category: `respiratory`
+- aliases: влажный кашель, продуктивный кашель, кашель с мокротой
+- parentSymptom: `cough`
+- childSymptoms: none
+- primary drugs count: 5; all linked drugs: 5
+- drugs:
+  - Acetylcysteine (`acetylcysteine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Ambroxol (`ambroxol`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Bromhexine (`bromhexine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Carbocisteine (`carbocisteine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Guaifenesin (`guaifenesin`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|MUCOLYTIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `runny-nose` (насморк)
+- category: `respiratory`
+- aliases: ринорея, выделения из носа, сопли
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 6; all linked drugs: 6
+- drugs:
+  - Cetirizine (`cetirizine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Loratadine (`loratadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Naphazoline (`naphazoline`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+  - Oxymetazoline (`oxymetazoline`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+  - Phenylephrine (`phenylephrine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+  - Xylometazoline (`xylometazoline`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `nasal-congestion` (заложенность носа)
+- category: `respiratory`
+- aliases: закладывает нос, заложен нос, насморк с заложенностью
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 4; all linked drugs: 4
+- drugs:
+  - Naphazoline (`naphazoline`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+  - Oxymetazoline (`oxymetazoline`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+  - Phenylephrine (`phenylephrine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+  - Xylometazoline (`xylometazoline`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|riskPriority:MEDIUM|VASOCONSTRICTOR_GROUP]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `allergy` (аллергия)
+- category: `allergy`
+- aliases: аллергическая реакция, аллергическое состояние
+- parentSymptom: `none`
+- childSymptoms: sneezing, itching
+- primary drugs count: 8; all linked drugs: 8
+- drugs:
+  - Cetirizine (`cetirizine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Chloropyramine (`chloropyramine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|PRESSURE|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Desloratadine (`desloratadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Diphenhydramine (`diphenhydramine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=7; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|PRESSURE|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Fexofenadine (`fexofenadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Ketotifen (`ketotifen`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Levocetirizine (`levocetirizine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Loratadine (`loratadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `itching` (зуд)
+- category: `allergy`
+- aliases: кожный зуд, зуд кожи, чешется
+- parentSymptom: `allergy`
+- childSymptoms: none
+- primary drugs count: 8; all linked drugs: 11
+- drugs:
+  - Betamethasone (`betamethasone`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|CORTICOSTEROID_GROUP|riskPriority:LOW]
+    - includeInPrimaryOutput: `true`
+  - Cetirizine (`cetirizine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Chloropyramine (`chloropyramine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|PRESSURE|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Diphenhydramine (`diphenhydramine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=7; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|PRESSURE|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Fexofenadine (`fexofenadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Hydrocortisone (`hydrocortisone`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|CORTICOSTEROID_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Levocetirizine (`levocetirizine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Loratadine (`loratadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Clotrimazole (`clotrimazole`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIFUNGAL_GROUP|riskPriority:LOW]
+    - includeInPrimaryOutput: `false`
+  - Desloratadine (`desloratadine`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `false`
+  - Terbinafine (`terbinafine`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIFUNGAL_GROUP|LIVER|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `sneezing` (чихание)
+- category: `allergy`
+- aliases: чихает, чихать
+- parentSymptom: `allergy`
+- childSymptoms: none
+- primary drugs count: 4; all linked drugs: 5
+- drugs:
+  - Cetirizine (`cetirizine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Fexofenadine (`fexofenadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Levocetirizine (`levocetirizine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Loratadine (`loratadine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Desloratadine (`desloratadine`)
+    - relationType: `weak_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|ANTIHISTAMINE_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `nausea` (тошнота)
+- category: `digestive`
+- aliases: тошнит, тошнотное состояние
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 2; all linked drugs: 2
+- drugs:
+  - Domperidone (`domperidone`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=5; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|PROKINETIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Metoclopramide (`metoclopramide`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|PROKINETIC_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `vomiting` (рвота)
+- category: `digestive`
+- aliases: рвет, рвотный рефлекс
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 2; all linked drugs: 2
+- drugs:
+  - Domperidone (`domperidone`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=5; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|PROKINETIC_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Metoclopramide (`metoclopramide`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=2; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PRESSURE|PROKINETIC_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `diarrhea` (диарея)
+- category: `digestive`
+- aliases: понос, расстройство желудка, жидкий стул
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 2; all linked drugs: 4
+- drugs:
+  - Diosmectite (`diosmectite`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|riskPriority:LOW|SORBENT_GROUP]
+    - includeInPrimaryOutput: `true`
+  - Loperamide (`loperamide`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=6; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|OTHER_GROUP|riskPriority:MEDIUM|SEDATION]
+    - includeInPrimaryOutput: `true`
+  - Polymethylsiloxane Polyhydrate (`polymethylsiloxane-polyhydrate`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|riskPriority:LOW|SORBENT_GROUP]
+    - includeInPrimaryOutput: `false`
+  - Saccharomyces Boulardii (`saccharomyces-boulardii`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=1; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|PROBIOTIC_GROUP|riskPriority:LOW]
+    - includeInPrimaryOutput: `false`
+
+### Symptom: `heartburn` (изжога)
+- category: `digestive`
+- aliases: жжение в желудке, кислотность
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: 3; all linked drugs: 3
+- drugs:
+  - Famotidine (`famotidine`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|PPI_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Omeprazole (`omeprazole`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|PPI_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Pantoprazole (`pantoprazole`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=12; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|LIVER|PPI_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+
+### Symptom: `bloating` (вздутие)
+- category: `digestive`
+- aliases: метеоризм, газы, вздутие живота
+- parentSymptom: `none`
+- childSymptoms: none
+- primary drugs count: ; all linked drugs: 3
+- drugs:
+  - Simethicone (`simethicone`)
+    - relationType: `strong_inferred`
+    - matchSource: drugSymptomMappings:drug_category_inference:medium; symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|OTHER_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `true`
+  - Activated Charcoal (`activated-charcoal`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=0; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|riskPriority:LOW|SORBENT_GROUP]
+    - includeInPrimaryOutput: `false`
+  - Pancreatin (`pancreatin`)
+    - relationType: `weak_inferred`
+    - matchSource: symptoms.relatedDrugs
+    - age: minAgeYears=3; pediatricAllowed=true; adultAllowed=true; ageNotes=none
+    - redFlags.absoluteContraindications: [] (missing_safety_data)
+    - redFlags.caution: [ALLERGY|GI|OTHER_GROUP|riskPriority:MEDIUM]
+    - includeInPrimaryOutput: `false`
+
+## 3. QA scenarios (>=20)
+
+1. Happy path: temperature, child
+   - input symptom: `temperature`
+   - age: 5
+   - expected included drugs: primary list for temperature with minAge<=5
+   - expected excluded drugs: drugs with minAge>5; weak_inferred
+   - reason: base include/exclude
+2. Happy path: fever adult
+   - input symptom: `fever`
+   - age: 30
+   - expected included drugs: all primary fever drugs
+   - expected excluded drugs: weak_inferred only
+   - reason: adult baseline
+3. Headache pediatric gate
+   - input symptom: `headache`
+   - age: 4
+   - expected included drugs: only age-eligible primary
+   - expected excluded drugs: 12+/18+ excluded
+   - reason: age hard filter
+4. Muscle pain adolescent
+   - input symptom: `muscle-pain`
+   - age: 13
+   - expected included drugs: age-eligible primary
+   - expected excluded drugs: adult-only/minAge>13
+   - reason: age consistency
+5. Toothache child safety
+   - input symptom: `toothache`
+   - age: 6
+   - expected included drugs: only pediatricAllowed=true and minAge<=6
+   - expected excluded drugs: minAge>6 and weak_inferred
+   - reason: child-safe shortlist
+6. Sore throat primary precision
+   - input symptom: `sore-throat`
+   - age: 10
+   - expected included drugs: throat-specific primary drugs
+   - expected excluded drugs: noise from unrelated classes
+   - reason: anti-noise
+7. Throat irritation vs sore throat
+   - input symptom: `throat-irritation`
+   - age: 10
+   - expected included drugs: throat-irritation primary set
+   - expected excluded drugs: sore-throat-only links
+   - reason: parent/child separation
+8. Cough generic
+   - input symptom: `cough`
+   - age: 8
+   - expected included drugs: generic cough primary set
+   - expected excluded drugs: dry/wet-only weak links
+   - reason: generic symptom handling
+9. Dry cough strict
+   - input symptom: `dry-cough`
+   - age: 8
+   - expected included drugs: dry-cough primary only
+   - expected excluded drugs: wet-cough-only drugs
+   - reason: child symptom isolation
+10. Wet cough strict
+   - input symptom: `wet-cough`
+   - age: 8
+   - expected included drugs: wet-cough primary only
+   - expected excluded drugs: dry-cough-only drugs
+   - reason: child symptom isolation
+11. Runny nose
+   - input symptom: `runny-nose`
+   - age: 7
+   - expected included drugs: runny-nose primary set
+   - expected excluded drugs: nasal-only weak links
+   - reason: sibling control
+12. Nasal congestion
+   - input symptom: `nasal-congestion`
+   - age: 7
+   - expected included drugs: decongestant-focused primary
+   - expected excluded drugs: runny-only non-primary
+   - reason: anti-overmatch
+13. Allergy broad
+   - input symptom: `allergy`
+   - age: 12
+   - expected included drugs: primary anti-allergy list
+   - expected excluded drugs: weak inferred non-primary
+   - reason: broad symptom with control
+14. Itching child of allergy
+   - input symptom: `itching`
+   - age: 12
+   - expected included drugs: itching-linked primary
+   - expected excluded drugs: allergy-only weak links
+   - reason: parent-child split
+15. Sneezing child of allergy
+   - input symptom: `sneezing`
+   - age: 12
+   - expected included drugs: sneezing-linked primary
+   - expected excluded drugs: allergy-only weak links
+   - reason: parent-child split
+16. Nausea
+   - input symptom: `nausea`
+   - age: 9
+   - expected included drugs: nausea primary drugs
+   - expected excluded drugs: vomiting-only weak links
+   - reason: GI precision
+17. Vomiting
+   - input symptom: `vomiting`
+   - age: 9
+   - expected included drugs: vomiting primary drugs
+   - expected excluded drugs: nausea-only weak links
+   - reason: GI precision
+18. Diarrhea pediatric
+   - input symptom: `diarrhea`
+   - age: 4
+   - expected included drugs: diarrhea primary with minAge<=4
+   - expected excluded drugs: age-ineligible anti-diarrheal
+   - reason: age safety
+19. Heartburn adult
+   - input symptom: `heartburn`
+   - age: 25
+   - expected included drugs: acid-related primary drugs
+   - expected excluded drugs: bloating-only weak links
+   - reason: GI separation
+20. Bloating adult
+   - input symptom: `bloating`
+   - age: 25
+   - expected included drugs: bloating primary drugs
+   - expected excluded drugs: heartburn-only weak links
+   - reason: GI separation
+21. Red flag completeness check
+   - input symptom: `all`
+   - age: 18
+   - expected included drugs: absolute contraindications when present
+   - expected excluded drugs: if empty => missing_safety_data
+   - reason: no fake contraindications
+22. Unknown age blocker
+   - input symptom: `all`
+   - age: not set
+   - expected included drugs: unknown minAge not in primary
+   - expected excluded drugs: unknown-age entries included
+   - reason: hard blocker rule
+23. Weak inferred blocker
+   - input symptom: `all`
+   - age: 18
+   - expected included drugs: weak_inferred excluded from primary
+   - expected excluded drugs: weak_inferred included
+   - reason: quality gate
+24. Runtime parity guard
+   - input symptom: `temperature`
+   - age: 5
+   - expected included drugs: golden map introduces only justified deltas
+   - expected excluded drugs: unexplained deltas
+   - reason: controlled rollout
+
+## 4. Problems found
+- Runtime source mismatch: symptom suggestion path in `src/index.ts` does not consume `symptom_tags.json`, so curated mapping is not enforced directly.
+- Taxonomy conflict: `THERAPEUTIC_CLASS_SYMPTOMS` keys differ from most `drugDatabase.classification.therapeuticClass` values.
+- Safety gap: absolute contraindications are missing (`contraindicationSignals` empty), so hard red-flag exclusion cannot be fully trusted.
+- Quality skew: mapping confidence mostly inferred; official direct mappings are rare.
+- Encoding issues (mojibake) in multilingual fields can reduce alias match quality.
+- Symptom-level gaps: no_primary:throat-irritation
+
+## 5. Production recommendation
+- ready_now: symptoms with non-empty primary list and known minAge for primary drugs.
+- needs_cleanup: symptoms dominated by inferred links and/or thin primary lists.
+- unsafe_to_use: absolute-contraindication-based hard blocking until safety data is populated.
+
+### Explicit rollout split (by symptom)
+- ready_now: temperature (primary=5, weakShare=0.58); fever (primary=3, weakShare=0.4); headache (primary=7, weakShare=0); muscle-pain (primary=5, weakShare=0.44); cough (primary=6, weakShare=0.33); wet-cough (primary=5, weakShare=0); runny-nose (primary=6, weakShare=0); nasal-congestion (primary=4, weakShare=0); allergy (primary=8, weakShare=0); itching (primary=8, weakShare=0.27); sneezing (primary=4, weakShare=0.2); heartburn (primary=3, weakShare=0)
+- needs_cleanup: toothache (primary=2, weakShare=0.6); sore-throat (primary=1, weakShare=0.78); dry-cough (primary=2, weakShare=0); nausea (primary=2, weakShare=0); vomiting (primary=2, weakShare=0); diarrhea (primary=2, weakShare=0.5); bloating (primary=1, weakShare=0.67)
+- unsafe_to_use: throat-irritation (no primary drugs)

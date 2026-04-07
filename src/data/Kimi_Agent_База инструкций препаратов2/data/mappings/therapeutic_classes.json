@@ -1,0 +1,235 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-31T19:28:47Z",
+  "metadata": {
+    "totalClasses": 12,
+    "languages": [
+      "ru",
+      "uz"
+    ]
+  },
+  "classes": [
+    {
+      "id": "analgesic",
+      "labels": {
+        "ru": "Анальгетик",
+        "uz": "Analgetik",
+        "en": "Analgesic"
+      },
+      "description": {
+        "ru": "Обезболивающее средство",
+        "uz": "Ogqirig'ini qoldiruvchi vosita",
+        "en": "Pain reliever"
+      },
+      "drugs": [
+        "paracetamol",
+        "ibuprofen",
+        "naproxen",
+        "ketoprofen",
+        "diclofenac",
+        "nimesulide",
+        "meloxicam",
+        "metamizole-sodium",
+        "mefenamic-acid",
+        "celecoxib"
+      ]
+    },
+    {
+      "id": "antipyretic",
+      "labels": {
+        "ru": "Жаропонижающее",
+        "uz": "Harorat tushiruvchi",
+        "en": "Antipyretic"
+      },
+      "description": {
+        "ru": "Средство для снижения температуры",
+        "uz": "Haroratni tushiruvchi vosita",
+        "en": "Fever reducer"
+      },
+      "drugs": [
+        "paracetamol",
+        "ibuprofen",
+        "metamizole-sodium",
+        "acetylsalicylic-acid"
+      ]
+    },
+    {
+      "id": "nsaid",
+      "labels": {
+        "ru": "НПВС",
+        "uz": "NPTS",
+        "en": "NSAID"
+      },
+      "description": {
+        "ru": "Нестероидный противовоспалительный препарат",
+        "uz": "Nesteroid yallig'lanishga qarshi preparat",
+        "en": "Non-steroidal anti-inflammatory drug"
+      },
+      "drugs": [
+        "ibuprofen",
+        "naproxen",
+        "ketoprofen",
+        "diclofenac",
+        "nimesulide",
+        "meloxicam",
+        "mefenamic-acid",
+        "celecoxib",
+        "acetylsalicylic-acid"
+      ]
+    },
+    {
+      "id": "antispasmodic",
+      "labels": {
+        "ru": "Спазмолитик",
+        "uz": "Spazmolitik",
+        "en": "Antispasmodic"
+      },
+      "description": {
+        "ru": "Средство от спазмов",
+        "uz": "Spazmga qarshi vosita",
+        "en": "Spasm reliever"
+      },
+      "drugs": [
+        "drotaverine"
+      ]
+    },
+    {
+      "id": "antibiotic-penicillin",
+      "labels": {
+        "ru": "Антибиотик (пенициллин)",
+        "uz": "Antibiotik (penitsillin)",
+        "en": "Antibiotic (Penicillin)"
+      },
+      "description": {
+        "ru": "Антибиотик группы пенициллинов",
+        "uz": "Penitsillin guruhiga mansub antibiotik",
+        "en": "Penicillin group antibiotic"
+      },
+      "drugs": [
+        "amoxicillin",
+        "amoxicillin-clavulanate"
+      ]
+    },
+    {
+      "id": "antibiotic-macrolide",
+      "labels": {
+        "ru": "Антибиотик (макролид)",
+        "uz": "Antibiotik (makrolid)",
+        "en": "Antibiotic (Macrolide)"
+      },
+      "description": {
+        "ru": "Антибиотик группы макролидов",
+        "uz": "Makrolid guruhiga mansub antibiotik",
+        "en": "Macrolide group antibiotic"
+      },
+      "drugs": [
+        "azithromycin",
+        "clarithromycin"
+      ]
+    },
+    {
+      "id": "antibiotic-cephalosporin",
+      "labels": {
+        "ru": "Антибиотик (цефалоспорин)",
+        "uz": "Antibiotik (sefalosporin)",
+        "en": "Antibiotic (Cephalosporin)"
+      },
+      "description": {
+        "ru": "Антибиотик группы цефалоспоринов",
+        "uz": "Sefalosporin guruhiga mansub antibiotik",
+        "en": "Cephalosporin group antibiotic"
+      },
+      "drugs": [
+        "cefuroxime",
+        "cefixime",
+        "ceftriaxone",
+        "cephalexin"
+      ]
+    },
+    {
+      "id": "antibiotic-fluoroquinolone",
+      "labels": {
+        "ru": "Антибиотик (фторхинолон)",
+        "uz": "Antibiotik (ftorxinolon)",
+        "en": "Antibiotic (Fluoroquinolone)"
+      },
+      "description": {
+        "ru": "Антибиотик группы фторхинолонов",
+        "uz": "Ftorxinolon guruhiga mansub antibiotik",
+        "en": "Fluoroquinolone group antibiotic"
+      },
+      "drugs": [
+        "ciprofloxacin",
+        "levofloxacin"
+      ]
+    },
+    {
+      "id": "antibiotic-tetracycline",
+      "labels": {
+        "ru": "Антибиотик (тетрациклин)",
+        "uz": "Antibiotik (tetratsiklin)",
+        "en": "Antibiotic (Tetracycline)"
+      },
+      "description": {
+        "ru": "Антибиотик группы тетрациклинов",
+        "uz": "Tetratsiklin guruhiga mansub antibiotik",
+        "en": "Tetracycline group antibiotic"
+      },
+      "drugs": [
+        "doxycycline"
+      ]
+    },
+    {
+      "id": "antibiotic-other",
+      "labels": {
+        "ru": "Антибиотик (другие)",
+        "uz": "Antibiotik (boshqalar)",
+        "en": "Antibiotic (Other)"
+      },
+      "description": {
+        "ru": "Прочие антибиотики",
+        "uz": "Boshqa antibiotiklar",
+        "en": "Other antibiotics"
+      },
+      "drugs": [
+        "metronidazole",
+        "furazidin",
+        "co-trimoxazole"
+      ]
+    },
+    {
+      "id": "antifungal",
+      "labels": {
+        "ru": "Противогрибковое",
+        "uz": "Qarshi zamburug'",
+        "en": "Antifungal"
+      },
+      "description": {
+        "ru": "Противогрибковое средство",
+        "uz": "Zamburug'ga qarshi vosita",
+        "en": "Antifungal agent"
+      },
+      "drugs": [
+        "fluconazole",
+        "clotrimazole",
+        "terbinafine"
+      ]
+    },
+    {
+      "id": "antiviral",
+      "labels": {
+        "ru": "Противовирусное",
+        "uz": "Virusga qarshi",
+        "en": "Antiviral"
+      },
+      "description": {
+        "ru": "Противовирусное средство",
+        "uz": "Virusga qarshi vosita",
+        "en": "Antiviral agent"
+      },
+      "drugs": [
+        "acyclovir"
+      ]
+    }
+  ]
+}

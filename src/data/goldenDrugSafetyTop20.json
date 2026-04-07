@@ -1,0 +1,1158 @@
+﻿{
+    "version":  "2026-04-01",
+    "source":  "golden_top20_primary",
+    "topDrugs":  [
+                     {
+                         "drugId":  "ibuprofen",
+                         "displayName":  "Ibuprofen",
+                         "activeSubstance":  "Ibuprofen",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  0,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_nsaid_group",
+                                                  "label":  "Риск дублирования терапии: NSAID_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "renal_risk",
+                                                  "label":  "Риск почечной нагрузки",
+                                                  "type":  "renal",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=KIDNEY",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "cetirizine",
+                         "displayName":  "Cetirizine",
+                         "activeSubstance":  "Cetirizine",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  1,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_1",
+                                                               "label":  "Не использовать у пациентов младше 1 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antihistamine_group",
+                                                  "label":  "Риск дублирования терапии: ANTIHISTAMINE_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "sedation_risk",
+                                                  "label":  "Риск седативного эффекта",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=SEDATION",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "loratadine",
+                         "displayName":  "Loratadine",
+                         "activeSubstance":  "Loratadine",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  2,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_2",
+                                                               "label":  "Не использовать у пациентов младше 2 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antihistamine_group",
+                                                  "label":  "Риск дублирования терапии: ANTIHISTAMINE_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "sedation_risk",
+                                                  "label":  "Риск седативного эффекта",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=SEDATION",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "metamizole-sodium",
+                         "displayName":  "Metamizole Sodium",
+                         "activeSubstance":  "Metamizole Sodium",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  3,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_3",
+                                                               "label":  "Не использовать у пациентов младше 3 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antipyretic_group",
+                                                  "label":  "Риск дублирования терапии: ANTIPYRETIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "pressure_risk",
+                                                  "label":  "Риск по давлению/ССС",
+                                                  "type":  "other",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=PRESSURE",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "renal_risk",
+                                                  "label":  "Риск почечной нагрузки",
+                                                  "type":  "renal",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=KIDNEY",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "paracetamol",
+                         "displayName":  "Paracetamol",
+                         "activeSubstance":  "Paracetamol",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  0,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antipyretic_group",
+                                                  "label":  "Риск дублирования терапии: ANTIPYRETIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "hepatic_risk",
+                                                  "label":  "Риск печёночной нагрузки",
+                                                  "type":  "hepatic",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=LIVER",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "diclofenac",
+                         "displayName":  "Diclofenac",
+                         "activeSubstance":  "Diclofenac",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  12,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_12",
+                                                               "label":  "Не использовать у пациентов младше 12 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_nsaid_group",
+                                                  "label":  "Риск дублирования терапии: NSAID_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "hepatic_risk",
+                                                  "label":  "Риск печёночной нагрузки",
+                                                  "type":  "hepatic",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=LIVER",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "renal_risk",
+                                                  "label":  "Риск почечной нагрузки",
+                                                  "type":  "renal",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=KIDNEY",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "fexofenadine",
+                         "displayName":  "Fexofenadine",
+                         "activeSubstance":  "Fexofenadine",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  6,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_6",
+                                                               "label":  "Не использовать у пациентов младше 6 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antihistamine_group",
+                                                  "label":  "Риск дублирования терапии: ANTIHISTAMINE_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "sedation_risk",
+                                                  "label":  "Риск седативного эффекта",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=SEDATION",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "levocetirizine",
+                         "displayName":  "Levocetirizine",
+                         "activeSubstance":  "Levocetirizine",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  2,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_2",
+                                                               "label":  "Не использовать у пациентов младше 2 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antihistamine_group",
+                                                  "label":  "Риск дублирования терапии: ANTIHISTAMINE_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "sedation_risk",
+                                                  "label":  "Риск седативного эффекта",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=SEDATION",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "acetylcysteine",
+                         "displayName":  "Acetylcysteine",
+                         "activeSubstance":  "Acetylcysteine",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  2,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_2",
+                                                               "label":  "Не использовать у пациентов младше 2 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_mucolytic_group",
+                                                  "label":  "Риск дублирования терапии: MUCOLYTIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "acetylsalicylic-acid",
+                         "displayName":  "Acetylsalicylic Acid",
+                         "activeSubstance":  "Acetylsalicylic Acid",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  18,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  false,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_18",
+                                                               "label":  "Не использовать у пациентов младше 18 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_nsaid_group",
+                                                  "label":  "Риск дублирования терапии: NSAID_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "hepatic_risk",
+                                                  "label":  "Риск печёночной нагрузки",
+                                                  "type":  "hepatic",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=LIVER",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "ambroxol",
+                         "displayName":  "Ambroxol",
+                         "activeSubstance":  "Ambroxol",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  0,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_mucolytic_group",
+                                                  "label":  "Риск дублирования терапии: MUCOLYTIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "bromhexine",
+                         "displayName":  "Bromhexine",
+                         "activeSubstance":  "Bromhexine",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  2,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_2",
+                                                               "label":  "Не использовать у пациентов младше 2 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_mucolytic_group",
+                                                  "label":  "Риск дублирования терапии: MUCOLYTIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "butamirate",
+                         "displayName":  "Butamirate",
+                         "activeSubstance":  "Butamirate",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  2,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_2",
+                                                               "label":  "Не использовать у пациентов младше 2 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antitussive_group",
+                                                  "label":  "Риск дублирования терапии: ANTITUSSIVE_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "sedation_risk",
+                                                  "label":  "Риск седативного эффекта",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=SEDATION",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "dextromethorphan",
+                         "displayName":  "Dextromethorphan",
+                         "activeSubstance":  "Dextromethorphan",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  6,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_6",
+                                                               "label":  "Не использовать у пациентов младше 6 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_antitussive_group",
+                                                  "label":  "Риск дублирования терапии: ANTITUSSIVE_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "sedation_risk",
+                                                  "label":  "Риск седативного эффекта",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=SEDATION",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "domperidone",
+                         "displayName":  "Domperidone",
+                         "activeSubstance":  "Domperidone",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  5,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_5",
+                                                               "label":  "Не использовать у пациентов младше 5 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_prokinetic_group",
+                                                  "label":  "Риск дублирования терапии: PROKINETIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "pressure_risk",
+                                                  "label":  "Риск по давлению/ССС",
+                                                  "type":  "other",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=PRESSURE",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "guaifenesin",
+                         "displayName":  "Guaifenesin",
+                         "activeSubstance":  "Guaifenesin",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  2,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_2",
+                                                               "label":  "Не использовать у пациентов младше 2 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_mucolytic_group",
+                                                  "label":  "Риск дублирования терапии: MUCOLYTIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "metoclopramide",
+                         "displayName":  "Metoclopramide",
+                         "activeSubstance":  "Metoclopramide",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  2,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_2",
+                                                               "label":  "Не использовать у пациентов младше 2 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_prokinetic_group",
+                                                  "label":  "Риск дублирования терапии: PROKINETIC_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "pressure_risk",
+                                                  "label":  "Риск по давлению/ССС",
+                                                  "type":  "other",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=PRESSURE",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "sedation_risk",
+                                                  "label":  "Риск седативного эффекта",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=SEDATION",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "omeprazole",
+                         "displayName":  "Omeprazole",
+                         "activeSubstance":  "Omeprazole",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  12,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_12",
+                                                               "label":  "Не использовать у пациентов младше 12 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_ppi_group",
+                                                  "label":  "Риск дублирования терапии: PPI_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "hepatic_risk",
+                                                  "label":  "Риск печёночной нагрузки",
+                                                  "type":  "hepatic",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=LIVER",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "pantoprazole",
+                         "displayName":  "Pantoprazole",
+                         "activeSubstance":  "Pantoprazole",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  12,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_12",
+                                                               "label":  "Не использовать у пациентов младше 12 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_ppi_group",
+                                                  "label":  "Риск дублирования терапии: PPI_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "hepatic_risk",
+                                                  "label":  "Риск печёночной нагрузки",
+                                                  "type":  "hepatic",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=LIVER",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     },
+                     {
+                         "drugId":  "famotidine",
+                         "displayName":  "Famotidine",
+                         "activeSubstance":  "Famotidine",
+                         "safetyStatus":  "validated_minimum",
+                         "ageSafety":  {
+                                           "minAgeYears":  12,
+                                           "maxAgeYears":  null,
+                                           "ageKnown":  true,
+                                           "pediatricAllowed":  true,
+                                           "adultAllowed":  true,
+                                           "notes":  ""
+                                       },
+                         "absoluteContraindications":  [
+                                                           {
+                                                               "id":  "age_min_12",
+                                                               "label":  "Не использовать у пациентов младше 12 лет",
+                                                               "type":  "age",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.ageRestrictions.minAgeYears",
+                                                               "confidence":  "high"
+                                                           },
+                                                           {
+                                                               "id":  "allergy_hypersensitivity",
+                                                               "label":  "Гиперчувствительность к действующему веществу",
+                                                               "type":  "allergy",
+                                                               "severity":  "hard_stop",
+                                                               "source":  "drugDatabase.safety.mainRisks=ALLERGY",
+                                                               "confidence":  "medium"
+                                                           }
+                                                       ],
+                         "cautionFlags":  [
+                                              {
+                                                  "id":  "dup_ppi_group",
+                                                  "label":  "Риск дублирования терапии: PPI_GROUP",
+                                                  "type":  "other",
+                                                  "severity":  "caution",
+                                                  "source":  "drugDatabase.safety.duplicateTherapyGroups",
+                                                  "confidence":  "medium"
+                                              },
+                                              {
+                                                  "id":  "gi_risk",
+                                                  "label":  "Риск ЖКТ-осложнений",
+                                                  "type":  "gi_risk",
+                                                  "severity":  "high_caution",
+                                                  "source":  "drugDatabase.safety.mainRisks=GI",
+                                                  "confidence":  "medium"
+                                              }
+                                          ],
+                         "safetyDataCoverage":  {
+                                                    "hasAgeData":  true,
+                                                    "hasAbsoluteContraindications":  true,
+                                                    "hasCautionFlags":  true,
+                                                    "hasReliableSafetyData":  true
+                                                }
+                     }
+                 ]
+}

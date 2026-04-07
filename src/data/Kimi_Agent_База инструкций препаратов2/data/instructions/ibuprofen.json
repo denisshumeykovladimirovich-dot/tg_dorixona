@@ -1,0 +1,658 @@
+{
+  "id": "ibuprofen",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Ибупрофен",
+    "uz": "Ибупрофен",
+    "en": "Ibuprofen"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Ибупрофен",
+      "uz": "Ибупрофен",
+      "en": "Ibuprofen"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 200 мг",
+      "таблетки 400 мг",
+      "капсулы",
+      "суспензия"
+    ],
+    "strengths": [
+      "200 мг",
+      "400 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Ибупрофен - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Симптоматическое лечение боли различного происхождения: головная боль, зубная боль, мигрень, невралгия, миалгия, артралгия, альгодисменорея",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-indications-ru-0"
+        },
+        {
+          "content": "Снижение повышенной температуры при ОРВИ, гриппе и других инфекционно-воспалительных заболеваниях",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-indications-ru-1"
+        },
+        {
+          "content": "Симптоматическое лечение воспалительных заболеваний опорно-двигательного аппарата: ревматоидный артрит, остеоартроз, анкилозирующий спондилит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-indications-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "ibuprofen-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Симптоматическое лечение боли различного происхождения: головная боль, зубная боль, мигрень, невралгия, миалгия, артралгия, альгодисменорея",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Снижение повышенной температуры при ОРВИ, гриппе и других инфекционно-воспалительных заболеваниях",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Симптоматическое лечение воспалительных заболеваний опорно-двигательного аппарата: ревматоидный артрит, остеоартроз, анкилозирующий спондилит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к ибупрофену или другим НПВП",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-contraindications-ru-0"
+        },
+        {
+          "content": "Анамнез бронхоспазма, крапивницы, ринита после приема ацетилсалициловой кислоты или других НПВП",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-contraindications-ru-1"
+        },
+        {
+          "content": "Язвенная болезнь желудка и двенадцатиперстной кишки в активной фазе или в анамнезе",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-contraindications-ru-2"
+        },
+        {
+          "content": "Кровотечение или перфорация ЖКТ в анамнезе",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-contraindications-ru-3"
+        },
+        {
+          "content": "Тяжелая печеночная, почечная или сердечная недостаточность",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-contraindications-ru-4"
+        },
+        {
+          "content": "III триместр беременности",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-contraindications-ru-5"
+        },
+        {
+          "content": "Дети с массой тела ниже 40 кг",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "ibuprofen-contraindications-ru-6"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "ibuprofen-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к ибупрофену или другим НПВП",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Анамнез бронхоспазма, крапивницы, ринита после приема ацетилсалициловой кислоты или других НПВП",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Язвенная болезнь желудка и двенадцатиперстной кишки в активной фазе или в анамнезе",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Кровотечение или перфорация ЖКТ в анамнезе",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-contraindications-ru-4",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелая печеночная, почечная или сердечная недостаточность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-contraindications-ru-5",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "III триместр беременности",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-contraindications-ru-6",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Дети с массой тела ниже 40 кг",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым и детям старше 12 лет (масса тела более 40 кг): по 200-400 мг 3-4 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "ibuprofen-dosage-adults-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 1200 мг (без назначения врача)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "ibuprofen-dosage-adults-ru-1"
+          },
+          {
+            "content": "При необходимости кратковременное увеличение дозы до 2400 мг/сут по назначению врача",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "ibuprofen-dosage-adults-ru-2"
+          },
+          {
+            "content": "Препарат следует принимать после еды, запивая водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "ibuprofen-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Дети 6-12 лет (20-40 кг): по 200 мг до 4 раз в сутки (максимум 800 мг/сут)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "ibuprofen-dosage-children-ru-0"
+          },
+          {
+            "content": "Дети с массой тела менее 20 кг: препарат не применяется",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "ibuprofen-dosage-children-ru-1"
+          },
+          {
+            "content": "Интервал между приемами - не менее 6 часов",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "ibuprofen-dosage-children-ru-2"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "ibuprofen-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым и детям старше 12 лет (масса тела более 40 кг): по 200-400 мг 3-4 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 1200 мг (без назначения врача)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При необходимости кратковременное увеличение дозы до 2400 мг/сут по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Препарат следует принимать после еды, запивая водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Дети 6-12 лет (20-40 кг): по 200 мг до 4 раз в сутки (максимум 800 мг/сут)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Дети с массой тела менее 20 кг: препарат не применяется",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-dosage-children-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Интервал между приемами - не менее 6 часов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЖКТ: тошнота, рвота, диспепсия, боли в животе, диарея, запор",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "ibuprofen-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЦНС: головная боль, головокружение, сонливость, бессонница",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "ibuprofen-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, зуд, крапивница, отек Квинке, анафилактический шок",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "ibuprofen-sideEffects-ru-2"
+        },
+        {
+          "content": "Со стороны сердечно-сосудистой системы: повышение АД, отеки, сердцебиение",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "ibuprofen-sideEffects-ru-3"
+        },
+        {
+          "content": "Нарушения функции почек и печени",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "ibuprofen-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "ibuprofen-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, рвота, диспепсия, боли в животе, диарея, запор",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: головная боль, головокружение, сонливость, бессонница",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, зуд, крапивница, отек Квинке, анафилактический шок",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны сердечно-сосудистой системы: повышение АД, отеки, сердцебиение",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "ibuprofen-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Нарушения функции почек и печени",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Противопоказан в III триместре. В I и II триместре применять только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "ibuprofen-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "ibuprofen-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Противопоказан в III триместре. В I и II триместре применять только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, в минимальных дозах и коротким курсом",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "ibuprofen-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "ibuprofen-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, в минимальных дозах и коротким курсом",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "ibuprofen-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "ibuprofen-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/ibuprofen-2663",
+            "title": "Ибупрофен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Противовоспалительное и обезболивающее",
+      "uz": "Yallig'lanishga qarshi va og'riq qoldiruvchi"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Противовоспалительное и обезболивающее. Прочее.",
+      "uz": "Yallig'lanishga qarshi va og'riq qoldiruvchi. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

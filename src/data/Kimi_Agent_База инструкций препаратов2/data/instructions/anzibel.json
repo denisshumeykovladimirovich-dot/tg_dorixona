@@ -1,0 +1,495 @@
+{
+  "id": "anzibel",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Анзибел",
+    "uz": "Анзибел",
+    "en": "Анзибел"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Анзибел",
+      "uz": "Анзибел",
+      "en": "Anzibel"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки для рассасывания"
+    ],
+    "strengths": [
+      "не указано"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Анзибел - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Боль в горле при фарингите, тонзиллите, ларингите",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "anzibel-indications-ru-0"
+        },
+        {
+          "content": "Першение в горле",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "anzibel-indications-ru-1"
+        },
+        {
+          "content": "Раздражение слизистой оболочки глотки",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "anzibel-indications-ru-2"
+        },
+        {
+          "content": "Дискомфорт в горле",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "anzibel-indications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "anzibel-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Боль в горле при фарингите, тонзиллите, ларингите",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Першение в горле",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Раздражение слизистой оболочки глотки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Дискомфорт в горле",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к компонентам препарата",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "anzibel-contraindications-ru-0"
+        },
+        {
+          "content": "Детский возраст до 6 лет",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "anzibel-contraindications-ru-1"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "anzibel-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к компонентам препарата",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 6 лет",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым и детям старше 12 лет: по 1 таблетке для рассасывания каждые 2-3 часа",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "anzibel-dosage-adults-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 8 таблеток",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "anzibel-dosage-adults-ru-1"
+          },
+          {
+            "content": "Таблетки рассасывать во рту до полного растворения",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "anzibel-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 6-12 лет: по 1 таблетке для рассасывания каждые 4 часа",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "anzibel-dosage-children-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 4 таблетки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "anzibel-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "anzibel-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым и детям старше 12 лет: по 1 таблетке для рассасывания каждые 2-3 часа",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 8 таблеток",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки рассасывать во рту до полного растворения",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6-12 лет: по 1 таблетке для рассасывания каждые 4 часа",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 4 таблетки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Аллергические реакции: кожная сыпь, зуд",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "anzibel-sideEffects-ru-0"
+        },
+        {
+          "content": "Сухость во рту",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "anzibel-sideEffects-ru-1"
+        },
+        {
+          "content": "Изменение вкуса",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "anzibel-sideEffects-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "anzibel-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, зуд",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Сухость во рту",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "anzibel-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Изменение вкуса",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "anzibel-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "anzibel-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "anzibel-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "anzibel-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "anzibel-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "anzibel-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/anzibel-4588",
+            "title": "Анзибел - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Для горла",
+      "uz": "Tomoq uchun"
+    },
+    "symptoms": {
+      "ru": [
+        "боль в горле",
+        "першение в горле",
+        "раздражение горла",
+        "дискомфорт в горле"
+      ],
+      "uz": []
+    },
+    "symptomTags": [
+      "горло",
+      "боль в горле",
+      "першение"
+    ],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Для горла. Для горла.",
+      "uz": "Tomoq uchun. Для горла."
+    }
+  },
+  "llmContextBlocks": []
+}

@@ -1,0 +1,493 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://drug-instructions.org/schemas/instruction.schema.json",
+  "title": "Drug Instruction Schema",
+  "description": "Schema for individual drug instruction files with two-layer data model (structured + verbatim)",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["id", "schemaVersion", "canonicalName", "identity", "source", "sections"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique instruction identifier (UUID v4, matches catalog entry)",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "description": "Schema version of this instruction file",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "examples": ["1.0.0"]
+    },
+    "reviewStatus": {
+      "type": "string",
+      "description": "Review status of the instruction",
+      "enum": ["pending", "auto_extracted", "human_reviewed", "medically_verified", "deprecated"],
+      "default": "pending"
+    },
+    "needsManualReview": {
+      "type": "boolean",
+      "description": "Flag indicating manual review is required",
+      "default": true
+    },
+    "canonicalName": {
+      "type": "object",
+      "description": "Canonical drug names in different languages",
+      "required": ["ru", "uz"],
+      "properties": {
+        "ru": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "uz": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "en": { "type": "string", "minLength": 1, "maxLength": 500 }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "description": "Drug identity information",
+      "required": ["activeSubstance"],
+      "properties": {
+        "activeSubstance": {
+          "type": "array",
+          "description": "Active pharmaceutical ingredients (INN names)",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1, "maxLength": 500 },
+              "nameEn": { "type": "string", "minLength": 1, "maxLength": 500 },
+              "strength": { "type": "string", "maxLength": 100 },
+              "unit": { "type": "string", "maxLength": 50 }
+            }
+          },
+          "minItems": 1
+        },
+        "drugForm": {
+          "type": "string",
+          "description": "Pharmaceutical form",
+          "maxLength": 500
+        },
+        "dosageForms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "tablet", "capsule", "syrup", "suspension", "injection",
+              "infusion", "drops", "ointment", "cream", "gel", "spray",
+              "inhaler", "suppository", "patch", "powder", "solution",
+              "emulsion", "lozenge", "other"
+            ]
+          }
+        },
+        "strengths": {
+          "type": "array",
+          "description": "Available strengths",
+          "items": { "type": "string", "maxLength": 100 },
+          "maxItems": 50
+        },
+        "atcCodes": {
+          "type": "array",
+          "description": "ATC classification codes",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]([0-9]{2}[A-Z]{0,2}[0-9]{0,2})?$"
+          }
+        },
+        "registrationNumbers": {
+          "type": "array",
+          "description": "Official registration numbers",
+          "items": {
+            "type": "object",
+            "properties": {
+              "country": { "type": "string", "maxLength": 100 },
+              "number": { "type": "string", "maxLength": 100 },
+              "date": { "type": "string", "format": "date" }
+            }
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "description": "Source document metadata",
+      "required": ["sourceType", "title", "language"],
+      "properties": {
+        "sourceType": {
+          "type": "string",
+          "description": "Type of source document",
+          "enum": [
+            "official_instruction",
+            "regulatory_database",
+            "who_database",
+            "clinical_guideline",
+            "pharmacopoeia",
+            "medical_literature",
+            "manufacturer_data",
+            "other"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of source document",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "organization": {
+          "type": "string",
+          "description": "Publishing organization",
+          "maxLength": 500
+        },
+        "country": {
+          "type": "string",
+          "description": "Country of registration/source",
+          "maxLength": 100
+        },
+        "language": {
+          "type": "string",
+          "description": "Language of source document",
+          "enum": ["ru", "uz", "en", "other"]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to source document",
+          "maxLength": 2000
+        },
+        "accessDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Date when source was accessed"
+        },
+        "publicationDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of source publication"
+        },
+        "evidenceLevel": {
+          "type": "string",
+          "description": "Level of evidence/reliability",
+          "enum": ["A", "B", "C", "D", "unknown"],
+          "default": "unknown"
+        },
+        "documentVersion": {
+          "type": "string",
+          "description": "Version of source document",
+          "maxLength": 100
+        }
+      }
+    },
+    "sections": {
+      "type": "object",
+      "description": "Instruction sections with two-layer data model",
+      "required": ["composition", "indications", "contraindications", "dosageAndAdministration"],
+      "properties": {
+        "composition": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Composition and formulation information"
+        },
+        "indications": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Approved indications and uses"
+        },
+        "contraindications": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Contraindications and precautions"
+        },
+        "dosageAndAdministration": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Dosage and administration guidelines"
+        },
+        "sideEffects": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Adverse effects and side effects"
+        },
+        "interactions": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Drug interactions"
+        },
+        "specialWarnings": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Special warnings and precautions"
+        },
+        "pregnancy": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Pregnancy and breastfeeding information"
+        },
+        "lactation": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Lactation-specific information"
+        },
+        "overdose": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Overdose symptoms and treatment"
+        },
+        "storage": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Storage conditions and shelf life"
+        },
+        "pharmacologicalProperties": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Pharmacodynamic and pharmacokinetic properties"
+        },
+        "clinicalData": {
+          "$ref": "#/$defs/InstructionSection",
+          "description": "Clinical trial data"
+        }
+      }
+    },
+    "extractions": {
+      "type": "object",
+      "description": "AI-extracted summaries and derived data",
+      "properties": {
+        "shortUserLabel": {
+          "type": "object",
+          "description": "Short user-friendly description",
+          "properties": {
+            "ru": { "type": "string", "maxLength": 500 },
+            "uz": { "type": "string", "maxLength": 500 },
+            "en": { "type": "string", "maxLength": 500 }
+          }
+        },
+        "symptoms": {
+          "type": "array",
+          "description": "Symptoms this drug can treat",
+          "items": { "type": "string", "maxLength": 200 },
+          "maxItems": 50
+        },
+        "symptomTags": {
+          "type": "array",
+          "description": "Normalized symptom tags",
+          "items": { "type": "string", "maxLength": 100 },
+          "maxItems": 50
+        },
+        "commonUseCases": {
+          "type": "array",
+          "description": "Common usage scenarios",
+          "items": { "type": "string", "maxLength": 300 },
+          "maxItems": 30
+        },
+        "ageSummary": {
+          "type": "object",
+          "description": "Age-specific usage summary",
+          "properties": {
+            "neonate": { "$ref": "#/$defs/AgeGroupInfo" },
+            "infant": { "$ref": "#/$defs/AgeGroupInfo" },
+            "toddler": { "$ref": "#/$defs/AgeGroupInfo" },
+            "child": { "$ref": "#/$defs/AgeGroupInfo" },
+            "adolescent": { "$ref": "#/$defs/AgeGroupInfo" },
+            "adult": { "$ref": "#/$defs/AgeGroupInfo" },
+            "elderly": { "$ref": "#/$defs/AgeGroupInfo" }
+          }
+        },
+        "interactionSummary": {
+          "type": "object",
+          "description": "Summary of drug interactions",
+          "properties": {
+            "major": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/InteractionItem" },
+              "maxItems": 50
+            },
+            "moderate": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/InteractionItem" },
+              "maxItems": 100
+            },
+            "minor": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/InteractionItem" },
+              "maxItems": 100
+            }
+          }
+        },
+        "riskSignals": {
+          "type": "array",
+          "description": "Important risk signals",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["contraindication", "warning", "precaution", "interaction", "side_effect"]
+              },
+              "severity": {
+                "type": "string",
+                "enum": ["critical", "high", "medium", "low"]
+              },
+              "description": { "type": "string", "maxLength": 1000 },
+              "sourceRef": { "type": "string", "maxLength": 100 }
+            }
+          },
+          "maxItems": 50
+        },
+        "botSafeSummary": {
+          "type": "object",
+          "description": "Safe summary for chatbot responses",
+          "properties": {
+            "ru": { "type": "string", "maxLength": 2000 },
+            "uz": { "type": "string", "maxLength": 2000 },
+            "en": { "type": "string", "maxLength": 2000 }
+          }
+        },
+        "extractionMetadata": {
+          "type": "object",
+          "description": "Metadata about AI extraction process",
+          "properties": {
+            "model": { "type": "string", "maxLength": 100 },
+            "timestamp": { "type": "string", "format": "date-time" },
+            "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+            "reviewed": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "llmContextBlocks": {
+      "type": "array",
+      "description": "Pre-computed context blocks for LLM queries",
+      "items": {
+        "type": "object",
+        "properties": {
+          "contextType": {
+            "type": "string",
+            "enum": ["general", "safety", "dosage", "interactions", "pregnancy", "pediatric"]
+          },
+          "content": { "type": "string", "maxLength": 10000 },
+          "language": { "type": "string", "enum": ["ru", "uz", "en"] },
+          "tokenCount": { "type": "integer", "minimum": 0 }
+        }
+      },
+      "maxItems": 20
+    },
+    "metadata": {
+      "type": "object",
+      "description": "File metadata",
+      "properties": {
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "createdBy": { "type": "string", "maxLength": 200 },
+        "updatedBy": { "type": "string", "maxLength": 200 },
+        "version": { "type": "integer", "minimum": 1 }
+      }
+    }
+  },
+  "$defs": {
+    "InstructionSection": {
+      "type": "object",
+      "description": "Two-layer section model with structured data and verbatim fragments",
+      "required": ["structured"],
+      "properties": {
+        "structured": {
+          "type": "array",
+          "description": "Structured data points extracted from source",
+          "items": {
+            "type": "object",
+            "required": ["id", "content"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Unique identifier within section",
+                "pattern": "^[a-z0-9\\-]+$",
+                "maxLength": 50
+              },
+              "content": {
+                "type": "string",
+                "description": "Structured content",
+                "maxLength": 10000
+              },
+              "contentType": {
+                "type": "string",
+                "description": "Type of structured content",
+                "enum": [
+                  "text", "list", "table", "dosage_table",
+                  "warning", "contraindication", "indication",
+                  "side_effect", "interaction"
+                ]
+              },
+              "language": {
+                "type": "string",
+                "enum": ["ru", "uz", "en"]
+              },
+              "sourceRef": {
+                "type": "string",
+                "description": "Reference to source fragment",
+                "maxLength": 100
+              },
+              "confidence": {
+                "type": "number",
+                "description": "Extraction confidence (0-1)",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "metadata": {
+                "type": "object",
+                "description": "Additional metadata for this item",
+                "properties": {
+                  "severity": { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+                  "frequency": { "type": "string" },
+                  "ageGroup": { "type": "string" },
+                  "condition": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "sourceFragments": {
+          "type": "array",
+          "description": "Verbatim fragments from original source",
+          "items": {
+            "type": "object",
+            "required": ["id", "text"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Unique fragment identifier",
+                "pattern": "^[a-z0-9\\-]+$",
+                "maxLength": 50
+              },
+              "text": {
+                "type": "string",
+                "description": "Verbatim text from source",
+                "maxLength": 50000
+              },
+              "language": {
+                "type": "string",
+                "enum": ["ru", "uz", "en"]
+              },
+              "pageNumber": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "sectionName": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "context": {
+                "type": "string",
+                "description": "Surrounding context for verification",
+                "maxLength": 1000
+              }
+            }
+          }
+        }
+      }
+    },
+    "AgeGroupInfo": {
+      "type": "object",
+      "properties": {
+        "approved": { "type": "boolean" },
+        "dosageAvailable": { "type": "boolean" },
+        "specialNotes": { "type": "string", "maxLength": 1000 },
+        "contraindicated": { "type": "boolean" },
+        "requiresMonitoring": { "type": "boolean" }
+      }
+    },
+    "InteractionItem": {
+      "type": "object",
+      "required": ["drugOrSubstance", "effect"],
+      "properties": {
+        "drugOrSubstance": { "type": "string", "maxLength": 500 },
+        "effect": { "type": "string", "maxLength": 1000 },
+        "mechanism": { "type": "string", "maxLength": 500 },
+        "recommendation": { "type": "string", "maxLength": 500 },
+        "evidenceLevel": { "type": "string", "enum": ["A", "B", "C", "D", "unknown"] }
+      }
+    }
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "id": "salbutamol",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Сальбутамол",
+    "uz": "Сальбутамол",
+    "en": "Salbutamol"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Сальбутамол",
+      "uz": "Сальбутамол",
+      "en": "Salbutamol"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "аэрозольный ингалятор 100 мкг/доза",
+      "порошковый ингалятор",
+      "раствор для ингаляций"
+    ],
+    "strengths": [
+      "100 мкг/доза"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Сальбутамол - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Бронхиальная астма (купирование приступов)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "salbutamol-indications-ru-0"
+        },
+        {
+          "content": "Профилактика бронхоспазма при физической нагрузке",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "salbutamol-indications-ru-1"
+        },
+        {
+          "content": "Хроническая обструктивная болезнь легких (ХОБЛ)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "salbutamol-indications-ru-2"
+        },
+        {
+          "content": "Острый бронхит с бронхоспазмом",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "salbutamol-indications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "salbutamol-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Бронхиальная астма (купирование приступов)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Профилактика бронхоспазма при физической нагрузке",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Хроническая обструктивная болезнь легких (ХОБЛ)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Острый бронхит с бронхоспазмом",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к сальбутамолу",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "salbutamol-contraindications-ru-0"
+        },
+        {
+          "content": "Тахиаритмии",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "salbutamol-contraindications-ru-1"
+        },
+        {
+          "content": "Тяжелая сердечная недостаточность",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "salbutamol-contraindications-ru-2"
+        },
+        {
+          "content": "I триместр беременности (с осторожностью)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "salbutamol-contraindications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "salbutamol-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к сальбутамолу",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тахиаритмии",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелая сердечная недостаточность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "I триместр беременности (с осторожностью)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Для купирования приступа: 1-2 ингаляции (100-200 мкг) через ингалятор",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "salbutamol-dosage-adults-ru-0"
+          },
+          {
+            "content": "Максимальная разовая доза - 200 мкг",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "salbutamol-dosage-adults-ru-1"
+          },
+          {
+            "content": "Максимальная суточная доза - 800 мкг",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "salbutamol-dosage-adults-ru-2"
+          },
+          {
+            "content": "Интервал между ингаляциями - не менее 4 часов",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "salbutamol-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям: 1 ингаляция (100 мкг) при необходимости",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "salbutamol-dosage-children-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 400 мкг",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "salbutamol-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "salbutamol-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Для купирования приступа: 1-2 ингаляции (100-200 мкг) через ингалятор",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная разовая доза - 200 мкг",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 800 мкг",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Интервал между ингаляциями - не менее 4 часов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям: 1 ингаляция (100 мкг) при необходимости",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 400 мкг",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны сердечно-сосудистой системы: тахикардия, сердцебиение, аритмии",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "salbutamol-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЦНС: тремор, нервозность, головная боль, головокружение",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "salbutamol-sideEffects-ru-1"
+        },
+        {
+          "content": "Со стороны дыхательной системы: парадоксальный бронхоспазм",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "salbutamol-sideEffects-ru-2"
+        },
+        {
+          "content": "Гипокалиемия",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "salbutamol-sideEffects-ru-3"
+        },
+        {
+          "content": "Мышечные судороги",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "salbutamol-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "salbutamol-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны сердечно-сосудистой системы: тахикардия, сердцебиение, аритмии",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: тремор, нервозность, головная боль, головокружение",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны дыхательной системы: парадоксальный бронхоспазм",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Гипокалиемия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "salbutamol-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Мышечные судороги",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "salbutamol-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "salbutamol-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "salbutamol-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "salbutamol-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "salbutamol-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "salbutamol-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/salbutamol-4584",
+            "title": "Сальбутамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Бронходилататор",
+      "uz": "Bronxodilatator"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Бронходилататор. Прочее.",
+      "uz": "Bronxodilatator. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

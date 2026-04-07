@@ -1,0 +1,658 @@
+{
+  "id": "acetylcysteine",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Ацетилцистеин",
+    "uz": "Ацетилцистеин",
+    "en": "Acetylcysteine"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Ацетилцистеин",
+      "uz": "Ацетилцистеин",
+      "en": "Acetylcysteine"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 200 мг",
+      "таблетки шипучие 600 мг",
+      "гранулы",
+      "сироп"
+    ],
+    "strengths": [
+      "200 мг",
+      "600 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Ацетилцистеин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Заболевания дыхательных путей с образованием густой вязкой мокроты",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-indications-ru-0"
+        },
+        {
+          "content": "Острый и хронический бронхит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-indications-ru-1"
+        },
+        {
+          "content": "Пневмония",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-indications-ru-2"
+        },
+        {
+          "content": "Бронхоэктатическая болезнь",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-indications-ru-3"
+        },
+        {
+          "content": "Ателектаза",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-indications-ru-4"
+        },
+        {
+          "content": "Муковисцидоз",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-indications-ru-5"
+        },
+        {
+          "content": "Отравления парацетамолом (в качестве антидота)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-indications-ru-6"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acetylcysteine-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Заболевания дыхательных путей с образованием густой вязкой мокроты",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Острый и хронический бронхит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Пневмония",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Бронхоэктатическая болезнь",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Ателектаза",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-indications-ru-5",
+          "section": "indications",
+          "language": "ru",
+          "text": "Муковисцидоз",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-indications-ru-6",
+          "section": "indications",
+          "language": "ru",
+          "text": "Отравления парацетамолом (в качестве антидота)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к ацетилцистеину",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-contraindications-ru-0"
+        },
+        {
+          "content": "Язвенная болезнь желудка и двенадцатиперстной кишки в период обострения",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-contraindications-ru-1"
+        },
+        {
+          "content": "Кровотечение из легких",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-contraindications-ru-2"
+        },
+        {
+          "content": "Бронхиальная астма (с осторожностью)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-contraindications-ru-3"
+        },
+        {
+          "content": "I триместр беременности",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-contraindications-ru-4"
+        },
+        {
+          "content": "Детский возраст до 2 лет",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-contraindications-ru-5"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acetylcysteine-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к ацетилцистеину",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Язвенная болезнь желудка и двенадцатиперстной кишки в период обострения",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Кровотечение из легких",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Бронхиальная астма (с осторожностью)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-contraindications-ru-4",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "I триместр беременности",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-contraindications-ru-5",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 2 лет",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым: по 200 мг (1 таблетка) 2-3 раза в сутки или по 600 мг (1 таблетка шипучая) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acetylcysteine-dosage-adults-ru-0"
+          },
+          {
+            "content": "Или по 3-5 мл 20% раствора 3-4 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acetylcysteine-dosage-adults-ru-1"
+          },
+          {
+            "content": "Таблетки принимать после еды, запивая водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acetylcysteine-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 6-14 лет: по 100 мг 2-3 раза в сутки или по 200 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acetylcysteine-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям 2-6 лет: по 100 мг 2 раза в сутки (сироп или гранулы)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "acetylcysteine-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "acetylcysteine-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым: по 200 мг (1 таблетка) 2-3 раза в сутки или по 600 мг (1 таблетка шипучая) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Или по 3-5 мл 20% раствора 3-4 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать после еды, запивая водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6-14 лет: по 100 мг 2-3 раза в сутки или по 200 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 2-6 лет: по 100 мг 2 раза в сутки (сироп или гранулы)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЖКТ: тошнота, рвота, диарея, изжога, стоматит",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны дыхательной системы: бронхоспазм (особенно у пациентов с бронхиальной астмой)",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-sideEffects-ru-2"
+        },
+        {
+          "content": "Головная боль, звон в ушах",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acetylcysteine-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, рвота, диарея, изжога, стоматит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны дыхательной системы: бронхоспазм (особенно у пациентов с бронхиальной астмой)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "acetylcysteine-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Головная боль, звон в ушах",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Противопоказан в I триместре. Во II и III триместре - только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acetylcysteine-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Противопоказан в I триместре. Во II и III триместре - только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acetylcysteine-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "acetylcysteine-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "acetylcysteine-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/acetylcistein-4583",
+            "title": "Ацетилцистеин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Муколитик",
+      "uz": "Mukolitik"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Муколитик. Прочее.",
+      "uz": "Mukolitik. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

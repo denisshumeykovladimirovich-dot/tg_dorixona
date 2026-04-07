@@ -1,0 +1,633 @@
+{
+  "id": "activated-charcoal",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Активированный уголь",
+    "uz": "Активированный уголь",
+    "en": "Activated Charcoal"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Активированный уголь",
+      "uz": "Активированный уголь",
+      "en": "Activated Charcoal"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 250 мг"
+    ],
+    "strengths": [
+      "250 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Активированный уголь - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Диспепсия",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-0"
+        },
+        {
+          "content": "Метеоризм",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-1"
+        },
+        {
+          "content": "Отравления пищевыми продуктами",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-2"
+        },
+        {
+          "content": "Отравления алкалоидами, солями тяжелых металлов",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-3"
+        },
+        {
+          "content": "Гипербилирубинемия",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-4"
+        },
+        {
+          "content": "Гиперплазия",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-5"
+        },
+        {
+          "content": "Аллергические заболевания",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-6"
+        },
+        {
+          "content": "Острые кишечные инфекции",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-indications-ru-7"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "activated-charcoal-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Диспепсия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Метеоризм",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Отравления пищевыми продуктами",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Отравления алкалоидами, солями тяжелых металлов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Гипербилирубинемия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-indications-ru-5",
+          "section": "indications",
+          "language": "ru",
+          "text": "Гиперплазия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-indications-ru-6",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергические заболевания",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-indications-ru-7",
+          "section": "indications",
+          "language": "ru",
+          "text": "Острые кишечные инфекции",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-contraindications-ru-0"
+        },
+        {
+          "content": "Язвенная болезнь желудка и двенадцатиперстной кишки в период обострения",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-contraindications-ru-1"
+        },
+        {
+          "content": "Кровотечения из ЖКТ",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-contraindications-ru-2"
+        },
+        {
+          "content": "Кишечная непроходимость",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-contraindications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "activated-charcoal-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Язвенная болезнь желудка и двенадцатиперстной кишки в период обострения",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Кровотечения из ЖКТ",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Кишечная непроходимость",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым: по 1-4 таблетки (250-1000 мг) 3-4 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "activated-charcoal-dosage-adults-ru-0"
+          },
+          {
+            "content": "При отравлениях: до 20-30 г в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "activated-charcoal-dosage-adults-ru-1"
+          },
+          {
+            "content": "Таблетки принимать внутрь до еды, запивая водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "activated-charcoal-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям: по 0,5-1 таблетке (125-250 мг) на каждый год жизни 3-4 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "activated-charcoal-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям до 1 года: только по назначению врача",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "activated-charcoal-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "activated-charcoal-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым: по 1-4 таблетки (250-1000 мг) 3-4 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При отравлениях: до 20-30 г в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь до еды, запивая водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям: по 0,5-1 таблетке (125-250 мг) на каждый год жизни 3-4 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 1 года: только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Запор",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-sideEffects-ru-0"
+        },
+        {
+          "content": "Диарея",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-sideEffects-ru-1"
+        },
+        {
+          "content": "Диспепсия",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-sideEffects-ru-2"
+        },
+        {
+          "content": "Снижение всасывания витаминов и других веществ",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "activated-charcoal-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Запор",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Диарея",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Диспепсия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "activated-charcoal-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Снижение всасывания витаминов и других веществ",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "activated-charcoal-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "activated-charcoal-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "activated-charcoal-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "activated-charcoal-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/aktivirovannyy-ugol-4575",
+            "title": "Активированный уголь - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Сорбент",
+      "uz": "Sorbent"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Сорбент. Прочее.",
+      "uz": "Sorbent. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

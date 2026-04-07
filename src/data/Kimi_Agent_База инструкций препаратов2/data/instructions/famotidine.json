@@ -1,0 +1,614 @@
+{
+  "id": "famotidine",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Фамотидин",
+    "uz": "Фамотидин",
+    "en": "Famotidine"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Фамотидин",
+      "uz": "Фамотидин",
+      "en": "Famotidine"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 20 мг",
+      "таблетки 40 мг"
+    ],
+    "strengths": [
+      "20 мг",
+      "40 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Фамотидин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Язвенная болезнь желудка и двенадцатиперстной кишки",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "famotidine-indications-ru-0"
+        },
+        {
+          "content": "Гастроэзофагеальная рефлюксная болезнь (ГЭРБ)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "famotidine-indications-ru-1"
+        },
+        {
+          "content": "Эрозивный гастрит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "famotidine-indications-ru-2"
+        },
+        {
+          "content": "Синдром Золлингера-Эллисона",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "famotidine-indications-ru-3"
+        },
+        {
+          "content": "Профилактика аспирационного пневмонита",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "famotidine-indications-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "famotidine-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Язвенная болезнь желудка и двенадцатиперстной кишки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Гастроэзофагеальная рефлюксная болезнь (ГЭРБ)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Эрозивный гастрит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Синдром Золлингера-Эллисона",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Профилактика аспирационного пневмонита",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к фамотидину",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "famotidine-contraindications-ru-0"
+        },
+        {
+          "content": "Беременность",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "famotidine-contraindications-ru-1"
+        },
+        {
+          "content": "Период лактации",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "famotidine-contraindications-ru-2"
+        },
+        {
+          "content": "Детский возраст до 3 лет",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "famotidine-contraindications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "famotidine-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к фамотидину",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Беременность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Период лактации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 3 лет",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "При язвенной болезни: по 20-40 мг 1 раз в сутки на ночь или по 20 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "famotidine-dosage-adults-ru-0"
+          },
+          {
+            "content": "При ГЭРБ: по 20-40 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "famotidine-dosage-adults-ru-1"
+          },
+          {
+            "content": "При синдроме Золлингера-Эллисона: начальная доза 20 мг каждые 6 часов",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "famotidine-dosage-adults-ru-2"
+          },
+          {
+            "content": "Таблетки принимать внутрь во время или после еды",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "famotidine-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 3-12 лет: по 10-20 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "famotidine-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям до 3 лет: применение противопоказано",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "famotidine-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "famotidine-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При язвенной болезни: по 20-40 мг 1 раз в сутки на ночь или по 20 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При ГЭРБ: по 20-40 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При синдроме Золлингера-Эллисона: начальная доза 20 мг каждые 6 часов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь во время или после еды",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 3-12 лет: по 10-20 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 3 лет: применение противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЦНС: головная боль, головокружение, сонливость, спутанность сознания (особенно у пожилых)",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "famotidine-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЖКТ: тошнота, рвота, диарея, запор, боль в животе",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "famotidine-sideEffects-ru-1"
+        },
+        {
+          "content": "Со стороны печени: повышение печеночных ферментов",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "famotidine-sideEffects-ru-2"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "famotidine-sideEffects-ru-3"
+        },
+        {
+          "content": "Гинекомастия, импотенция, снижение либидо",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "famotidine-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "famotidine-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: головная боль, головокружение, сонливость, спутанность сознания (особенно у пожилых)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, рвота, диарея, запор, боль в животе",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны печени: повышение печеночных ферментов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "famotidine-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Гинекомастия, импотенция, снижение либидо",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Противопоказано",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "famotidine-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "famotidine-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Противопоказано",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "famotidine-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "famotidine-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "famotidine-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "famotidine-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/famotidin-4587",
+            "title": "Фамотидин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Блокатор H2-рецепторов",
+      "uz": "H2-retseptorlar blokatori"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Блокатор H2-рецепторов. Прочее.",
+      "uz": "H2-retseptorlar blokatori. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

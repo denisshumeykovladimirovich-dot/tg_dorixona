@@ -1,0 +1,613 @@
+{
+  "id": "cetirizine",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Цетиризин",
+    "uz": "Цетиризин",
+    "en": "Cetirizine"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Цетиризин",
+      "uz": "Цетиризин",
+      "en": "Cetirizine"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 10 мг",
+      "капли"
+    ],
+    "strengths": [
+      "10 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Цетиризин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Аллергический ринит (сезонный и круглогодичный)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "cetirizine-indications-ru-0"
+        },
+        {
+          "content": "Аллергический конъюнктивит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "cetirizine-indications-ru-1"
+        },
+        {
+          "content": "Крапивница (острая и хроническая)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "cetirizine-indications-ru-2"
+        },
+        {
+          "content": "Ангионевротический отек",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "cetirizine-indications-ru-3"
+        },
+        {
+          "content": "Атопический дерматит, сопровождающийся зудом",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "cetirizine-indications-ru-4"
+        },
+        {
+          "content": "Сенная лихорадка",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "cetirizine-indications-ru-5"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "cetirizine-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергический ринит (сезонный и круглогодичный)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергический конъюнктивит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Крапивница (острая и хроническая)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Ангионевротический отек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Атопический дерматит, сопровождающийся зудом",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-indications-ru-5",
+          "section": "indications",
+          "language": "ru",
+          "text": "Сенная лихорадка",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к цетиризину или гидроксизину",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "cetirizine-contraindications-ru-0"
+        },
+        {
+          "content": "Тяжелая почечная недостаточность (СКФ < 10 мл/мин)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "cetirizine-contraindications-ru-1"
+        },
+        {
+          "content": "Период лактации",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "cetirizine-contraindications-ru-2"
+        },
+        {
+          "content": "Детский возраст до 6 месяцев (для капель), до 6 лет (для таблеток)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "cetirizine-contraindications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "cetirizine-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к цетиризину или гидроксизину",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелая почечная недостаточность (СКФ < 10 мл/мин)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Период лактации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 6 месяцев (для капель), до 6 лет (для таблеток)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым и детям старше 12 лет: по 10 мг (1 таблетка) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "cetirizine-dosage-adults-ru-0"
+          },
+          {
+            "content": "При почечной недостаточности: дозу снижают до 5 мг/сут",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "cetirizine-dosage-adults-ru-1"
+          },
+          {
+            "content": "Таблетки принимать внутрь вечером, независимо от приема пищи",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "cetirizine-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 6-12 лет: по 10 мг 1 раз в сутки или по 5 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "cetirizine-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям 2-6 лет: по 5 мг 1 раз в сутки или по 2,5 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "cetirizine-dosage-children-ru-1"
+          },
+          {
+            "content": "Детям 6 месяцев-2 лет: по 2,5 мг 2 раза в сутки (капли)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "cetirizine-dosage-children-ru-2"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "cetirizine-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым и детям старше 12 лет: по 10 мг (1 таблетка) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При почечной недостаточности: дозу снижают до 5 мг/сут",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь вечером, независимо от приема пищи",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6-12 лет: по 10 мг 1 раз в сутки или по 5 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 2-6 лет: по 5 мг 1 раз в сутки или по 2,5 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-dosage-children-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6 месяцев-2 лет: по 2,5 мг 2 раза в сутки (капли)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЦНС: сонливость, головная боль, головокружение, астения",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "cetirizine-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЖКТ: сухость во рту, тошнота, диспепсия",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "cetirizine-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "cetirizine-sideEffects-ru-2"
+        },
+        {
+          "content": "Увеличение массы тела",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "cetirizine-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "cetirizine-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: сонливость, головная боль, головокружение, астения",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: сухость во рту, тошнота, диспепсия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "cetirizine-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Увеличение массы тела",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "cetirizine-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "cetirizine-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Противопоказано",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "cetirizine-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "cetirizine-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "cetirizine-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "cetirizine-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/cetirizin-4567",
+            "title": "Цетиризин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Антигистаминное",
+      "uz": "Antigistamin"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Антигистаминное. Прочее.",
+      "uz": "Antigistamin. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

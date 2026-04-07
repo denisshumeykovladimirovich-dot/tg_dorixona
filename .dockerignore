@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-admin
+analytics-dashboard/node_modules
+analytics-dashboard/dist
+.git
+.gitignore
+.env
+.env.production
+.env.staging
+*.log
+tmp_*
+.tmp-analytics-build

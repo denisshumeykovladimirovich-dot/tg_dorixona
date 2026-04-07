@@ -1,0 +1,2812 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-31",
+  "totalDrugs": 30,
+  "schemaVersion": 1,
+  "drugs": [
+    {
+      "id": "paracetamol",
+      "canonicalName": {
+        "ru": "Парацетамол",
+        "uz": "Paratsetamol",
+        "en": "Paracetamol"
+      },
+      "normalizedKey": "paracetamol",
+      "aliases": {
+        "ru": [
+          "парацетамол"
+        ],
+        "uz": [
+          "paratsetamol"
+        ],
+        "en": [
+          "paracetamol"
+        ],
+        "brands": [
+          "Цитрамон",
+          "Эффералган",
+          "Панадол",
+          "Тайленол"
+        ],
+        "transliterations": [
+          "paracetamol"
+        ],
+        "commonMisspellings": [
+          "парацетомол",
+          "парацитамол"
+        ]
+      },
+      "searchTokens": [
+        "боль",
+        "paratsetamol",
+        "температура",
+        "парацетамол",
+        "жар",
+        "paracetamol",
+        "жаропонижающее"
+      ],
+      "therapeuticClass": [
+        "analgesic",
+        "antipyretic"
+      ],
+      "pharmacologicalClass": [
+        "non_opioid_analgesic"
+      ],
+      "symptomTags": [
+        "температура",
+        "жар",
+        "боль"
+      ],
+      "commonUseCases": [
+        "muscle_pain",
+        "pain_relief",
+        "fever_reduction",
+        "toothache",
+        "headache"
+      ],
+      "dosageForms": [
+        "tablet",
+        "suspension",
+        "suppository",
+        "syrup"
+      ],
+      "ageBucketsSupported": [
+        "infant",
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/paracetamol.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_verified",
+      "needsManualReview": false,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "ibuprofen",
+      "canonicalName": {
+        "ru": "Ибупрофен",
+        "uz": "Ibuprofen",
+        "en": "Ibuprofen"
+      },
+      "normalizedKey": "ibuprofen",
+      "aliases": {
+        "ru": [
+          "ибупрофен"
+        ],
+        "uz": [
+          "ibuprofen"
+        ],
+        "en": [
+          "ibuprofen"
+        ],
+        "brands": [
+          "Нурофен",
+          "Ибупром",
+          "Ибупрофен"
+        ],
+        "transliterations": [
+          "ibuprofen"
+        ],
+        "commonMisspellings": [
+          "ибупрофен",
+          "ибуфен"
+        ]
+      },
+      "searchTokens": [
+        "ibuprofen",
+        "боль",
+        "воспаление",
+        "ибупрофен",
+        "жар",
+        "nsaid"
+      ],
+      "therapeuticClass": [
+        "analgesic",
+        "antipyretic",
+        "anti_inflammatory"
+      ],
+      "pharmacologicalClass": [
+        "nsaid"
+      ],
+      "symptomTags": [
+        "боль",
+        "воспаление",
+        "жар"
+      ],
+      "commonUseCases": [
+        "muscle_pain",
+        "pain_relief",
+        "fever_reduction",
+        "toothache",
+        "inflammation",
+        "headache"
+      ],
+      "dosageForms": [
+        "tablet",
+        "suspension",
+        "gel",
+        "capsule"
+      ],
+      "ageBucketsSupported": [
+        "infant",
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/ibuprofen.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "acetylsalicylic-acid",
+      "canonicalName": {
+        "ru": "Ацетилсалициловая кислота",
+        "uz": "Asetilsalitsilovaya kislota",
+        "en": "Acetylsalicylic Acid"
+      },
+      "normalizedKey": "acetylsalicylic-acid",
+      "aliases": {
+        "ru": [
+          "ацетилсалициловая кислота"
+        ],
+        "uz": [
+          "asetilsalitsilovaya kislota"
+        ],
+        "en": [
+          "acetylsalicylic acid"
+        ],
+        "brands": [
+          "Аспирин",
+          "Аспекард",
+          "Кардиомагнил"
+        ],
+        "transliterations": [
+          "acetylsalicylic acid"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "боль",
+        "воспаление",
+        "ацетилсалициловая кислота",
+        "asetilsalitsilovaya kislota",
+        "жар",
+        "acetylsalicylic acid",
+        "nsaid"
+      ],
+      "therapeuticClass": [
+        "analgesic",
+        "antipyretic",
+        "anti_inflammatory"
+      ],
+      "pharmacologicalClass": [
+        "nsaid"
+      ],
+      "symptomTags": [
+        "боль",
+        "воспаление",
+        "жар"
+      ],
+      "commonUseCases": [
+        "muscle_pain",
+        "pain_relief",
+        "fever_reduction",
+        "toothache",
+        "inflammation",
+        "headache"
+      ],
+      "dosageForms": [
+        "tablet",
+        "powder"
+      ],
+      "ageBucketsSupported": [
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/acetylsalicylic-acid.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "metamizole-sodium",
+      "canonicalName": {
+        "ru": "Метамизол натрия",
+        "uz": "Metamizol natriyi",
+        "en": "Metamizole Sodium"
+      },
+      "normalizedKey": "metamizole-sodium",
+      "aliases": {
+        "ru": [
+          "метамизол натрия"
+        ],
+        "uz": [
+          "metamizol natriyi"
+        ],
+        "en": [
+          "metamizole sodium"
+        ],
+        "brands": [
+          "Анальгин",
+          "Спазмалгон",
+          "Баралгин"
+        ],
+        "transliterations": [
+          "metamizole sodium"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "боль",
+        "температура",
+        "жар",
+        "metamizole sodium",
+        "метамизол натрия",
+        "жаропонижающее",
+        "metamizol natriyi"
+      ],
+      "therapeuticClass": [
+        "analgesic",
+        "antipyretic",
+        "spasmolytic"
+      ],
+      "pharmacologicalClass": [
+        "pyrazolone"
+      ],
+      "symptomTags": [
+        "температура",
+        "жар",
+        "боль"
+      ],
+      "commonUseCases": [
+        "spasm",
+        "muscle_pain",
+        "pain_relief",
+        "fever_reduction",
+        "toothache",
+        "colic",
+        "headache"
+      ],
+      "dosageForms": [
+        "tablet",
+        "injection",
+        "drops"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/metamizole-sodium.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_verified",
+      "needsManualReview": false,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "naproxen",
+      "canonicalName": {
+        "ru": "Напроксен",
+        "uz": "Naproksen",
+        "en": "Naproxen"
+      },
+      "normalizedKey": "naproxen",
+      "aliases": {
+        "ru": [
+          "напроксен"
+        ],
+        "uz": [
+          "naproksen"
+        ],
+        "en": [
+          "naproxen"
+        ],
+        "brands": [
+          "Напросин",
+          "Алефлемп"
+        ],
+        "transliterations": [
+          "naproxen"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "боль",
+        "воспаление",
+        "naproksen",
+        "naproxen",
+        "напроксен",
+        "nsaid"
+      ],
+      "therapeuticClass": [
+        "analgesic",
+        "anti_inflammatory"
+      ],
+      "pharmacologicalClass": [
+        "nsaid"
+      ],
+      "symptomTags": [
+        "боль",
+        "воспаление"
+      ],
+      "commonUseCases": [
+        "muscle_pain",
+        "pain_relief",
+        "toothache",
+        "inflammation",
+        "headache"
+      ],
+      "dosageForms": [
+        "tablet",
+        "gel"
+      ],
+      "ageBucketsSupported": [
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/naproxen.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "diclofenac",
+      "canonicalName": {
+        "ru": "Диклофенак",
+        "uz": "Diklofenak",
+        "en": "Diclofenac"
+      },
+      "normalizedKey": "diclofenac",
+      "aliases": {
+        "ru": [
+          "диклофенак"
+        ],
+        "uz": [
+          "diklofenak"
+        ],
+        "en": [
+          "diclofenac"
+        ],
+        "brands": [
+          "Вольтарен",
+          "Диклофенак",
+          "Диклак"
+        ],
+        "transliterations": [
+          "diclofenac"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "боль",
+        "воспаление",
+        "diclofenac",
+        "diklofenak",
+        "nsaid",
+        "диклофенак"
+      ],
+      "therapeuticClass": [
+        "analgesic",
+        "anti_inflammatory"
+      ],
+      "pharmacologicalClass": [
+        "nsaid"
+      ],
+      "symptomTags": [
+        "боль",
+        "воспаление"
+      ],
+      "commonUseCases": [
+        "muscle_pain",
+        "pain_relief",
+        "toothache",
+        "inflammation",
+        "headache"
+      ],
+      "dosageForms": [
+        "tablet",
+        "gel",
+        "injection",
+        "suppository"
+      ],
+      "ageBucketsSupported": [
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/diclofenac.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "drotaverine",
+      "canonicalName": {
+        "ru": "Дротаверин",
+        "uz": "Drotaverin",
+        "en": "Drotaverine"
+      },
+      "normalizedKey": "drotaverine",
+      "aliases": {
+        "ru": [
+          "дротаверин"
+        ],
+        "uz": [
+          "drotaverin"
+        ],
+        "en": [
+          "drotaverine"
+        ],
+        "brands": [
+          "Но-шпа",
+          "Дротаверин"
+        ],
+        "transliterations": [
+          "drotaverine"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "боль",
+        "drotaverin",
+        "спазмолитик",
+        "спазм",
+        "drotaverine",
+        "дротаверин"
+      ],
+      "therapeuticClass": [
+        "spasmolytic"
+      ],
+      "pharmacologicalClass": [
+        "phosphodiesterase_inhibitor"
+      ],
+      "symptomTags": [
+        "спазм",
+        "боль"
+      ],
+      "commonUseCases": [
+        "colic",
+        "spasm"
+      ],
+      "dosageForms": [
+        "tablet",
+        "injection"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/drotaverine.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "chlorhexidine",
+      "canonicalName": {
+        "ru": "Хлоргексидин",
+        "uz": "Xlorgeksidin",
+        "en": "Chlorhexidine"
+      },
+      "normalizedKey": "chlorhexidine",
+      "aliases": {
+        "ru": [
+          "хлоргексидин"
+        ],
+        "uz": [
+          "xlorgeksidin"
+        ],
+        "en": [
+          "chlorhexidine"
+        ],
+        "brands": [
+          "Хлоргексидин"
+        ],
+        "transliterations": [
+          "chlorhexidine"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "дезинфекция",
+        "chlorhexidine",
+        "хлоргексидин",
+        "антисептик",
+        "xlorgeksidin"
+      ],
+      "therapeuticClass": [
+        "antiseptic"
+      ],
+      "pharmacologicalClass": [
+        "biguanide"
+      ],
+      "symptomTags": [
+        "антисептик",
+        "дезинфекция"
+      ],
+      "commonUseCases": [
+        "wound_disinfection",
+        "skin_antiseptic"
+      ],
+      "dosageForms": [
+        "solution",
+        "gel",
+        "spray"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/chlorhexidine.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "miramistin",
+      "canonicalName": {
+        "ru": "Мирамистин",
+        "uz": "Miramistin",
+        "en": "Miramistin"
+      },
+      "normalizedKey": "miramistin",
+      "aliases": {
+        "ru": [
+          "мирамистин"
+        ],
+        "uz": [
+          "miramistin"
+        ],
+        "en": [
+          "miramistin"
+        ],
+        "brands": [
+          "Мирамистин"
+        ],
+        "transliterations": [
+          "miramistin"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "miramistin",
+        "дезинфекция",
+        "мирамистин",
+        "антисептик"
+      ],
+      "therapeuticClass": [
+        "antiseptic"
+      ],
+      "pharmacologicalClass": [
+        "quaternary_ammonium"
+      ],
+      "symptomTags": [
+        "антисептик",
+        "дезинфекция"
+      ],
+      "commonUseCases": [
+        "wound_disinfection",
+        "skin_antiseptic"
+      ],
+      "dosageForms": [
+        "solution",
+        "spray"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/miramistin.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "ambroxol",
+      "canonicalName": {
+        "ru": "Амброксол",
+        "uz": "Ambroksol",
+        "en": "Ambroxol"
+      },
+      "normalizedKey": "ambroxol",
+      "aliases": {
+        "ru": [
+          "амброксол"
+        ],
+        "uz": [
+          "ambroksol"
+        ],
+        "en": [
+          "ambroxol"
+        ],
+        "brands": [
+          "Амбробене",
+          "Лазолван",
+          "Амброксол"
+        ],
+        "transliterations": [
+          "ambroxol"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "мокрота",
+        "ambroxol",
+        "кашель",
+        "ambroksol",
+        "муколитик",
+        "амброксол"
+      ],
+      "therapeuticClass": [
+        "mucolytic",
+        "expectorant"
+      ],
+      "pharmacologicalClass": [
+        "mucolytic_agent"
+      ],
+      "symptomTags": [
+        "кашель",
+        "мокрота"
+      ],
+      "commonUseCases": [
+        "productive_cough"
+      ],
+      "dosageForms": [
+        "tablet",
+        "syrup",
+        "solution"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/ambroxol.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "acetylcysteine",
+      "canonicalName": {
+        "ru": "Ацетилцистеин",
+        "uz": "Asetiltsistein",
+        "en": "Acetylcysteine"
+      },
+      "normalizedKey": "acetylcysteine",
+      "aliases": {
+        "ru": [
+          "ацетилцистеин"
+        ],
+        "uz": [
+          "asetiltsistein"
+        ],
+        "en": [
+          "acetylcysteine"
+        ],
+        "brands": [
+          "Флуимуцил",
+          "АЦЦ"
+        ],
+        "transliterations": [
+          "acetylcysteine"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "мокрота",
+        "asetiltsistein",
+        "кашель",
+        "ацетилцистеин",
+        "acetylcysteine",
+        "муколитик"
+      ],
+      "therapeuticClass": [
+        "mucolytic"
+      ],
+      "pharmacologicalClass": [
+        "mucolytic_agent"
+      ],
+      "symptomTags": [
+        "кашель",
+        "мокрота"
+      ],
+      "commonUseCases": [
+        "productive_cough"
+      ],
+      "dosageForms": [
+        "tablet",
+        "powder",
+        "solution"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/acetylcysteine.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "dextromethorphan",
+      "canonicalName": {
+        "ru": "Декстрометорфан",
+        "uz": "Dekstrometorfan",
+        "en": "Dextromethorphan"
+      },
+      "normalizedKey": "dextromethorphan",
+      "aliases": {
+        "ru": [
+          "декстрометорфан"
+        ],
+        "uz": [
+          "dekstrometorfan"
+        ],
+        "en": [
+          "dextromethorphan"
+        ],
+        "brands": [
+          "Стоптуссин",
+          "Туссин плюс"
+        ],
+        "transliterations": [
+          "dextromethorphan"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "кашель",
+        "декстрометорфан",
+        "dekstrometorfan",
+        "противокашлевое",
+        "dextromethorphan"
+      ],
+      "therapeuticClass": [
+        "antitussive"
+      ],
+      "pharmacologicalClass": [
+        "opioid_antitussive"
+      ],
+      "symptomTags": [
+        "кашель"
+      ],
+      "commonUseCases": [
+        "dry_cough"
+      ],
+      "dosageForms": [
+        "tablet",
+        "syrup",
+        "capsule"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/dextromethorphan.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "xylometazoline",
+      "canonicalName": {
+        "ru": "Ксилометазолин",
+        "uz": "Ksilometazolin",
+        "en": "Xylometazoline"
+      },
+      "normalizedKey": "xylometazoline",
+      "aliases": {
+        "ru": [
+          "ксилометазолин"
+        ],
+        "uz": [
+          "ksilometazolin"
+        ],
+        "en": [
+          "xylometazoline"
+        ],
+        "brands": [
+          "Ксимелин",
+          "Галазолин",
+          "Отривин"
+        ],
+        "transliterations": [
+          "xylometazoline"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "заложенность носа",
+        "насморк",
+        "xylometazoline",
+        "ксилометазолин",
+        "ksilometazolin",
+        "сосудосуживающее"
+      ],
+      "therapeuticClass": [
+        "decongestant"
+      ],
+      "pharmacologicalClass": [
+        "sympathomimetic"
+      ],
+      "symptomTags": [
+        "насморк",
+        "заложенность носа"
+      ],
+      "commonUseCases": [
+        "runny_nose",
+        "nasal_congestion"
+      ],
+      "dosageForms": [
+        "nasal_spray",
+        "nasal_drops"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/xylometazoline.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "oxymetazoline",
+      "canonicalName": {
+        "ru": "Оксиметазолин",
+        "uz": "Oksimetazolin",
+        "en": "Oxymetazoline"
+      },
+      "normalizedKey": "oxymetazoline",
+      "aliases": {
+        "ru": [
+          "оксиметазолин"
+        ],
+        "uz": [
+          "oksimetazolin"
+        ],
+        "en": [
+          "oxymetazoline"
+        ],
+        "brands": [
+          "Називин",
+          "Назол",
+          "Африн"
+        ],
+        "transliterations": [
+          "oxymetazoline"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "насморк",
+        "заложенность носа",
+        "оксиметазолин",
+        "oksimetazolin",
+        "oxymetazoline",
+        "сосудосуживающее"
+      ],
+      "therapeuticClass": [
+        "decongestant"
+      ],
+      "pharmacologicalClass": [
+        "sympathomimetic"
+      ],
+      "symptomTags": [
+        "насморк",
+        "заложенность носа"
+      ],
+      "commonUseCases": [
+        "runny_nose",
+        "nasal_congestion"
+      ],
+      "dosageForms": [
+        "nasal_spray",
+        "nasal_drops"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/oxymetazoline.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "loratadine",
+      "canonicalName": {
+        "ru": "Лоратадин",
+        "uz": "Loratadin",
+        "en": "Loratadine"
+      },
+      "normalizedKey": "loratadine",
+      "aliases": {
+        "ru": [
+          "лоратадин"
+        ],
+        "uz": [
+          "loratadin"
+        ],
+        "en": [
+          "loratadine"
+        ],
+        "brands": [
+          "Кларитин",
+          "Лорагексал"
+        ],
+        "transliterations": [
+          "loratadine"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "насморк",
+        "loratadine",
+        "аллергия",
+        "антигистаминное",
+        "лоратадин",
+        "loratadin",
+        "зуд"
+      ],
+      "therapeuticClass": [
+        "antihistamine"
+      ],
+      "pharmacologicalClass": [
+        "h1_antagonist"
+      ],
+      "symptomTags": [
+        "аллергия",
+        "зуд",
+        "насморк"
+      ],
+      "commonUseCases": [
+        "hay_fever",
+        "allergy",
+        "urticaria"
+      ],
+      "dosageForms": [
+        "tablet",
+        "syrup"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/loratadine.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "cetirizine",
+      "canonicalName": {
+        "ru": "Цетиризин",
+        "uz": "Setirizin",
+        "en": "Cetirizine"
+      },
+      "normalizedKey": "cetirizine",
+      "aliases": {
+        "ru": [
+          "цетиризин"
+        ],
+        "uz": [
+          "setirizin"
+        ],
+        "en": [
+          "cetirizine"
+        ],
+        "brands": [
+          "Цетрин",
+          "Зиртек",
+          "Цетиризин"
+        ],
+        "transliterations": [
+          "cetirizine"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "цетиризин",
+        "насморк",
+        "аллергия",
+        "setirizin",
+        "антигистаминное",
+        "зуд",
+        "cetirizine"
+      ],
+      "therapeuticClass": [
+        "antihistamine"
+      ],
+      "pharmacologicalClass": [
+        "h1_antagonist"
+      ],
+      "symptomTags": [
+        "аллергия",
+        "зуд",
+        "насморк"
+      ],
+      "commonUseCases": [
+        "hay_fever",
+        "allergy",
+        "urticaria"
+      ],
+      "dosageForms": [
+        "tablet",
+        "drops",
+        "syrup"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/cetirizine.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "desloratadine",
+      "canonicalName": {
+        "ru": "Дезлоратадин",
+        "uz": "Dezloratadin",
+        "en": "Desloratadine"
+      },
+      "normalizedKey": "desloratadine",
+      "aliases": {
+        "ru": [
+          "дезлоратадин"
+        ],
+        "uz": [
+          "dezloratadin"
+        ],
+        "en": [
+          "desloratadine"
+        ],
+        "brands": [
+          "Аэриус",
+          "Дезлоратадин"
+        ],
+        "transliterations": [
+          "desloratadine"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "насморк",
+        "desloratadine",
+        "аллергия",
+        "антигистаминное",
+        "дезлоратадин",
+        "dezloratadin",
+        "зуд"
+      ],
+      "therapeuticClass": [
+        "antihistamine"
+      ],
+      "pharmacologicalClass": [
+        "h1_antagonist"
+      ],
+      "symptomTags": [
+        "аллергия",
+        "зуд",
+        "насморк"
+      ],
+      "commonUseCases": [
+        "hay_fever",
+        "allergy",
+        "urticaria"
+      ],
+      "dosageForms": [
+        "tablet",
+        "syrup"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/desloratadine.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "omeprazole",
+      "canonicalName": {
+        "ru": "Омепразол",
+        "uz": "Omeprozol",
+        "en": "Omeprazole"
+      },
+      "normalizedKey": "omeprazole",
+      "aliases": {
+        "ru": [
+          "омепразол"
+        ],
+        "uz": [
+          "omeprozol"
+        ],
+        "en": [
+          "omeprazole"
+        ],
+        "brands": [
+          "Омепразол",
+          "Омез",
+          "Лосек"
+        ],
+        "transliterations": [
+          "omeprazole"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "гастрит",
+        "ипп",
+        "омепразол",
+        "изжога",
+        "язва",
+        "omeprozol",
+        "omeprazole"
+      ],
+      "therapeuticClass": [
+        "ppi"
+      ],
+      "pharmacologicalClass": [
+        "proton_pump_inhibitor"
+      ],
+      "symptomTags": [
+        "изжога",
+        "гастрит",
+        "язва"
+      ],
+      "commonUseCases": [
+        "gastritis",
+        "ulcer",
+        "heartburn"
+      ],
+      "dosageForms": [
+        "capsule",
+        "tablet"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/omeprazole.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "domperidone",
+      "canonicalName": {
+        "ru": "Домперидон",
+        "uz": "Domperidon",
+        "en": "Domperidone"
+      },
+      "normalizedKey": "domperidone",
+      "aliases": {
+        "ru": [
+          "домперидон"
+        ],
+        "uz": [
+          "domperidon"
+        ],
+        "en": [
+          "domperidone"
+        ],
+        "brands": [
+          "Мотилиум",
+          "Домперидон"
+        ],
+        "transliterations": [
+          "domperidone"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "прокинетик",
+        "рвота",
+        "domperidone",
+        "вздутие",
+        "тошнота",
+        "домперидон",
+        "domperidon"
+      ],
+      "therapeuticClass": [
+        "prokinetic",
+        "antiemetic"
+      ],
+      "pharmacologicalClass": [
+        "dopamine_antagonist"
+      ],
+      "symptomTags": [
+        "тошнота",
+        "рвота",
+        "вздутие"
+      ],
+      "commonUseCases": [
+        "vomiting",
+        "nausea"
+      ],
+      "dosageForms": [
+        "tablet",
+        "suspension",
+        "suppository"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/domperidone.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "loperamide",
+      "canonicalName": {
+        "ru": "Лоперамид",
+        "uz": "Loperamid",
+        "en": "Loperamide"
+      },
+      "normalizedKey": "loperamide",
+      "aliases": {
+        "ru": [
+          "лоперамид"
+        ],
+        "uz": [
+          "loperamid"
+        ],
+        "en": [
+          "loperamide"
+        ],
+        "brands": [
+          "Имодиум",
+          "Лоперамид"
+        ],
+        "transliterations": [
+          "loperamide"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "лоперамид",
+        "противодиарейное",
+        "loperamide",
+        "диарея",
+        "loperamid"
+      ],
+      "therapeuticClass": [
+        "antidiarrheal"
+      ],
+      "pharmacologicalClass": [
+        "opioid_agonist"
+      ],
+      "symptomTags": [
+        "диарея"
+      ],
+      "commonUseCases": [
+        "diarrhea"
+      ],
+      "dosageForms": [
+        "capsule",
+        "tablet"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/loperamide.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "activated-charcoal",
+      "canonicalName": {
+        "ru": "Активированный уголь",
+        "uz": "Aktivlangan ugol",
+        "en": "Activated Charcoal"
+      },
+      "normalizedKey": "activated-charcoal",
+      "aliases": {
+        "ru": [
+          "активированный уголь"
+        ],
+        "uz": [
+          "aktivlangan ugol"
+        ],
+        "en": [
+          "activated charcoal"
+        ],
+        "brands": [
+          "Активированный уголь",
+          "Уголь активированный"
+        ],
+        "transliterations": [
+          "activated charcoal"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "отравление",
+        "сорбент",
+        "aktivlangan ugol",
+        "вздутие",
+        "activated charcoal",
+        "активированный уголь"
+      ],
+      "therapeuticClass": [
+        "adsorbent"
+      ],
+      "pharmacologicalClass": [
+        "enterosorbent"
+      ],
+      "symptomTags": [
+        "отравление",
+        "вздутие"
+      ],
+      "commonUseCases": [
+        "detoxification",
+        "poisoning"
+      ],
+      "dosageForms": [
+        "tablet",
+        "powder",
+        "capsule"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/activated-charcoal.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "amoxicillin",
+      "canonicalName": {
+        "ru": "Амоксициллин",
+        "uz": "Amoksitsillin",
+        "en": "Amoxicillin"
+      },
+      "normalizedKey": "amoxicillin",
+      "aliases": {
+        "ru": [
+          "амоксициллин"
+        ],
+        "uz": [
+          "amoksitsillin"
+        ],
+        "en": [
+          "amoxicillin"
+        ],
+        "brands": [
+          "Амоксициллин",
+          "Оспамокс",
+          "Флемоксин"
+        ],
+        "transliterations": [
+          "amoxicillin"
+        ],
+        "commonMisspellings": [
+          "амоксицилин"
+        ]
+      },
+      "searchTokens": [
+        "amoxicillin",
+        "бактерии",
+        "амоксициллин",
+        "антибиотик",
+        "инфекция",
+        "amoksitsillin"
+      ],
+      "therapeuticClass": [
+        "antibiotic"
+      ],
+      "pharmacologicalClass": [
+        "penicillin"
+      ],
+      "symptomTags": [
+        "инфекция",
+        "бактерии"
+      ],
+      "commonUseCases": [
+        "respiratory_infection",
+        "bacterial_infection"
+      ],
+      "dosageForms": [
+        "capsule",
+        "suspension",
+        "tablet"
+      ],
+      "ageBucketsSupported": [
+        "infant",
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/amoxicillin.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "azithromycin",
+      "canonicalName": {
+        "ru": "Азитромицин",
+        "uz": "Azitromitsin",
+        "en": "Azithromycin"
+      },
+      "normalizedKey": "azithromycin",
+      "aliases": {
+        "ru": [
+          "азитромицин"
+        ],
+        "uz": [
+          "azitromitsin"
+        ],
+        "en": [
+          "azithromycin"
+        ],
+        "brands": [
+          "Азитро",
+          "Сумамед",
+          "Хемомицин"
+        ],
+        "transliterations": [
+          "azithromycin"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "бактерии",
+        "антибиотик",
+        "azithromycin",
+        "азитромицин",
+        "azitromitsin",
+        "инфекция"
+      ],
+      "therapeuticClass": [
+        "antibiotic"
+      ],
+      "pharmacologicalClass": [
+        "macrolide"
+      ],
+      "symptomTags": [
+        "инфекция",
+        "бактерии"
+      ],
+      "commonUseCases": [
+        "respiratory_infection",
+        "bacterial_infection"
+      ],
+      "dosageForms": [
+        "capsule",
+        "tablet",
+        "suspension"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/azithromycin.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "fluconazole",
+      "canonicalName": {
+        "ru": "Флуконазол",
+        "uz": "Flukonazol",
+        "en": "Fluconazole"
+      },
+      "normalizedKey": "fluconazole",
+      "aliases": {
+        "ru": [
+          "флуконазол"
+        ],
+        "uz": [
+          "flukonazol"
+        ],
+        "en": [
+          "fluconazole"
+        ],
+        "brands": [
+          "Дифлюкан",
+          "Флуконазол",
+          "Микосист"
+        ],
+        "transliterations": [
+          "fluconazole"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "флуконазол",
+        "fluconazole",
+        "грибок",
+        "противогрибковое",
+        "молочница",
+        "flukonazol"
+      ],
+      "therapeuticClass": [
+        "antifungal"
+      ],
+      "pharmacologicalClass": [
+        "azole_antifungal"
+      ],
+      "symptomTags": [
+        "грибок",
+        "молочница"
+      ],
+      "commonUseCases": [
+        "fungal_infection",
+        "candidiasis"
+      ],
+      "dosageForms": [
+        "capsule",
+        "solution"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/fluconazole.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "acyclovir",
+      "canonicalName": {
+        "ru": "Ацикловир",
+        "uz": "Asiklovir",
+        "en": "Acyclovir"
+      },
+      "normalizedKey": "acyclovir",
+      "aliases": {
+        "ru": [
+          "ацикловир"
+        ],
+        "uz": [
+          "asiklovir"
+        ],
+        "en": [
+          "acyclovir"
+        ],
+        "brands": [
+          "Ацикловир",
+          "Зовиракс"
+        ],
+        "transliterations": [
+          "acyclovir"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "asiklovir",
+        "противовирусное",
+        "герпес",
+        "вирус",
+        "acyclovir",
+        "ацикловир"
+      ],
+      "therapeuticClass": [
+        "antiviral"
+      ],
+      "pharmacologicalClass": [
+        "nucleoside_analogue"
+      ],
+      "symptomTags": [
+        "герпес",
+        "вирус"
+      ],
+      "commonUseCases": [
+        "herpes",
+        "viral_infection"
+      ],
+      "dosageForms": [
+        "tablet",
+        "ointment",
+        "cream"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/acyclovir.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "salbutamol",
+      "canonicalName": {
+        "ru": "Сальбутамол",
+        "uz": "Salbutamol",
+        "en": "Salbutamol"
+      },
+      "normalizedKey": "salbutamol",
+      "aliases": {
+        "ru": [
+          "сальбутамол"
+        ],
+        "uz": [
+          "salbutamol"
+        ],
+        "en": [
+          "salbutamol"
+        ],
+        "brands": [
+          "Вентолин",
+          "Сальбутамол"
+        ],
+        "transliterations": [
+          "salbutamol"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "астма",
+        "кашель",
+        "salbutamol",
+        "одышка",
+        "сальбутамол",
+        "бронходилататор"
+      ],
+      "therapeuticClass": [
+        "bronchodilator"
+      ],
+      "pharmacologicalClass": [
+        "beta2_agonist"
+      ],
+      "symptomTags": [
+        "астма",
+        "одышка",
+        "кашель"
+      ],
+      "commonUseCases": [
+        "bronchospasm",
+        "asthma"
+      ],
+      "dosageForms": [
+        "inhaler",
+        "nebulizer_solution",
+        "tablet"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/salbutamol.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "budesonide",
+      "canonicalName": {
+        "ru": "Будесонид",
+        "uz": "Budesonid",
+        "en": "Budesonide"
+      },
+      "normalizedKey": "budesonide",
+      "aliases": {
+        "ru": [
+          "будесонид"
+        ],
+        "uz": [
+          "budesonid"
+        ],
+        "en": [
+          "budesonide"
+        ],
+        "brands": [
+          "Пульмикорт",
+          "Будесонид"
+        ],
+        "transliterations": [
+          "budesonide"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "астма",
+        "budesonide",
+        "аллергия",
+        "будесонид",
+        "budesonid",
+        "гкс"
+      ],
+      "therapeuticClass": [
+        "corticosteroid"
+      ],
+      "pharmacologicalClass": [
+        "inhaled_corticosteroid"
+      ],
+      "symptomTags": [
+        "астма",
+        "аллергия"
+      ],
+      "commonUseCases": [
+        "general_use"
+      ],
+      "dosageForms": [
+        "inhaler",
+        "nebulizer_solution",
+        "nasal_spray"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/budesonide.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "pantoprazole",
+      "canonicalName": {
+        "ru": "Пантопразол",
+        "uz": "Pantoprozol",
+        "en": "Pantoprazole"
+      },
+      "normalizedKey": "pantoprazole",
+      "aliases": {
+        "ru": [
+          "пантопразол"
+        ],
+        "uz": [
+          "pantoprozol"
+        ],
+        "en": [
+          "pantoprazole"
+        ],
+        "brands": [
+          "Контролок",
+          "Нольпаза",
+          "Пантопразол"
+        ],
+        "transliterations": [
+          "pantoprazole"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "гастрит",
+        "пантопразол",
+        "pantoprozol",
+        "ипп",
+        "pantoprazole",
+        "изжога",
+        "язва"
+      ],
+      "therapeuticClass": [
+        "ppi"
+      ],
+      "pharmacologicalClass": [
+        "proton_pump_inhibitor"
+      ],
+      "symptomTags": [
+        "изжога",
+        "гастрит",
+        "язва"
+      ],
+      "commonUseCases": [
+        "gastritis",
+        "ulcer",
+        "heartburn"
+      ],
+      "dosageForms": [
+        "tablet",
+        "injection"
+      ],
+      "ageBucketsSupported": [
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/pantoprazole.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "famotidine",
+      "canonicalName": {
+        "ru": "Фамотидин",
+        "uz": "Famotidin",
+        "en": "Famotidine"
+      },
+      "normalizedKey": "famotidine",
+      "aliases": {
+        "ru": [
+          "фамотидин"
+        ],
+        "uz": [
+          "famotidin"
+        ],
+        "en": [
+          "famotidine"
+        ],
+        "brands": [
+          "Квамател",
+          "Фамотидин"
+        ],
+        "transliterations": [
+          "famotidine"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "гастрит",
+        "фамотидин",
+        "famotidin",
+        "h2-блокер",
+        "изжога",
+        "famotidine",
+        "язва"
+      ],
+      "therapeuticClass": [
+        "h2_blocker"
+      ],
+      "pharmacologicalClass": [
+        "h2_antagonist"
+      ],
+      "symptomTags": [
+        "изжога",
+        "гастрит",
+        "язва"
+      ],
+      "commonUseCases": [
+        "gastritis",
+        "ulcer",
+        "heartburn"
+      ],
+      "dosageForms": [
+        "tablet",
+        "injection"
+      ],
+      "ageBucketsSupported": [
+        "child",
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/famotidine.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    },
+    {
+      "id": "anzibel",
+      "canonicalName": {
+        "ru": "Анзибел",
+        "uz": "Anzibel",
+        "en": "Anzibel"
+      },
+      "normalizedKey": "anzibel",
+      "aliases": {
+        "ru": [
+          "анзибел"
+        ],
+        "uz": [
+          "anzibel"
+        ],
+        "en": [
+          "anzibel"
+        ],
+        "brands": [
+          "Анзибел"
+        ],
+        "transliterations": [
+          "anzibel"
+        ],
+        "commonMisspellings": []
+      },
+      "searchTokens": [
+        "боль",
+        "воспаление",
+        "анзибел",
+        "комбинированное",
+        "anzibel"
+      ],
+      "therapeuticClass": [
+        "analgesic",
+        "anti_inflammatory"
+      ],
+      "pharmacologicalClass": [
+        "combination"
+      ],
+      "symptomTags": [
+        "боль",
+        "воспаление"
+      ],
+      "commonUseCases": [
+        "muscle_pain",
+        "pain_relief",
+        "toothache",
+        "inflammation",
+        "headache"
+      ],
+      "dosageForms": [
+        "tablet"
+      ],
+      "ageBucketsSupported": [
+        "adult"
+      ],
+      "hasOfficialInstruction": true,
+      "instructionFile": "data/instructions/anzibel.json",
+      "sourcePriority": 1,
+      "reviewStatus": "draft_pending",
+      "needsManualReview": true,
+      "metadata": {
+        "addedAt": "2026-03-31",
+        "lastReviewed": "2026-03-31",
+        "reviewedBy": "system"
+      }
+    }
+  ],
+  "indexes": {
+    "bySymptom": {
+      "температура": [
+        "paracetamol",
+        "metamizole-sodium"
+      ],
+      "жар": [
+        "paracetamol",
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "metamizole-sodium"
+      ],
+      "боль": [
+        "paracetamol",
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "metamizole-sodium",
+        "naproxen",
+        "diclofenac",
+        "drotaverine",
+        "anzibel"
+      ],
+      "воспаление": [
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "naproxen",
+        "diclofenac",
+        "anzibel"
+      ],
+      "спазм": [
+        "drotaverine"
+      ],
+      "антисептик": [
+        "chlorhexidine",
+        "miramistin"
+      ],
+      "дезинфекция": [
+        "chlorhexidine",
+        "miramistin"
+      ],
+      "кашель": [
+        "ambroxol",
+        "acetylcysteine",
+        "dextromethorphan",
+        "salbutamol"
+      ],
+      "мокрота": [
+        "ambroxol",
+        "acetylcysteine"
+      ],
+      "насморк": [
+        "xylometazoline",
+        "oxymetazoline",
+        "loratadine",
+        "cetirizine",
+        "desloratadine"
+      ],
+      "заложенность носа": [
+        "xylometazoline",
+        "oxymetazoline"
+      ],
+      "аллергия": [
+        "loratadine",
+        "cetirizine",
+        "desloratadine",
+        "budesonide"
+      ],
+      "зуд": [
+        "loratadine",
+        "cetirizine",
+        "desloratadine"
+      ],
+      "изжога": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ],
+      "гастрит": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ],
+      "язва": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ],
+      "тошнота": [
+        "domperidone"
+      ],
+      "рвота": [
+        "domperidone"
+      ],
+      "вздутие": [
+        "domperidone",
+        "activated-charcoal"
+      ],
+      "диарея": [
+        "loperamide"
+      ],
+      "отравление": [
+        "activated-charcoal"
+      ],
+      "инфекция": [
+        "amoxicillin",
+        "azithromycin"
+      ],
+      "бактерии": [
+        "amoxicillin",
+        "azithromycin"
+      ],
+      "грибок": [
+        "fluconazole"
+      ],
+      "молочница": [
+        "fluconazole"
+      ],
+      "герпес": [
+        "acyclovir"
+      ],
+      "вирус": [
+        "acyclovir"
+      ],
+      "астма": [
+        "salbutamol",
+        "budesonide"
+      ],
+      "одышка": [
+        "salbutamol"
+      ]
+    },
+    "byTherapeuticClass": {
+      "analgesic": [
+        "paracetamol",
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "metamizole-sodium",
+        "naproxen",
+        "diclofenac",
+        "anzibel"
+      ],
+      "antipyretic": [
+        "paracetamol",
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "metamizole-sodium"
+      ],
+      "anti_inflammatory": [
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "naproxen",
+        "diclofenac",
+        "anzibel"
+      ],
+      "spasmolytic": [
+        "metamizole-sodium",
+        "drotaverine"
+      ],
+      "antiseptic": [
+        "chlorhexidine",
+        "miramistin"
+      ],
+      "mucolytic": [
+        "ambroxol",
+        "acetylcysteine"
+      ],
+      "expectorant": [
+        "ambroxol"
+      ],
+      "antitussive": [
+        "dextromethorphan"
+      ],
+      "decongestant": [
+        "xylometazoline",
+        "oxymetazoline"
+      ],
+      "antihistamine": [
+        "loratadine",
+        "cetirizine",
+        "desloratadine"
+      ],
+      "ppi": [
+        "omeprazole",
+        "pantoprazole"
+      ],
+      "prokinetic": [
+        "domperidone"
+      ],
+      "antiemetic": [
+        "domperidone"
+      ],
+      "antidiarrheal": [
+        "loperamide"
+      ],
+      "adsorbent": [
+        "activated-charcoal"
+      ],
+      "antibiotic": [
+        "amoxicillin",
+        "azithromycin"
+      ],
+      "antifungal": [
+        "fluconazole"
+      ],
+      "antiviral": [
+        "acyclovir"
+      ],
+      "bronchodilator": [
+        "salbutamol"
+      ],
+      "corticosteroid": [
+        "budesonide"
+      ],
+      "h2_blocker": [
+        "famotidine"
+      ]
+    },
+    "bySearchToken": {
+      "боль": [
+        "paracetamol",
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "metamizole-sodium",
+        "naproxen",
+        "diclofenac",
+        "drotaverine",
+        "anzibel"
+      ],
+      "paratsetamol": [
+        "paracetamol"
+      ],
+      "температура": [
+        "paracetamol",
+        "metamizole-sodium"
+      ],
+      "парацетамол": [
+        "paracetamol"
+      ],
+      "жар": [
+        "paracetamol",
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "metamizole-sodium"
+      ],
+      "paracetamol": [
+        "paracetamol"
+      ],
+      "жаропонижающее": [
+        "paracetamol",
+        "metamizole-sodium"
+      ],
+      "ibuprofen": [
+        "ibuprofen"
+      ],
+      "воспаление": [
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "naproxen",
+        "diclofenac",
+        "anzibel"
+      ],
+      "ибупрофен": [
+        "ibuprofen"
+      ],
+      "nsaid": [
+        "ibuprofen",
+        "acetylsalicylic-acid",
+        "naproxen",
+        "diclofenac"
+      ],
+      "ацетилсалициловая кислота": [
+        "acetylsalicylic-acid"
+      ],
+      "asetilsalitsilovaya kislota": [
+        "acetylsalicylic-acid"
+      ],
+      "acetylsalicylic acid": [
+        "acetylsalicylic-acid"
+      ],
+      "metamizole sodium": [
+        "metamizole-sodium"
+      ],
+      "метамизол натрия": [
+        "metamizole-sodium"
+      ],
+      "metamizol natriyi": [
+        "metamizole-sodium"
+      ],
+      "naproksen": [
+        "naproxen"
+      ],
+      "naproxen": [
+        "naproxen"
+      ],
+      "напроксен": [
+        "naproxen"
+      ],
+      "diclofenac": [
+        "diclofenac"
+      ],
+      "diklofenak": [
+        "diclofenac"
+      ],
+      "диклофенак": [
+        "diclofenac"
+      ],
+      "drotaverin": [
+        "drotaverine"
+      ],
+      "спазмолитик": [
+        "drotaverine"
+      ],
+      "спазм": [
+        "drotaverine"
+      ],
+      "drotaverine": [
+        "drotaverine"
+      ],
+      "дротаверин": [
+        "drotaverine"
+      ],
+      "дезинфекция": [
+        "chlorhexidine",
+        "miramistin"
+      ],
+      "chlorhexidine": [
+        "chlorhexidine"
+      ],
+      "хлоргексидин": [
+        "chlorhexidine"
+      ],
+      "антисептик": [
+        "chlorhexidine",
+        "miramistin"
+      ],
+      "xlorgeksidin": [
+        "chlorhexidine"
+      ],
+      "miramistin": [
+        "miramistin"
+      ],
+      "мирамистин": [
+        "miramistin"
+      ],
+      "мокрота": [
+        "ambroxol",
+        "acetylcysteine"
+      ],
+      "ambroxol": [
+        "ambroxol"
+      ],
+      "кашель": [
+        "ambroxol",
+        "acetylcysteine",
+        "dextromethorphan",
+        "salbutamol"
+      ],
+      "ambroksol": [
+        "ambroxol"
+      ],
+      "муколитик": [
+        "ambroxol",
+        "acetylcysteine"
+      ],
+      "амброксол": [
+        "ambroxol"
+      ],
+      "asetiltsistein": [
+        "acetylcysteine"
+      ],
+      "ацетилцистеин": [
+        "acetylcysteine"
+      ],
+      "acetylcysteine": [
+        "acetylcysteine"
+      ],
+      "декстрометорфан": [
+        "dextromethorphan"
+      ],
+      "dekstrometorfan": [
+        "dextromethorphan"
+      ],
+      "противокашлевое": [
+        "dextromethorphan"
+      ],
+      "dextromethorphan": [
+        "dextromethorphan"
+      ],
+      "заложенность носа": [
+        "xylometazoline",
+        "oxymetazoline"
+      ],
+      "насморк": [
+        "xylometazoline",
+        "oxymetazoline",
+        "loratadine",
+        "cetirizine",
+        "desloratadine"
+      ],
+      "xylometazoline": [
+        "xylometazoline"
+      ],
+      "ксилометазолин": [
+        "xylometazoline"
+      ],
+      "ksilometazolin": [
+        "xylometazoline"
+      ],
+      "сосудосуживающее": [
+        "xylometazoline",
+        "oxymetazoline"
+      ],
+      "оксиметазолин": [
+        "oxymetazoline"
+      ],
+      "oksimetazolin": [
+        "oxymetazoline"
+      ],
+      "oxymetazoline": [
+        "oxymetazoline"
+      ],
+      "loratadine": [
+        "loratadine"
+      ],
+      "аллергия": [
+        "loratadine",
+        "cetirizine",
+        "desloratadine",
+        "budesonide"
+      ],
+      "антигистаминное": [
+        "loratadine",
+        "cetirizine",
+        "desloratadine"
+      ],
+      "лоратадин": [
+        "loratadine"
+      ],
+      "loratadin": [
+        "loratadine"
+      ],
+      "зуд": [
+        "loratadine",
+        "cetirizine",
+        "desloratadine"
+      ],
+      "цетиризин": [
+        "cetirizine"
+      ],
+      "setirizin": [
+        "cetirizine"
+      ],
+      "cetirizine": [
+        "cetirizine"
+      ],
+      "desloratadine": [
+        "desloratadine"
+      ],
+      "дезлоратадин": [
+        "desloratadine"
+      ],
+      "dezloratadin": [
+        "desloratadine"
+      ],
+      "гастрит": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ],
+      "ипп": [
+        "omeprazole",
+        "pantoprazole"
+      ],
+      "омепразол": [
+        "omeprazole"
+      ],
+      "изжога": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ],
+      "язва": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ],
+      "omeprozol": [
+        "omeprazole"
+      ],
+      "omeprazole": [
+        "omeprazole"
+      ],
+      "прокинетик": [
+        "domperidone"
+      ],
+      "рвота": [
+        "domperidone"
+      ],
+      "domperidone": [
+        "domperidone"
+      ],
+      "вздутие": [
+        "domperidone",
+        "activated-charcoal"
+      ],
+      "тошнота": [
+        "domperidone"
+      ],
+      "домперидон": [
+        "domperidone"
+      ],
+      "domperidon": [
+        "domperidone"
+      ],
+      "лоперамид": [
+        "loperamide"
+      ],
+      "противодиарейное": [
+        "loperamide"
+      ],
+      "loperamide": [
+        "loperamide"
+      ],
+      "диарея": [
+        "loperamide"
+      ],
+      "loperamid": [
+        "loperamide"
+      ],
+      "отравление": [
+        "activated-charcoal"
+      ],
+      "сорбент": [
+        "activated-charcoal"
+      ],
+      "aktivlangan ugol": [
+        "activated-charcoal"
+      ],
+      "activated charcoal": [
+        "activated-charcoal"
+      ],
+      "активированный уголь": [
+        "activated-charcoal"
+      ],
+      "amoxicillin": [
+        "amoxicillin"
+      ],
+      "бактерии": [
+        "amoxicillin",
+        "azithromycin"
+      ],
+      "амоксициллин": [
+        "amoxicillin"
+      ],
+      "антибиотик": [
+        "amoxicillin",
+        "azithromycin"
+      ],
+      "инфекция": [
+        "amoxicillin",
+        "azithromycin"
+      ],
+      "amoksitsillin": [
+        "amoxicillin"
+      ],
+      "azithromycin": [
+        "azithromycin"
+      ],
+      "азитромицин": [
+        "azithromycin"
+      ],
+      "azitromitsin": [
+        "azithromycin"
+      ],
+      "флуконазол": [
+        "fluconazole"
+      ],
+      "fluconazole": [
+        "fluconazole"
+      ],
+      "грибок": [
+        "fluconazole"
+      ],
+      "противогрибковое": [
+        "fluconazole"
+      ],
+      "молочница": [
+        "fluconazole"
+      ],
+      "flukonazol": [
+        "fluconazole"
+      ],
+      "asiklovir": [
+        "acyclovir"
+      ],
+      "противовирусное": [
+        "acyclovir"
+      ],
+      "герпес": [
+        "acyclovir"
+      ],
+      "вирус": [
+        "acyclovir"
+      ],
+      "acyclovir": [
+        "acyclovir"
+      ],
+      "ацикловир": [
+        "acyclovir"
+      ],
+      "астма": [
+        "salbutamol",
+        "budesonide"
+      ],
+      "salbutamol": [
+        "salbutamol"
+      ],
+      "одышка": [
+        "salbutamol"
+      ],
+      "сальбутамол": [
+        "salbutamol"
+      ],
+      "бронходилататор": [
+        "salbutamol"
+      ],
+      "budesonide": [
+        "budesonide"
+      ],
+      "будесонид": [
+        "budesonide"
+      ],
+      "budesonid": [
+        "budesonide"
+      ],
+      "гкс": [
+        "budesonide"
+      ],
+      "пантопразол": [
+        "pantoprazole"
+      ],
+      "pantoprozol": [
+        "pantoprazole"
+      ],
+      "pantoprazole": [
+        "pantoprazole"
+      ],
+      "фамотидин": [
+        "famotidine"
+      ],
+      "famotidin": [
+        "famotidine"
+      ],
+      "h2-блокер": [
+        "famotidine"
+      ],
+      "famotidine": [
+        "famotidine"
+      ],
+      "анзибел": [
+        "anzibel"
+      ],
+      "комбинированное": [
+        "anzibel"
+      ],
+      "anzibel": [
+        "anzibel"
+      ]
+    }
+  },
+  "statistics": {
+    "totalWithOfficialSource": 30,
+    "totalWithRU": 30,
+    "totalWithUZ": 30,
+    "totalNeedingReview": 28
+  }
+}

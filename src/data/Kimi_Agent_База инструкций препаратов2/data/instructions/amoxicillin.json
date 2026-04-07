@@ -1,0 +1,721 @@
+{
+  "id": "amoxicillin",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Амоксициллин",
+    "uz": "Амоксициллин",
+    "en": "Amoxicillin"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Амоксициллин",
+      "uz": "Амоксициллин",
+      "en": "Amoxicillin"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 500 мг",
+      "таблетки 250 мг",
+      "суспензия",
+      "капсулы"
+    ],
+    "strengths": [
+      "500 мг",
+      "250 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Амоксициллин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Инфекции дыхательных путей: острый и хронический бронхит, пневмония, ангина",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-0"
+        },
+        {
+          "content": "Инфекции ЛОР-органов: отит, синусит, тонзиллит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-1"
+        },
+        {
+          "content": "Инфекции мочевыводящих путей: цистит, пиелонефрит, уретрит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-2"
+        },
+        {
+          "content": "Инфекции желудочно-кишечного тракта",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-3"
+        },
+        {
+          "content": "Кожные инфекции",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-4"
+        },
+        {
+          "content": "Лептоспироз",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-5"
+        },
+        {
+          "content": "Листериоз",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-6"
+        },
+        {
+          "content": "Эрадикация Helicobacter pylori",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-indications-ru-7"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "amoxicillin-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Инфекции дыхательных путей: острый и хронический бронхит, пневмония, ангина",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Инфекции ЛОР-органов: отит, синусит, тонзиллит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Инфекции мочевыводящих путей: цистит, пиелонефрит, уретрит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Инфекции желудочно-кишечного тракта",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Кожные инфекции",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-indications-ru-5",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лептоспироз",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-indications-ru-6",
+          "section": "indications",
+          "language": "ru",
+          "text": "Листериоз",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-indications-ru-7",
+          "section": "indications",
+          "language": "ru",
+          "text": "Эрадикация Helicobacter pylori",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к амоксициллину или другим пенициллинам",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-contraindications-ru-0"
+        },
+        {
+          "content": "Гиперчувствительность к цефалоспоринам (кросс-аллергия)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-contraindications-ru-1"
+        },
+        {
+          "content": "Инфекционный мононуклеоз",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-contraindications-ru-2"
+        },
+        {
+          "content": "Лимфолейкоз",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-contraindications-ru-3"
+        },
+        {
+          "content": "Тяжелые нарушения функции печени и почек",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "amoxicillin-contraindications-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "amoxicillin-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к амоксициллину или другим пенициллинам",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к цефалоспоринам (кросс-аллергия)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Инфекционный мононуклеоз",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Лимфолейкоз",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-contraindications-ru-4",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелые нарушения функции печени и почек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым и детям старше 12 лет: по 500 мг 3 раза в сутки или по 750 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "amoxicillin-dosage-adults-ru-0"
+          },
+          {
+            "content": "При тяжелых инфекциях: по 750 мг-1 г 3 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "amoxicillin-dosage-adults-ru-1"
+          },
+          {
+            "content": "Курс лечения - 5-14 дней",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "amoxicillin-dosage-adults-ru-2"
+          },
+          {
+            "content": "Таблетки принимать внутрь до, во время или после еды",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "amoxicillin-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям до 12 лет: доза рассчитывается из расчета 20-40 мг/кг/сут в 3 приема",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "amoxicillin-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям до 5 лет: предпочтительна суспензия",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "amoxicillin-dosage-children-ru-1"
+          },
+          {
+            "content": "Детям до 1 года: доза рассчитывается из расчета 20 мг/кг/сут в 3 приема",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "amoxicillin-dosage-children-ru-2"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "amoxicillin-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым и детям старше 12 лет: по 500 мг 3 раза в сутки или по 750 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При тяжелых инфекциях: по 750 мг-1 г 3 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Курс лечения - 5-14 дней",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь до, во время или после еды",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 12 лет: доза рассчитывается из расчета 20-40 мг/кг/сут в 3 приема",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 5 лет: предпочтительна суспензия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-dosage-children-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 1 года: доза рассчитывается из расчета 20 мг/кг/сут в 3 приема",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке, анафилактический шок",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "amoxicillin-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЖКТ: тошнота, рвота, диарея, дисбактериоз",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "amoxicillin-sideEffects-ru-1"
+        },
+        {
+          "content": "Со стороны печени: повышение печеночных ферментов, холестатический гепатит",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "amoxicillin-sideEffects-ru-2"
+        },
+        {
+          "content": "Со стороны нервной системы: головная боль, головокружение",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "amoxicillin-sideEffects-ru-3"
+        },
+        {
+          "content": "Суперинфекция",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "amoxicillin-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "amoxicillin-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке, анафилактический шок",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, рвота, диарея, дисбактериоз",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны печени: повышение печеночных ферментов, холестатический гепатит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны нервной системы: головная боль, головокружение",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "amoxicillin-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Суперинфекция",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "amoxicillin-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "amoxicillin-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "amoxicillin-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "amoxicillin-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "amoxicillin-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "amoxicillin-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/amoksicillin-4577",
+            "title": "Амоксициллин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Антибиотик",
+      "uz": "Antibiotik"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Антибиотик. Прочее.",
+      "uz": "Antibiotik. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

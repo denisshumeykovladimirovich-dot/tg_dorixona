@@ -1,0 +1,1360 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-31T19:28:09Z",
+  "metadata": {
+    "totalDrugs": 30,
+    "phase": "PHASE 1",
+    "languages": [
+      "ru",
+      "uz",
+      "en"
+    ],
+    "source": "REPORT_DRUGS_AND_SYMPTOMS.md"
+  },
+  "drugAliases": [
+    {
+      "drugId": "paracetamol",
+      "canonicalNames": {
+        "ru": "Парацетамол",
+        "uz": "Paratsetamol",
+        "en": "Paracetamol"
+      },
+      "aliases": {
+        "ru": [
+          "парацетамол",
+          "ацетаминофен"
+        ],
+        "uz": [
+          "paratsetamol"
+        ],
+        "en": [
+          "paracetamol",
+          "acetaminophen"
+        ],
+        "brands": [
+          "Цитрамон",
+          "Эффералган",
+          "Панадол",
+          "Calpol",
+          "Tylenol"
+        ],
+        "transliterations": [
+          "paracetamol",
+          "paratsetamol"
+        ],
+        "commonMisspellings": [
+          "парацетомол",
+          "парацитамол",
+          "парацитомол"
+        ]
+      },
+      "searchTokens": [
+        "парацетамол",
+        "жаропонижающее",
+        "боль",
+        "paratsetamol",
+        "harorat tushiruvchi"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "ibuprofen",
+      "canonicalNames": {
+        "ru": "Ибупрофен",
+        "uz": "Ibuprofen",
+        "en": "Ibuprofen"
+      },
+      "aliases": {
+        "ru": [
+          "ибупрофен",
+          "ибуфен"
+        ],
+        "uz": [
+          "ibuprofen"
+        ],
+        "en": [
+          "ibuprofen"
+        ],
+        "brands": [
+          "Нурофен",
+          "Ибупром",
+          "Advil",
+          "Motrin",
+          "Brufen"
+        ],
+        "transliterations": [
+          "ibuprofen",
+          "ibuprofen"
+        ],
+        "commonMisspellings": [
+          "ибуфен",
+          "ибупрофан",
+          "ибупрофен"
+        ]
+      },
+      "searchTokens": [
+        "ибупрофен",
+        "обезболивающее",
+        "воспаление",
+        "ibuprofen",
+        "og'riq qoldiruvchi"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "acetylsalicylic-acid",
+      "canonicalNames": {
+        "ru": "Ацетилсалициловая кислота",
+        "uz": "Asetilsalitsilovaya kislota",
+        "en": "Acetylsalicylic Acid"
+      },
+      "aliases": {
+        "ru": [
+          "ацетилсалициловая кислота",
+          "аспирин",
+          "аса"
+        ],
+        "uz": [
+          "asetilsalitsilovaya kislota",
+          "aspirin"
+        ],
+        "en": [
+          "acetylsalicylic acid",
+          "aspirin",
+          "asa"
+        ],
+        "brands": [
+          "Аспирин",
+          "Аспикор",
+          "CardioAspirin",
+          "Bayer"
+        ],
+        "transliterations": [
+          "acetilsalitsilovaya",
+          "aspirin"
+        ],
+        "commonMisspellings": [
+          "аспирин",
+          "ацетилсалициловая"
+        ]
+      },
+      "searchTokens": [
+        "аспирин",
+        "жаропонижающее",
+        "разжижение крови",
+        "aspirin",
+        "qon suyultiruvchi"
+      ],
+      "needsManualReview": {
+        "uz": true
+      }
+    },
+    {
+      "drugId": "naproxen",
+      "canonicalNames": {
+        "ru": "Напроксен",
+        "uz": "Naproksen",
+        "en": "Naproxen"
+      },
+      "aliases": {
+        "ru": [
+          "напроксен",
+          "напросин"
+        ],
+        "uz": [
+          "naproksen"
+        ],
+        "en": [
+          "naproxen",
+          "naprosyn"
+        ],
+        "brands": [
+          "Напросин",
+          "Алефлоп",
+          "Naprosyn",
+          "Aleve"
+        ],
+        "transliterations": [
+          "naproxen",
+          "naproksen"
+        ],
+        "commonMisspellings": [
+          "напроксен",
+          "напросин"
+        ]
+      },
+      "searchTokens": [
+        "напроксен",
+        "обезболивающее",
+        "воспаление",
+        "naproksen"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "ketoprofen",
+      "canonicalNames": {
+        "ru": "Кетопрофен",
+        "uz": "Ketoprofen",
+        "en": "Ketoprofen"
+      },
+      "aliases": {
+        "ru": [
+          "кетопрофен",
+          "фастум"
+        ],
+        "uz": [
+          "ketoprofen"
+        ],
+        "en": [
+          "ketoprofen",
+          "fastum"
+        ],
+        "brands": [
+          "Фастум",
+          "Кетонал",
+          "Fastum Gel",
+          "Ketonal"
+        ],
+        "transliterations": [
+          "ketoprofen"
+        ],
+        "commonMisspellings": [
+          "кетопрофен",
+          "кетопрофан"
+        ]
+      },
+      "searchTokens": [
+        "кетопрофен",
+        "обезболивающее",
+        "гель",
+        "ketoprofen"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "diclofenac",
+      "canonicalNames": {
+        "ru": "Диклофенак",
+        "uz": "Diklofenak",
+        "en": "Diclofenac"
+      },
+      "aliases": {
+        "ru": [
+          "диклофенак",
+          "диклофенак натрия"
+        ],
+        "uz": [
+          "diklofenak"
+        ],
+        "en": [
+          "diclofenac",
+          "diclofenac sodium"
+        ],
+        "brands": [
+          "Вольтарен",
+          "Диклак",
+          "Voltaren",
+          "Diklak"
+        ],
+        "transliterations": [
+          "diclofenac",
+          "diklofenak"
+        ],
+        "commonMisspellings": [
+          "диклофенак",
+          "диклофенак"
+        ]
+      },
+      "searchTokens": [
+        "диклофенак",
+        "обезболивающее",
+        "воспаление",
+        "diklofenak"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "nimesulide",
+      "canonicalNames": {
+        "ru": "Нимесулид",
+        "uz": "Nimesulid",
+        "en": "Nimesulide"
+      },
+      "aliases": {
+        "ru": [
+          "нимесулид"
+        ],
+        "uz": [
+          "nimesulid"
+        ],
+        "en": [
+          "nimesulide"
+        ],
+        "brands": [
+          "Найз",
+          "Нимесил",
+          "Nise",
+          "Nimesil"
+        ],
+        "transliterations": [
+          "nimesulide",
+          "nimesulid"
+        ],
+        "commonMisspellings": [
+          "нимесулид",
+          "нимесулид"
+        ]
+      },
+      "searchTokens": [
+        "нимесулид",
+        "обезболивающее",
+        "воспаление",
+        "nimesulid"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "meloxicam",
+      "canonicalNames": {
+        "ru": "Мелоксикам",
+        "uz": "Meloksikam",
+        "en": "Meloxicam"
+      },
+      "aliases": {
+        "ru": [
+          "мелоксикам"
+        ],
+        "uz": [
+          "meloksikam"
+        ],
+        "en": [
+          "meloxicam"
+        ],
+        "brands": [
+          "Мовалис",
+          "Амелотекс",
+          "Movalis",
+          "Amelotex"
+        ],
+        "transliterations": [
+          "meloxicam",
+          "meloksikam"
+        ],
+        "commonMisspellings": [
+          "мелоксикам",
+          "мелоксикам"
+        ]
+      },
+      "searchTokens": [
+        "мелоксикам",
+        "обезболивающее",
+        "суставы",
+        "meloksikam"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "metamizole-sodium",
+      "canonicalNames": {
+        "ru": "Метамизол натрия",
+        "uz": "Metamizol natriy",
+        "en": "Metamizole Sodium"
+      },
+      "aliases": {
+        "ru": [
+          "метамизол",
+          "анальгин"
+        ],
+        "uz": [
+          "metamizol",
+          "analgin"
+        ],
+        "en": [
+          "metamizole",
+          "analgin",
+          "dipyrone"
+        ],
+        "brands": [
+          "Баралгин",
+          "Спазмалгон",
+          "Baralgin",
+          "Spasmalgon"
+        ],
+        "transliterations": [
+          "metamizol",
+          "analgin"
+        ],
+        "commonMisspellings": [
+          "метамизол",
+          "анальгин",
+          "метамизол"
+        ]
+      },
+      "searchTokens": [
+        "метамизол",
+        "анальгин",
+        "жаропонижающее",
+        "metamizol",
+        "analgin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "drotaverine",
+      "canonicalNames": {
+        "ru": "Дротаверин",
+        "uz": "Drotaverin",
+        "en": "Drotaverine"
+      },
+      "aliases": {
+        "ru": [
+          "дротаверин",
+          "но-шпа"
+        ],
+        "uz": [
+          "drotaverin",
+          "no-shpa"
+        ],
+        "en": [
+          "drotaverine",
+          "no-spa"
+        ],
+        "brands": [
+          "Но-шпа",
+          "Дротаверин",
+          "No-Spa",
+          "Drotaverine"
+        ],
+        "transliterations": [
+          "drotaverine",
+          "drotaverin"
+        ],
+        "commonMisspellings": [
+          "дротаверин",
+          "ношпа",
+          "но-шпа"
+        ]
+      },
+      "searchTokens": [
+        "дротаверин",
+        "но-шпа",
+        "спазм",
+        "drotaverin",
+        "no-shpa"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "mefenamic-acid",
+      "canonicalNames": {
+        "ru": "Мефенаминовая кислота",
+        "uz": "Mefenaminovaya kislota",
+        "en": "Mefenamic Acid"
+      },
+      "aliases": {
+        "ru": [
+          "мефенаминовая кислота",
+          "понстал"
+        ],
+        "uz": [
+          "mefenaminovaya kislota"
+        ],
+        "en": [
+          "mefenamic acid",
+          "ponstan"
+        ],
+        "brands": [
+          "Понстал",
+          "Понсель",
+          "Ponstan",
+          "Poncel"
+        ],
+        "transliterations": [
+          "mefenamic acid"
+        ],
+        "commonMisspellings": [
+          "мефенаминовая"
+        ]
+      },
+      "searchTokens": [
+        "мефенаминовая",
+        "обезболивающее",
+        "месячные",
+        "mefenaminovaya"
+      ],
+      "needsManualReview": {
+        "uz": true
+      }
+    },
+    {
+      "drugId": "celecoxib",
+      "canonicalNames": {
+        "ru": "Целекоксиб",
+        "uz": "Selekoksib",
+        "en": "Celecoxib"
+      },
+      "aliases": {
+        "ru": [
+          "целекоксиб",
+          "селебрекс"
+        ],
+        "uz": [
+          "selekoksib"
+        ],
+        "en": [
+          "celecoxib",
+          "celebrex"
+        ],
+        "brands": [
+          "Селебрекс",
+          "Целекоксиб",
+          "Celebrex"
+        ],
+        "transliterations": [
+          "celecoxib",
+          "selekoksib"
+        ],
+        "commonMisspellings": [
+          "целекоксиб"
+        ]
+      },
+      "searchTokens": [
+        "целекоксиб",
+        "обезболивающее",
+        "воспаление",
+        "selekoksib"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "amoxicillin",
+      "canonicalNames": {
+        "ru": "Амоксициллин",
+        "uz": "Amoksitsillin",
+        "en": "Amoxicillin"
+      },
+      "aliases": {
+        "ru": [
+          "амоксициллин",
+          "амоксил"
+        ],
+        "uz": [
+          "amoksitsillin"
+        ],
+        "en": [
+          "amoxicillin",
+          "amoxil"
+        ],
+        "brands": [
+          "Амоксил",
+          "Оспамокс",
+          "Amoxil",
+          "Ospamox"
+        ],
+        "transliterations": [
+          "amoxicillin",
+          "amoksitsillin"
+        ],
+        "commonMisspellings": [
+          "амоксициллин",
+          "амоксил"
+        ]
+      },
+      "searchTokens": [
+        "амоксициллин",
+        "антибиотик",
+        "инфекция",
+        "amoksitsillin",
+        "antibiotik"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "amoxicillin-clavulanate",
+      "canonicalNames": {
+        "ru": "Амоксициллин/Клавуланат",
+        "uz": "Amoksitsillin/Klavulanat",
+        "en": "Amoxicillin Clavulanate"
+      },
+      "aliases": {
+        "ru": [
+          "амоксициллин клавуланат",
+          "аугментин"
+        ],
+        "uz": [
+          "amoksitsillin klavulanat",
+          "augmentin"
+        ],
+        "en": [
+          "amoxicillin clavulanate",
+          "augmentin",
+          "co-amoxiclav"
+        ],
+        "brands": [
+          "Аугментин",
+          "Амоксиклав",
+          "Augmentin",
+          "Amoxiclav"
+        ],
+        "transliterations": [
+          "amoxicillin clavulanate"
+        ],
+        "commonMisspellings": [
+          "аугментин",
+          "амоксиклав"
+        ]
+      },
+      "searchTokens": [
+        "аугментин",
+        "амоксиклав",
+        "антибиотик",
+        "augmentin",
+        "amoksiklav"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "azithromycin",
+      "canonicalNames": {
+        "ru": "Азитромицин",
+        "uz": "Azitromitsin",
+        "en": "Azithromycin"
+      },
+      "aliases": {
+        "ru": [
+          "азитромицин",
+          "азитро"
+        ],
+        "uz": [
+          "azitromitsin"
+        ],
+        "en": [
+          "azithromycin",
+          "azitro",
+          "zithromax"
+        ],
+        "brands": [
+          "Сумамед",
+          "Азитрокс",
+          "Sumamed",
+          "Zithromax"
+        ],
+        "transliterations": [
+          "azithromycin",
+          "azitromitsin"
+        ],
+        "commonMisspellings": [
+          "азитромицин",
+          "азитро"
+        ]
+      },
+      "searchTokens": [
+        "азитромицин",
+        "антибиотик",
+        "3 дня",
+        "azitromitsin",
+        "antibiotik"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "clarithromycin",
+      "canonicalNames": {
+        "ru": "Кларитромицин",
+        "uz": "Klaritromitsin",
+        "en": "Clarithromycin"
+      },
+      "aliases": {
+        "ru": [
+          "кларитромицин",
+          "фромилид"
+        ],
+        "uz": [
+          "klaritromitsin"
+        ],
+        "en": [
+          "clarithromycin",
+          "fromilid",
+          "biaxin"
+        ],
+        "brands": [
+          "Фромилид",
+          "Клацид",
+          "Fromilid",
+          "Klacid"
+        ],
+        "transliterations": [
+          "clarithromycin",
+          "klaritromitsin"
+        ],
+        "commonMisspellings": [
+          "кларитромицин"
+        ]
+      },
+      "searchTokens": [
+        "кларитромицин",
+        "антибиотик",
+        " helicobacter",
+        "klaritromitsin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "cefuroxime",
+      "canonicalNames": {
+        "ru": "Цефуроксим",
+        "uz": "Sefuroksim",
+        "en": "Cefuroxime"
+      },
+      "aliases": {
+        "ru": [
+          "цефуроксим",
+          "зиннат"
+        ],
+        "uz": [
+          "sefuroksim"
+        ],
+        "en": [
+          "cefuroxime",
+          "zinnat",
+          "ceftin"
+        ],
+        "brands": [
+          "Зиннат",
+          "Цефуроксим",
+          "Zinnat",
+          "Ceftin"
+        ],
+        "transliterations": [
+          "cefuroxime",
+          "sefuroksim"
+        ],
+        "commonMisspellings": [
+          "цефуроксим",
+          "зинат"
+        ]
+      },
+      "searchTokens": [
+        "цефуроксим",
+        "антибиотик",
+        "зиннат",
+        "sefuroksim"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "cefixime",
+      "canonicalNames": {
+        "ru": "Цефиксим",
+        "uz": "Sefiksim",
+        "en": "Cefixime"
+      },
+      "aliases": {
+        "ru": [
+          "цефиксим",
+          "супракс"
+        ],
+        "uz": [
+          "sefiksim"
+        ],
+        "en": [
+          "cefixime",
+          "suprax"
+        ],
+        "brands": [
+          "Супракс",
+          "Цефиксим",
+          "Suprax",
+          "Cefixime"
+        ],
+        "transliterations": [
+          "cefixime",
+          "sefiksim"
+        ],
+        "commonMisspellings": [
+          "цефиксим",
+          "супракс"
+        ]
+      },
+      "searchTokens": [
+        "цефиксим",
+        "антибиотик",
+        "супракс",
+        "sefiksim"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "ceftriaxone",
+      "canonicalNames": {
+        "ru": "Цефтриаксон",
+        "uz": "Seftriakson",
+        "en": "Ceftriaxone"
+      },
+      "aliases": {
+        "ru": [
+          "цефтриаксон",
+          "цефазолин"
+        ],
+        "uz": [
+          "seftriakson"
+        ],
+        "en": [
+          "ceftriaxone",
+          "rocephin"
+        ],
+        "brands": [
+          "Роцефин",
+          "Цефтриаксон",
+          "Rocephin",
+          "Ceftriaxone"
+        ],
+        "transliterations": [
+          "ceftriaxone",
+          "seftriakson"
+        ],
+        "commonMisspellings": [
+          "цефтриаксон"
+        ]
+      },
+      "searchTokens": [
+        "цефтриаксон",
+        "антибиотик",
+        "укол",
+        "seftriakson"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "cephalexin",
+      "canonicalNames": {
+        "ru": "Цефалексин",
+        "uz": "Sefaleksin",
+        "en": "Cephalexin"
+      },
+      "aliases": {
+        "ru": [
+          "цефалексин",
+          "оспексин"
+        ],
+        "uz": [
+          "sefaleksin"
+        ],
+        "en": [
+          "cephalexin",
+          "ospexin",
+          "keflex"
+        ],
+        "brands": [
+          "Оспексин",
+          "Цефалексин",
+          "Ospexin",
+          "Keflex"
+        ],
+        "transliterations": [
+          "cephalexin",
+          "sefaleksin"
+        ],
+        "commonMisspellings": [
+          "цефалексин"
+        ]
+      },
+      "searchTokens": [
+        "цефалексин",
+        "антибиотик",
+        "оспексин",
+        "sefaleksin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "ciprofloxacin",
+      "canonicalNames": {
+        "ru": "Ципрофлоксацин",
+        "uz": "Siprofloksasin",
+        "en": "Ciprofloxacin"
+      },
+      "aliases": {
+        "ru": [
+          "ципрофлоксацин",
+          "ципринол"
+        ],
+        "uz": [
+          "siprofloksasin"
+        ],
+        "en": [
+          "ciprofloxacin",
+          "cipro",
+          "ciproxin"
+        ],
+        "brands": [
+          "Ципринол",
+          "Ципрофлоксацин",
+          "Ciproxin",
+          "Cipro"
+        ],
+        "transliterations": [
+          "ciprofloxacin",
+          "siprofloksasin"
+        ],
+        "commonMisspellings": [
+          "ципрофлоксацин",
+          "ципро"
+        ]
+      },
+      "searchTokens": [
+        "ципрофлоксацин",
+        "антибиотик",
+        "фторхинолон",
+        "siprofloksasin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "levofloxacin",
+      "canonicalNames": {
+        "ru": "Левофлоксацин",
+        "uz": "Levofloksasin",
+        "en": "Levofloxacin"
+      },
+      "aliases": {
+        "ru": [
+          "левофлоксацин",
+          "таваник"
+        ],
+        "uz": [
+          "levofloksasin"
+        ],
+        "en": [
+          "levofloxacin",
+          "tavanic",
+          "levaquin"
+        ],
+        "brands": [
+          "Таваник",
+          "Левофлоксацин",
+          "Tavanic",
+          "Levaquin"
+        ],
+        "transliterations": [
+          "levofloxacin",
+          "levofloksasin"
+        ],
+        "commonMisspellings": [
+          "левофлоксацин"
+        ]
+      },
+      "searchTokens": [
+        "левофлоксацин",
+        "антибиотик",
+        "таваник",
+        "levofloksasin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "doxycycline",
+      "canonicalNames": {
+        "ru": "Доксициклин",
+        "uz": "Doksitsiklin",
+        "en": "Doxycycline"
+      },
+      "aliases": {
+        "ru": [
+          "доксициклин",
+          "унидокс"
+        ],
+        "uz": [
+          "doksitsiklin"
+        ],
+        "en": [
+          "doxycycline",
+          "unidox",
+          "vibramycin"
+        ],
+        "brands": [
+          "Унидокс",
+          "Доксициклин",
+          "Unidox",
+          "Vibramycin"
+        ],
+        "transliterations": [
+          "doxycycline",
+          "doksitsiklin"
+        ],
+        "commonMisspellings": [
+          "доксициклин",
+          "докси"
+        ]
+      },
+      "searchTokens": [
+        "доксициклин",
+        "антибиотик",
+        "тетрациклин",
+        "doksitsiklin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "metronidazole",
+      "canonicalNames": {
+        "ru": "Метронидазол",
+        "uz": "Metronidazol",
+        "en": "Metronidazole"
+      },
+      "aliases": {
+        "ru": [
+          "метронидазол",
+          "метрогил"
+        ],
+        "uz": [
+          "metronidazol"
+        ],
+        "en": [
+          "metronidazole",
+          "metrogyl",
+          "flagyl"
+        ],
+        "brands": [
+          "Метрогил",
+          "Метронидазол",
+          "Metrogyl",
+          "Flagyl"
+        ],
+        "transliterations": [
+          "metronidazole",
+          "metronidazol"
+        ],
+        "commonMisspellings": [
+          "метронидазол",
+          "метрогил"
+        ]
+      },
+      "searchTokens": [
+        "метронидазол",
+        "антибиотик",
+        "протозойные",
+        "metronidazol"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "furazidin",
+      "canonicalNames": {
+        "ru": "Фуразидин",
+        "uz": "Furazidin",
+        "en": "Furazidin"
+      },
+      "aliases": {
+        "ru": [
+          "фуразидин",
+          "фурагин"
+        ],
+        "uz": [
+          "furazidin",
+          "furagin"
+        ],
+        "en": [
+          "furazidin",
+          "furagin"
+        ],
+        "brands": [
+          "Фурагин",
+          "Фуразидин",
+          "Furagin",
+          "Furazidin"
+        ],
+        "transliterations": [
+          "furazidin",
+          "furagin"
+        ],
+        "commonMisspellings": [
+          "фуразидин",
+          "фурагин"
+        ]
+      },
+      "searchTokens": [
+        "фуразидин",
+        "фурагин",
+        "мочевыводящие",
+        "furazidin",
+        "furagin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "co-trimoxazole",
+      "canonicalNames": {
+        "ru": "Ко-тримоксазол",
+        "uz": "Ko-trimoksazol",
+        "en": "Co-trimoxazole"
+      },
+      "aliases": {
+        "ru": [
+          "ко-тримоксазол",
+          "бактрим"
+        ],
+        "uz": [
+          "ko-trimoksazol",
+          "bactrim"
+        ],
+        "en": [
+          "co-trimoxazole",
+          "bactrim",
+          "septra",
+          "sulfamethoxazole trimethoprim"
+        ],
+        "brands": [
+          "Бактрим",
+          "Бисептол",
+          "Bactrim",
+          "Biseptol"
+        ],
+        "transliterations": [
+          "co-trimoxazole",
+          "ko-trimoksazol"
+        ],
+        "commonMisspellings": [
+          "бактрим",
+          "бисептол"
+        ]
+      },
+      "searchTokens": [
+        "бактрим",
+        "бисептол",
+        "антибиотик",
+        "bactrim",
+        "biseptol"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "fluconazole",
+      "canonicalNames": {
+        "ru": "Флуконазол",
+        "uz": "Flukonazol",
+        "en": "Fluconazole"
+      },
+      "aliases": {
+        "ru": [
+          "флуконазол",
+          "дифлюкан"
+        ],
+        "uz": [
+          "flukonazol"
+        ],
+        "en": [
+          "fluconazole",
+          "diflucan"
+        ],
+        "brands": [
+          "Дифлюкан",
+          "Флуконазол",
+          "Diflucan",
+          "Fluconazole"
+        ],
+        "transliterations": [
+          "fluconazole",
+          "flukonazol"
+        ],
+        "commonMisspellings": [
+          "флуконазол",
+          "дифлюкан"
+        ]
+      },
+      "searchTokens": [
+        "флуконазол",
+        "противогрибковое",
+        "дифлюкан",
+        "flukonazol"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "clotrimazole",
+      "canonicalNames": {
+        "ru": "Клотримазол",
+        "uz": "Klotrimazol",
+        "en": "Clotrimazole"
+      },
+      "aliases": {
+        "ru": [
+          "клотримазол",
+          "канестен"
+        ],
+        "uz": [
+          "klotrimazol"
+        ],
+        "en": [
+          "clotrimazole",
+          "canesten",
+          "lotrimin"
+        ],
+        "brands": [
+          "Канестен",
+          "Клотримазол",
+          "Canesten",
+          "Lotrimin"
+        ],
+        "transliterations": [
+          "clotrimazole",
+          "klotrimazol"
+        ],
+        "commonMisspellings": [
+          "клотримазол",
+          "канестен"
+        ]
+      },
+      "searchTokens": [
+        "клотримазол",
+        "противогрибковое",
+        "канестен",
+        "klotrimazol"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "terbinafine",
+      "canonicalNames": {
+        "ru": "Тербинафин",
+        "uz": "Terbinafin",
+        "en": "Terbinafine"
+      },
+      "aliases": {
+        "ru": [
+          "тербинафин",
+          "экзифин"
+        ],
+        "uz": [
+          "terbinafin"
+        ],
+        "en": [
+          "terbinafine",
+          "exifin",
+          "lamisil"
+        ],
+        "brands": [
+          "Экзифин",
+          "Ламизил",
+          "Exifin",
+          "Lamisil"
+        ],
+        "transliterations": [
+          "terbinafine",
+          "terbinafin"
+        ],
+        "commonMisspellings": [
+          "тербинафин",
+          "экзифин"
+        ]
+      },
+      "searchTokens": [
+        "тербинафин",
+        "противогрибковое",
+        "ногти",
+        "terbinafin"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    },
+    {
+      "drugId": "acyclovir",
+      "canonicalNames": {
+        "ru": "Ацикловир",
+        "uz": "Asiklovir",
+        "en": "Acyclovir"
+      },
+      "aliases": {
+        "ru": [
+          "ацикловир",
+          "ацик"
+        ],
+        "uz": [
+          "asiklovir"
+        ],
+        "en": [
+          "acyclovir",
+          "acic",
+          "zovirax"
+        ],
+        "brands": [
+          "Зовиракс",
+          "Ацикловир",
+          "Zovirax",
+          "Acyclovir"
+        ],
+        "transliterations": [
+          "acyclovir",
+          "asiklovir"
+        ],
+        "commonMisspellings": [
+          "ацикловир",
+          "ацик"
+        ]
+      },
+      "searchTokens": [
+        "ацикловир",
+        "противовирусное",
+        "герпес",
+        "asiklovir"
+      ],
+      "needsManualReview": {
+        "uz": false
+      }
+    }
+  ]
+}

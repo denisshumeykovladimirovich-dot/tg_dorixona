@@ -1,0 +1,542 @@
+{
+  "id": "paracetamol",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Парацетамол",
+    "uz": "Парацетамол",
+    "en": "Paracetamol"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Парацетамол",
+      "uz": "Парацетамол",
+      "en": "Paracetamol"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 500 мг",
+      "суппозитории ректальные 50-500 мг",
+      "раствор для приема внутрь",
+      "раствор для инфузий"
+    ],
+    "strengths": [
+      "500 мг",
+      "200 мг",
+      "100 мг",
+      "50 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Парацетамол - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Обезболивающее средство при болевом синдроме слабой и умеренной выраженности: артралгия, миалгия, невралгия, мигрень, зубная и головная боль, альгодисменорея, боль при травмах и ожогах",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "paracetamol-indications-ru-0"
+        },
+        {
+          "content": "Жаропонижающее средство при острых респираторных заболеваниях и других инфекционно-воспалительных заболеваниях, сопровождающихся повышением температуры тела",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "paracetamol-indications-ru-1"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "paracetamol-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Обезболивающее средство при болевом синдроме слабой и умеренной выраженности: артралгия, миалгия, невралгия, мигрень, зубная и головная боль, альгодисменорея, боль при травмах и ожогах",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Жаропонижающее средство при острых респираторных заболеваниях и других инфекционно-воспалительных заболеваниях, сопровождающихся повышением температуры тела",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Повышенная чувствительность к парацетамолу или любому другому компоненту препарата",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "paracetamol-contraindications-ru-0"
+        },
+        {
+          "content": "Тяжелые нарушения функции печени или почек",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "paracetamol-contraindications-ru-1"
+        },
+        {
+          "content": "Детский возраст до 6 лет",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "paracetamol-contraindications-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "paracetamol-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Повышенная чувствительность к парацетамолу или любому другому компоненту препарата",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелые нарушения функции печени или почек",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 6 лет",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослые (включая пожилых) и дети старше 12 лет (масса тела более 40 кг): 500 мг - 1 г (1 - 2 таблетки) до 4 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "paracetamol-dosage-adults-ru-0"
+          },
+          {
+            "content": "Разовая доза - 500 мг (1 таблетка). Максимальная разовая доза - 1 г (2 таблетки)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "paracetamol-dosage-adults-ru-1"
+          },
+          {
+            "content": "Максимальная суточная доза - 4 г (8 таблеток). Интервал между приемами - не менее 4 часов",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "paracetamol-dosage-adults-ru-2"
+          },
+          {
+            "content": "У взрослых парацетамол не рекомендуется применять более 5 дней в качестве обезболивающего средства и более 3 дней в качестве жаропонижающего средства без назначения и наблюдения врача",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "paracetamol-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Дети от 6 до 12 лет: дозу рассчитывают, исходя из массы тела ребенка: максимальная разовая доза - 15 мг/кг массы тела (1/2 таблетки - 1 таблетка) 4 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "paracetamol-dosage-children-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 60 мг/кг массы тела (4 таблетки). Интервал между приемами - не менее 4 часов",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "paracetamol-dosage-children-ru-1"
+          },
+          {
+            "content": "У детей парацетамол не рекомендуется применять более 3 дней без назначения и наблюдения врача",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "paracetamol-dosage-children-ru-2"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "paracetamol-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослые (включая пожилых) и дети старше 12 лет (масса тела более 40 кг): 500 мг - 1 г (1 - 2 таблетки) до 4 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Разовая доза - 500 мг (1 таблетка). Максимальная разовая доза - 1 г (2 таблетки)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 4 г (8 таблеток). Интервал между приемами - не менее 4 часов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "У взрослых парацетамол не рекомендуется применять более 5 дней в качестве обезболивающего средства и более 3 дней в качестве жаропонижающего средства без назначения и наблюдения врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Дети от 6 до 12 лет: дозу рассчитывают, исходя из массы тела ребенка: максимальная разовая доза - 15 мг/кг массы тела (1/2 таблетки - 1 таблетка) 4 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 60 мг/кг массы тела (4 таблетки). Интервал между приемами - не менее 4 часов",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-dosage-children-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "У детей парацетамол не рекомендуется применять более 3 дней без назначения и наблюдения врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Аллергические реакции: кожная сыпь, зуд, крапивница",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "paracetamol-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЖКТ: тошнота, диспепсия, боли в эпигастрии",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "paracetamol-sideEffects-ru-1"
+        },
+        {
+          "content": "Со стороны кроветворной системы: редко - тромбоцитопения, лейкопения, агранулоцитоз",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "paracetamol-sideEffects-ru-2"
+        },
+        {
+          "content": "При длительном применении высоких доз: гепатотоксичность, нефротоксичность",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "paracetamol-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "paracetamol-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, зуд, крапивница",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, диспепсия, боли в эпигастрии",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны кроветворной системы: редко - тромбоцитопения, лейкопения, агранулоцитоз",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "paracetamol-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "При длительном применении высоких доз: гепатотоксичность, нефротоксичность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Может использоваться во время беременности, однако целесообразно использовать минимальные эффективные дозы и максимально коротким курсом",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "paracetamol-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "paracetamol-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Может использоваться во время беременности, однако целесообразно использовать минимальные эффективные дозы и максимально коротким курсом",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "В небольших количествах проникает в грудное молоко. Необходимо применять с осторожностью",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "paracetamol-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "paracetamol-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "В небольших количествах проникает в грудное молоко. Необходимо применять с осторожностью",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "paracetamol-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "paracetamol-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/paracetamol-920",
+            "title": "Парацетамол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Жаропонижающее и обезболивающее",
+      "uz": "Isitma tushiruvchi va og'riq qoldiruvchi"
+    },
+    "symptoms": {
+      "ru": [
+        "повышенная температура",
+        "лихорадка",
+        "головная боль"
+      ],
+      "uz": []
+    },
+    "symptomTags": [
+      "температура",
+      "жар",
+      "боль"
+    ],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Жаропонижающее и обезболивающее. Жаропонижающее.",
+      "uz": "Isitma tushiruvchi va og'riq qoldiruvchi. Жаропонижающее."
+    }
+  },
+  "llmContextBlocks": []
+}

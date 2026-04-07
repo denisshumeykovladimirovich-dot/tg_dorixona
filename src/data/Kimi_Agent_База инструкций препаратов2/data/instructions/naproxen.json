@@ -1,0 +1,572 @@
+{
+  "id": "naproxen",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Напроксен",
+    "uz": "Напроксен",
+    "en": "Naproxen"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Напроксен",
+      "uz": "Напроксен",
+      "en": "Naproxen"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 250 мг",
+      "таблетки 500 мг"
+    ],
+    "strengths": [
+      "250 мг",
+      "500 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Напроксен - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Воспалительные заболевания опорно-двигательного аппарата: ревматоидный артрит, остеоартроз, анкилозирующий спондилит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "naproxen-indications-ru-0"
+        },
+        {
+          "content": "Болевые синдромы: головная боль, зубная боль, менструальные боли, мышечные боли, невралгия",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "naproxen-indications-ru-1"
+        },
+        {
+          "content": "Лихорадочный синдром при инфекционно-воспалительных заболеваниях",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "naproxen-indications-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "naproxen-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Воспалительные заболевания опорно-двигательного аппарата: ревматоидный артрит, остеоартроз, анкилозирующий спондилит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Болевые синдромы: головная боль, зубная боль, менструальные боли, мышечные боли, невралгия",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Лихорадочный синдром при инфекционно-воспалительных заболеваниях",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к напроксену или другим НПВП",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "naproxen-contraindications-ru-0"
+        },
+        {
+          "content": "Анамнез бронхоспазма после приема НПВП",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "naproxen-contraindications-ru-1"
+        },
+        {
+          "content": "Язвенная болезнь ЖКТ в активной фазе или кровотечение",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "naproxen-contraindications-ru-2"
+        },
+        {
+          "content": "Тяжелая печеночная или почечная недостаточность",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "naproxen-contraindications-ru-3"
+        },
+        {
+          "content": "III триместр беременности",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "naproxen-contraindications-ru-4"
+        },
+        {
+          "content": "Детский возраст до 16 лет",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "naproxen-contraindications-ru-5"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "naproxen-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к напроксену или другим НПВП",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Анамнез бронхоспазма после приема НПВП",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Язвенная болезнь ЖКТ в активной фазе или кровотечение",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелая печеночная или почечная недостаточность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-contraindications-ru-4",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "III триместр беременности",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-contraindications-ru-5",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 16 лет",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым: по 250-500 мг 2 раза в сутки (утром и вечером)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "naproxen-dosage-adults-ru-0"
+          },
+          {
+            "content": "Максимальная суточная доза - 1000 мг (без назначения врача)",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "naproxen-dosage-adults-ru-1"
+          },
+          {
+            "content": "Таблетки принимать внутрь во время или после еды, запивая водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "naproxen-dosage-adults-ru-2"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям старше 16 лет: по 250 мг 2 раза в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "naproxen-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям до 16 лет: применение противопоказано",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "naproxen-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "naproxen-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым: по 250-500 мг 2 раза в сутки (утром и вечером)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 1000 мг (без назначения врача)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь во время или после еды, запивая водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям старше 16 лет: по 250 мг 2 раза в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 16 лет: применение противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЖКТ: тошнота, изжога, боли в животе, запор, диарея",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "naproxen-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЦНС: головная боль, головокружение, сонливость",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "naproxen-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, зуд, крапивница",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "naproxen-sideEffects-ru-2"
+        },
+        {
+          "content": "Отеки, повышение артериального давления",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "naproxen-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "naproxen-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, изжога, боли в животе, запор, диарея",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: головная боль, головокружение, сонливость",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, зуд, крапивница",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "naproxen-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Отеки, повышение артериального давления",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Противопоказан в III триместре. В I и II триместре - только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "naproxen-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "naproxen-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Противопоказан в III триместре. В I и II триместре - только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Применять с осторожностью, в минимальных дозах",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "naproxen-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "naproxen-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Применять с осторожностью, в минимальных дозах",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "naproxen-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "naproxen-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/naproksen-4563",
+            "title": "Напроксен - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Противовоспалительное",
+      "uz": "Yallig'lanishga qarshi"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Противовоспалительное. Прочее.",
+      "uz": "Yallig'lanishga qarshi. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

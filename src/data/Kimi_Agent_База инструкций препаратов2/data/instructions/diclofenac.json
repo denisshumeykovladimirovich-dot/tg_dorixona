@@ -1,0 +1,641 @@
+{
+  "id": "diclofenac",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Диклофенак",
+    "uz": "Диклофенак",
+    "en": "Diclofenac"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Диклофенак",
+      "uz": "Диклофенак",
+      "en": "Diclofenac"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 25 мг",
+      "таблетки 50 мг",
+      "таблетки 100 мг",
+      "раствор для инъекций",
+      "гель",
+      "суппозитории"
+    ],
+    "strengths": [
+      "25 мг",
+      "50 мг",
+      "100 мг",
+      "75 мг/3 мл"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Диклофенак - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Воспалительные и дегенеративные заболевания опорно-двигательного аппарата: ревматоидный артрит, остеоартроз, анкилозирующий спондилит, подагрический артрит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "diclofenac-indications-ru-0"
+        },
+        {
+          "content": "Болевые синдромы: почечная и желчная колика, посттравматический и послеоперационный болевой синдром, менструальные боли, мигрень",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "diclofenac-indications-ru-1"
+        },
+        {
+          "content": "Воспалительные заболевания ЛОР-органов с болевым синдромом",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "diclofenac-indications-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "diclofenac-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Воспалительные и дегенеративные заболевания опорно-двигательного аппарата: ревматоидный артрит, остеоартроз, анкилозирующий спондилит, подагрический артрит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Болевые синдромы: почечная и желчная колика, посттравматический и послеоперационный болевой синдром, менструальные боли, мигрень",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Воспалительные заболевания ЛОР-органов с болевым синдромом",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к диклофенаку или другим компонентам",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "diclofenac-contraindications-ru-0"
+        },
+        {
+          "content": "Анамнез бронхоспазма, крапивницы, ринита после приема НПВП",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "diclofenac-contraindications-ru-1"
+        },
+        {
+          "content": "Язвенная болезнь ЖКТ или кровотечение в активной фазе или в анамнезе",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "diclofenac-contraindications-ru-2"
+        },
+        {
+          "content": "Тяжелая печеночная, почечная или сердечная недостаточность",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "diclofenac-contraindications-ru-3"
+        },
+        {
+          "content": "Нарушение кроветворения неопределенного генеза",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "diclofenac-contraindications-ru-4"
+        },
+        {
+          "content": "Последние 3 месяца беременности",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "diclofenac-contraindications-ru-5"
+        },
+        {
+          "content": "Детский возраст до 6 лет (для таблеток 25 мг), до 14 лет (для таблеток 50 мг)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "diclofenac-contraindications-ru-6"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "diclofenac-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к диклофенаку или другим компонентам",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Анамнез бронхоспазма, крапивницы, ринита после приема НПВП",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Язвенная болезнь ЖКТ или кровотечение в активной фазе или в анамнезе",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Тяжелая печеночная, почечная или сердечная недостаточность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-contraindications-ru-4",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Нарушение кроветворения неопределенного генеза",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-contraindications-ru-5",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Последние 3 месяца беременности",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-contraindications-ru-6",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 6 лет (для таблеток 25 мг), до 14 лет (для таблеток 50 мг)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым: по 100-150 мг в сутки в 2-3 приема",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "diclofenac-dosage-adults-ru-0"
+          },
+          {
+            "content": "Таблетки принимать внутрь, не разжевывая, во время или после еды",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "diclofenac-dosage-adults-ru-1"
+          },
+          {
+            "content": "Максимальная суточная доза - 150 мг",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "diclofenac-dosage-adults-ru-2"
+          },
+          {
+            "content": "Инъекции: 75 мг (1 ампула) 1-2 раза в сутки внутримышечно, курс не более 2 дней",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "diclofenac-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям старше 14 лет: доза определяется врачом индивидуально",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "diclofenac-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям до 14 лет: применение таблеток противопоказано",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "diclofenac-dosage-children-ru-1"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "diclofenac-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым: по 100-150 мг в сутки в 2-3 приема",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь, не разжевывая, во время или после еды",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Максимальная суточная доза - 150 мг",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Инъекции: 75 мг (1 ампула) 1-2 раза в сутки внутримышечно, курс не более 2 дней",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям старше 14 лет: доза определяется врачом индивидуально",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 14 лет: применение таблеток противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЖКТ: тошнота, рвота, диспепсия, боли в животе, диарея, кровотечения",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "diclofenac-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЦНС: головная боль, головокружение, сонливость",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "diclofenac-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке, анафилактический шок",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "diclofenac-sideEffects-ru-2"
+        },
+        {
+          "content": "Со стороны печени: повышение трансаминаз, гепатит",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "diclofenac-sideEffects-ru-3"
+        },
+        {
+          "content": "Со стороны почек: отеки, повышение креатинина",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "diclofenac-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "diclofenac-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, рвота, диспепсия, боли в животе, диарея, кровотечения",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: головная боль, головокружение, сонливость",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница, отек Квинке, анафилактический шок",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны печени: повышение трансаминаз, гепатит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "diclofenac-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны почек: отеки, повышение креатинина",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Противопоказан в III триместре. До 20 недели - только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "diclofenac-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "diclofenac-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Противопоказан в III триместре. До 20 недели - только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Не рекомендуется применять в период грудного вскармливания",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "diclofenac-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "diclofenac-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Не рекомендуется применять в период грудного вскармливания",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "diclofenac-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "diclofenac-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/diklofenak-1582",
+            "title": "Диклофенак - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Противовоспалительное и обезболивающее",
+      "uz": "Yallig'lanishga qarshi va og'riq qoldiruvchi"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Противовоспалительное и обезболивающее. Прочее.",
+      "uz": "Yallig'lanishga qarshi va og'riq qoldiruvchi. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

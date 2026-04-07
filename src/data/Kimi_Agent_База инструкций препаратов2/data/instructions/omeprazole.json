@@ -1,0 +1,613 @@
+{
+  "id": "omeprazole",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Омепразол",
+    "uz": "Омепразол",
+    "en": "Omeprazole"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Омепразол",
+      "uz": "Омепразол",
+      "en": "Omeprazole"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "капсулы 20 мг",
+      "таблетки 20 мг"
+    ],
+    "strengths": [
+      "20 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Омепразол - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Язвенная болезнь желудка и двенадцатиперстной кишки",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "omeprazole-indications-ru-0"
+        },
+        {
+          "content": "Гастроэзофагеальная рефлюксная болезнь (ГЭРБ)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "omeprazole-indications-ru-1"
+        },
+        {
+          "content": "Эрозивный гастрит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "omeprazole-indications-ru-2"
+        },
+        {
+          "content": "Синдром Золлингера-Эллисона",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "omeprazole-indications-ru-3"
+        },
+        {
+          "content": "Профилактика язв желудка при приеме НПВП",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "omeprazole-indications-ru-4"
+        },
+        {
+          "content": "Эрадикация Helicobacter pylori (в составе комбинированной терапии)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "omeprazole-indications-ru-5"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "omeprazole-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Язвенная болезнь желудка и двенадцатиперстной кишки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Гастроэзофагеальная рефлюксная болезнь (ГЭРБ)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Эрозивный гастрит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Синдром Золлингера-Эллисона",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-indications-ru-4",
+          "section": "indications",
+          "language": "ru",
+          "text": "Профилактика язв желудка при приеме НПВП",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-indications-ru-5",
+          "section": "indications",
+          "language": "ru",
+          "text": "Эрадикация Helicobacter pylori (в составе комбинированной терапии)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к омепразолу или другим ИПП",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "omeprazole-contraindications-ru-0"
+        },
+        {
+          "content": "Беременность",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "omeprazole-contraindications-ru-1"
+        },
+        {
+          "content": "Период лактации",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "omeprazole-contraindications-ru-2"
+        },
+        {
+          "content": "Детский возраст до 18 лет",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "omeprazole-contraindications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "omeprazole-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к омепразолу или другим ИПП",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Беременность",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Период лактации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-contraindications-ru-3",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 18 лет",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "При язвенной болезни: по 20 мг 1 раз в сутки утром за 30 минут до еды, курс 4-8 недель",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "omeprazole-dosage-adults-ru-0"
+          },
+          {
+            "content": "При ГЭРБ: по 20 мг 1 раз в сутки, курс 4-8 недель",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "omeprazole-dosage-adults-ru-1"
+          },
+          {
+            "content": "При синдроме Золлингера-Эллисона: начальная доза 60 мг/сут, далее подбирается индивидуально",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "omeprazole-dosage-adults-ru-2"
+          },
+          {
+            "content": "Капсулы проглатывать целиком, не разжевывать",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "omeprazole-dosage-adults-ru-3"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям до 18 лет: применение противопоказано",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "omeprazole-dosage-children-ru-0"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "omeprazole-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При язвенной болезни: по 20 мг 1 раз в сутки утром за 30 минут до еды, курс 4-8 недель",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При ГЭРБ: по 20 мг 1 раз в сутки, курс 4-8 недель",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-dosage-adults-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "При синдроме Золлингера-Эллисона: начальная доза 60 мг/сут, далее подбирается индивидуально",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-dosage-adults-ru-3",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Капсулы проглатывать целиком, не разжевывать",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям до 18 лет: применение противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЖКТ: тошнота, рвота, диарея, запор, метеоризм, боли в животе",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "omeprazole-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЦНС: головная боль, головокружение, сонливость",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "omeprazole-sideEffects-ru-1"
+        },
+        {
+          "content": "Со стороны печени: повышение печеночных ферментов, гепатит",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "omeprazole-sideEffects-ru-2"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница, анафилактический шок",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "omeprazole-sideEffects-ru-3"
+        },
+        {
+          "content": "Переломы костей при длительном применении",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "omeprazole-sideEffects-ru-4"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "omeprazole-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: тошнота, рвота, диарея, запор, метеоризм, боли в животе",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: головная боль, головокружение, сонливость",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны печени: повышение печеночных ферментов, гепатит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница, анафилактический шок",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "omeprazole-sideEffects-ru-4",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Переломы костей при длительном применении",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Противопоказано",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "omeprazole-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "omeprazole-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Противопоказано",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "omeprazole-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "omeprazole-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "omeprazole-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "omeprazole-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 25°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/omeprazol-4573",
+            "title": "Омепразол - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Противоязвенное",
+      "uz": "Yaraga qarshi"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Противоязвенное. Прочее.",
+      "uz": "Yaraga qarshi. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

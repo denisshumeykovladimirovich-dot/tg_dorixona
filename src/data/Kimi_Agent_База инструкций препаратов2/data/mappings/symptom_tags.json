@@ -1,0 +1,2347 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-31T19:34:06.352274",
+  "metadata": {
+    "source": "REPORT_DRUGS_AND_SYMPTOMS.md",
+    "totalDrugs": 101,
+    "drugsWithSymptoms": 3,
+    "coverage": "initial"
+  },
+  "symptoms": [
+    {
+      "id": "temperature",
+      "labels": {
+        "ru": "температура",
+        "uz": "harorat"
+      },
+      "aliases": {
+        "ru": [
+          "жар",
+          "лихорадка",
+          "повышенная температура",
+          "высокая температура",
+          "температура тела"
+        ],
+        "uz": [
+          "issiq",
+          "qizish",
+          "yuqori harorat",
+          "harorat ko'tarilishi"
+        ]
+      },
+      "searchTokens": [
+        "температура",
+        "жар",
+        "лихорадка",
+        "harorat",
+        "qizish",
+        "issiq"
+      ],
+      "relatedDrugs": [
+        "paracetamol",
+        "ibuprofen",
+        "metamizole-sodium",
+        "acetylsalicylic-acid",
+        "nimesulide"
+      ],
+      "category": "general"
+    },
+    {
+      "id": "fever",
+      "labels": {
+        "ru": "лихорадка",
+        "uz": "qizish"
+      },
+      "aliases": {
+        "ru": [
+          "жар",
+          "лихорадочное состояние",
+          "озноб"
+        ],
+        "uz": [
+          "qizish",
+          "titroq",
+          "issiq"
+        ]
+      },
+      "searchTokens": [
+        "лихорадка",
+        "жар",
+        "qizish",
+        "titroq"
+      ],
+      "relatedDrugs": [
+        "paracetamol",
+        "ibuprofen",
+        "metamizole-sodium"
+      ],
+      "category": "general"
+    },
+    {
+      "id": "weakness",
+      "labels": {
+        "ru": "слабость",
+        "uz": "o'z kuchini yo'qotish"
+      },
+      "aliases": {
+        "ru": [
+          "утомляемость",
+          "малопригодность",
+          "общая слабость"
+        ],
+        "uz": [
+          "xotirjam emaslik",
+          "holdan toyish",
+          "umumiy zaiflik"
+        ]
+      },
+      "searchTokens": [
+        "слабость",
+        "утомляемость",
+        "zaiflik",
+        "holdan toyish"
+      ],
+      "relatedDrugs": [
+        "paracetamol",
+        "ibuprofen"
+      ],
+      "category": "general"
+    },
+    {
+      "id": "malaise",
+      "labels": {
+        "ru": "недомогание",
+        "uz": "o'zini yomon his qilish"
+      },
+      "aliases": {
+        "ru": [
+          "плохое самочувствие",
+          "дискомфорт"
+        ],
+        "uz": [
+          "yaxshi emas",
+          "noqulaylik"
+        ]
+      },
+      "searchTokens": [
+        "недомогание",
+        "самочувствие",
+        "yomon his",
+        "noqulaylik"
+      ],
+      "relatedDrugs": [
+        "paracetamol",
+        "ibuprofen"
+      ],
+      "category": "general"
+    },
+    {
+      "id": "headache",
+      "labels": {
+        "ru": "головная боль",
+        "uz": "bosh og'rig'i"
+      },
+      "aliases": {
+        "ru": [
+          "головная",
+          "боль в голове",
+          "мигрень",
+          "головные боли"
+        ],
+        "uz": [
+          "bosh og'rig'i",
+          "bosh ogrigi",
+          "migren",
+          "bosh aghrishi"
+        ]
+      },
+      "searchTokens": [
+        "головная",
+        "боль",
+        "bosh",
+        "ogrig",
+        "migren"
+      ],
+      "relatedDrugs": [
+        "paracetamol",
+        "ibuprofen",
+        "metamizole-sodium",
+        "acetylsalicylic-acid",
+        "naproxen",
+        "diclofenac",
+        "nimesulide"
+      ],
+      "category": "pain"
+    },
+    {
+      "id": "muscle-pain",
+      "labels": {
+        "ru": "мышечная боль",
+        "uz": "mushak og'rig'i"
+      },
+      "aliases": {
+        "ru": [
+          "боль в мышцах",
+          "миалгия",
+          "мышечные боли"
+        ],
+        "uz": [
+          "mushak og'rig'i",
+          "mushak aghrishi"
+        ]
+      },
+      "searchTokens": [
+        "мышечная",
+        "боль",
+        "mushak",
+        "ogrig"
+      ],
+      "relatedDrugs": [
+        "ibuprofen",
+        "paracetamol",
+        "metamizole-sodium",
+        "diclofenac",
+        "naproxen"
+      ],
+      "category": "pain"
+    },
+    {
+      "id": "toothache",
+      "labels": {
+        "ru": "зубная боль",
+        "uz": "tish og'rig'i"
+      },
+      "aliases": {
+        "ru": [
+          "боль в зубе",
+          "зубная",
+          "зубные боли"
+        ],
+        "uz": [
+          "tish og'rig'i",
+          "tish ogrigi",
+          "tish aghrishi"
+        ]
+      },
+      "searchTokens": [
+        "зубная",
+        "боль",
+        "tish",
+        "ogrig"
+      ],
+      "relatedDrugs": [
+        "ibuprofen",
+        "paracetamol",
+        "metamizole-sodium",
+        "diclofenac"
+      ],
+      "category": "pain"
+    },
+    {
+      "id": "joint-pain",
+      "labels": {
+        "ru": "боль в суставах",
+        "uz": "bo'g'im og'rig'i"
+      },
+      "aliases": {
+        "ru": [
+          "артралгия",
+          "суставные боли",
+          "боли в суставах"
+        ],
+        "uz": [
+          "bo'g'im og'rig'i",
+          "bog'im ogrigi"
+        ]
+      },
+      "searchTokens": [
+        "сустав",
+        "боль",
+        "bogim",
+        "ogrig"
+      ],
+      "relatedDrugs": [
+        "ibuprofen",
+        "diclofenac",
+        "naproxen",
+        "meloxicam",
+        "nimesulide"
+      ],
+      "category": "pain"
+    },
+    {
+      "id": "abdominal-pain",
+      "labels": {
+        "ru": "боль в животе",
+        "uz": "qorin og'rig'i"
+      },
+      "aliases": {
+        "ru": [
+          "живот",
+          "боли в животе",
+          "абдоминальная боль"
+        ],
+        "uz": [
+          "qorin og'rig'i",
+          "qorin ogrigi"
+        ]
+      },
+      "searchTokens": [
+        "живот",
+        "боль",
+        "qorin",
+        "ogrig"
+      ],
+      "relatedDrugs": [
+        "drotaverine",
+        "metamizole-sodium",
+        "ibuprofen"
+      ],
+      "category": "pain"
+    },
+    {
+      "id": "sore-throat",
+      "labels": {
+        "ru": "боль в горле",
+        "uz": "tomoq og'rig'i"
+      },
+      "aliases": {
+        "ru": [
+          "горло болит",
+          "ангина",
+          "фарингит",
+          "боль в горле"
+        ],
+        "uz": [
+          "tomoq og'rig'i",
+          "tomoq ogrigi",
+          "angina"
+        ]
+      },
+      "searchTokens": [
+        "горло",
+        "боль",
+        "tomoq",
+        "ogrig",
+        "angina"
+      ],
+      "relatedDrugs": [
+        "paracetamol",
+        "ibuprofen",
+        "anzibel",
+        "chlorhexidine",
+        "miramistin"
+      ],
+      "category": "pain"
+    },
+    {
+      "id": "throat-irritation",
+      "labels": {
+        "ru": "раздражение горла",
+        "uz": "tomoqni razdrazh qilish"
+      },
+      "aliases": {
+        "ru": [
+          "першение в горле",
+          "дискомфорт в горле",
+          "горло першит"
+        ],
+        "uz": [
+          "tomoqni razdrazh qilish",
+          "tomoq qichishishi",
+          "tomoq qichish"
+        ]
+      },
+      "searchTokens": [
+        "раздражение",
+        "горло",
+        "першение",
+        "tomoq",
+        "qichish"
+      ],
+      "relatedDrugs": [
+        "anzibel",
+        "chlorhexidine",
+        "miramistin"
+      ],
+      "category": "respiratory"
+    },
+    {
+      "id": "cough",
+      "labels": {
+        "ru": "кашель",
+        "uz": "yo'tal"
+      },
+      "aliases": {
+        "ru": [
+          "кашляет",
+          "кашлевой рефлекс",
+          "покашливание"
+        ],
+        "uz": [
+          "yo'tal",
+          "yotal"
+        ]
+      },
+      "searchTokens": [
+        "кашель",
+        "кашляет",
+        "yotal",
+        "yotalish"
+      ],
+      "relatedDrugs": [
+        "ambroxol",
+        "acetylcysteine",
+        "bromhexine",
+        "dextromethorphan",
+        "butamirate",
+        "guaifenesin"
+      ],
+      "category": "respiratory"
+    },
+    {
+      "id": "dry-cough",
+      "labels": {
+        "ru": "сухой кашель",
+        "uz": "quruq yo'tal"
+      },
+      "aliases": {
+        "ru": [
+          "непродуктивный кашель",
+          "кашель без мокроты"
+        ],
+        "uz": [
+          "quruq yotal",
+          "quruq yotalish"
+        ]
+      },
+      "searchTokens": [
+        "сухой",
+        "кашель",
+        "quruq",
+        "yotal"
+      ],
+      "relatedDrugs": [
+        "dextromethorphan",
+        "butamirate"
+      ],
+      "category": "respiratory"
+    },
+    {
+      "id": "wet-cough",
+      "labels": {
+        "ru": "мокрый кашель",
+        "uz": "nam yo'tal"
+      },
+      "aliases": {
+        "ru": [
+          "влажный кашель",
+          "продуктивный кашель",
+          "кашель с мокротой"
+        ],
+        "uz": [
+          "nam yotal",
+          "yotalish"
+        ]
+      },
+      "searchTokens": [
+        "мокрый",
+        "влажный",
+        "кашель",
+        "nam",
+        "yotal"
+      ],
+      "relatedDrugs": [
+        "ambroxol",
+        "acetylcysteine",
+        "bromhexine",
+        "guaifenesin",
+        "carbocisteine"
+      ],
+      "category": "respiratory"
+    },
+    {
+      "id": "runny-nose",
+      "labels": {
+        "ru": "насморк",
+        "uz": "tomchi tomchi"
+      },
+      "aliases": {
+        "ru": [
+          "ринорея",
+          "выделения из носа",
+          "сопли"
+        ],
+        "uz": [
+          "burun oqishi",
+          "tomchi tomchi"
+        ]
+      },
+      "searchTokens": [
+        "насморк",
+        "ринорея",
+        "burun",
+        "tomchi"
+      ],
+      "relatedDrugs": [
+        "xylometazoline",
+        "oxymetazoline",
+        "naphazoline",
+        "phenylephrine",
+        "loratadine",
+        "cetirizine"
+      ],
+      "category": "respiratory"
+    },
+    {
+      "id": "nasal-congestion",
+      "labels": {
+        "ru": "заложенность носа",
+        "uz": "burun bitishi"
+      },
+      "aliases": {
+        "ru": [
+          "закладывает нос",
+          "заложен нос",
+          "насморк с заложенностью"
+        ],
+        "uz": [
+          "burun bitishi",
+          "burun yopilishi"
+        ]
+      },
+      "searchTokens": [
+        "заложенность",
+        "нос",
+        "burun",
+        "bitish"
+      ],
+      "relatedDrugs": [
+        "xylometazoline",
+        "oxymetazoline",
+        "naphazoline",
+        "phenylephrine"
+      ],
+      "category": "respiratory"
+    },
+    {
+      "id": "allergy",
+      "labels": {
+        "ru": "аллергия",
+        "uz": "allergiya"
+      },
+      "aliases": {
+        "ru": [
+          "аллергическая реакция",
+          "аллергическое состояние"
+        ],
+        "uz": [
+          "allergik reaksiya",
+          "allergik holat"
+        ]
+      },
+      "searchTokens": [
+        "аллергия",
+        "allergiya",
+        "allergik"
+      ],
+      "relatedDrugs": [
+        "loratadine",
+        "desloratadine",
+        "cetirizine",
+        "levocetirizine",
+        "fexofenadine",
+        "chloropyramine",
+        "diphenhydramine",
+        "ketotifen"
+      ],
+      "category": "allergy"
+    },
+    {
+      "id": "sneezing",
+      "labels": {
+        "ru": "чихание",
+        "uz": "aksirish"
+      },
+      "aliases": {
+        "ru": [
+          "чихает",
+          "чихать"
+        ],
+        "uz": [
+          "aksirish",
+          "aksiradi"
+        ]
+      },
+      "searchTokens": [
+        "чихание",
+        "чихает",
+        "aksirish",
+        "aksiradi"
+      ],
+      "relatedDrugs": [
+        "loratadine",
+        "cetirizine",
+        "levocetirizine",
+        "fexofenadine"
+      ],
+      "category": "allergy"
+    },
+    {
+      "id": "itching",
+      "labels": {
+        "ru": "зуд",
+        "uz": "qichishish"
+      },
+      "aliases": {
+        "ru": [
+          "кожный зуд",
+          "зуд кожи",
+          "чешется"
+        ],
+        "uz": [
+          "qichishish",
+          "qichiydi",
+          "teri qichishishi"
+        ]
+      },
+      "searchTokens": [
+        "зуд",
+        "чешется",
+        "qichishish",
+        "qichiydi"
+      ],
+      "relatedDrugs": [
+        "loratadine",
+        "cetirizine",
+        "levocetirizine",
+        "fexofenadine",
+        "chloropyramine",
+        "diphenhydramine",
+        "hydrocortisone",
+        "betamethasone"
+      ],
+      "category": "allergy"
+    },
+    {
+      "id": "watery-eyes",
+      "labels": {
+        "ru": "слезотечение",
+        "uz": "ko'z yoshlanishi"
+      },
+      "aliases": {
+        "ru": [
+          "слезятся глаза",
+          "глаза слезятся"
+        ],
+        "uz": [
+          "ko'z yoshlanadi",
+          "ko'z yosh"
+        ]
+      },
+      "searchTokens": [
+        "слезотечение",
+        "слезятся",
+        "ko'z",
+        "yoshlanish"
+      ],
+      "relatedDrugs": [
+        "loratadine",
+        "cetirizine",
+        "levocetirizine"
+      ],
+      "category": "allergy"
+    },
+    {
+      "id": "nausea",
+      "labels": {
+        "ru": "тошнота",
+        "uz": "ko'ngil aynishi"
+      },
+      "aliases": {
+        "ru": [
+          "тошнит",
+          "тошнотное состояние"
+        ],
+        "uz": [
+          "ko'ngil aynadi",
+          "ko'ngil aynishi"
+        ]
+      },
+      "searchTokens": [
+        "тошнота",
+        "тошнит",
+        "ko'ngil",
+        "aynishi"
+      ],
+      "relatedDrugs": [
+        "domperidone",
+        "metoclopramide"
+      ],
+      "category": "digestive"
+    },
+    {
+      "id": "vomiting",
+      "labels": {
+        "ru": "рвота",
+        "uz": "qusish"
+      },
+      "aliases": {
+        "ru": [
+          "рвет",
+          "рвотный рефлекс"
+        ],
+        "uz": [
+          "qusish",
+          "qusadi"
+        ]
+      },
+      "searchTokens": [
+        "рвота",
+        "рвет",
+        "qusish",
+        "qusadi"
+      ],
+      "relatedDrugs": [
+        "domperidone",
+        "metoclopramide"
+      ],
+      "category": "digestive"
+    },
+    {
+      "id": "diarrhea",
+      "labels": {
+        "ru": "диарея",
+        "uz": "ishal"
+      },
+      "aliases": {
+        "ru": [
+          "понос",
+          "расстройство желудка",
+          "жидкий стул"
+        ],
+        "uz": [
+          "ishal",
+          "suyuq ich",
+          "oshqozon buzilishi"
+        ]
+      },
+      "searchTokens": [
+        "диарея",
+        "понос",
+        "ishal",
+        "suyuq"
+      ],
+      "relatedDrugs": [
+        "loperamide",
+        "diosmectite",
+        "polymethylsiloxane-polyhydrate",
+        "saccharomyces-boulardii"
+      ],
+      "category": "digestive"
+    },
+    {
+      "id": "constipation",
+      "labels": {
+        "ru": "запор",
+        "uz": "qabziyat"
+      },
+      "aliases": {
+        "ru": [
+          "затрудненный стул",
+          "проблемы со стулом"
+        ],
+        "uz": [
+          "qabziyat",
+          "ich qatishi"
+        ]
+      },
+      "searchTokens": [
+        "запор",
+        "qabziyat",
+        "ich qatishi"
+      ],
+      "relatedDrugs": [
+        "lactulose",
+        "macrogol",
+        "bisacodyl"
+      ],
+      "category": "digestive"
+    },
+    {
+      "id": "heartburn",
+      "labels": {
+        "ru": "изжога",
+        "uz": "ko'ngil aynishi"
+      },
+      "aliases": {
+        "ru": [
+          "жжение в желудке",
+          "кислотность"
+        ],
+        "uz": [
+          "ko'ngil aynishi",
+          "oshqozon yonishi"
+        ]
+      },
+      "searchTokens": [
+        "изжога",
+        "жжение",
+        "ko'ngil",
+        "aynishi"
+      ],
+      "relatedDrugs": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ],
+      "category": "digestive"
+    },
+    {
+      "id": "bloating",
+      "labels": {
+        "ru": "вздутие",
+        "uz": "qorin shishishi"
+      },
+      "aliases": {
+        "ru": [
+          "метеоризм",
+          "газы",
+          "вздутие живота"
+        ],
+        "uz": [
+          "qorin shishishi",
+          "gaz",
+          "meteorizm"
+        ]
+      },
+      "searchTokens": [
+        "вздутие",
+        "метеоризм",
+        "gaz",
+        "shishish"
+      ],
+      "relatedDrugs": [
+        "simethicone",
+        "activated-charcoal",
+        "pancreatin"
+      ],
+      "category": "digestive"
+    },
+    {
+      "id": "rash",
+      "labels": {
+        "ru": "сыпь",
+        "uz": "to'shma"
+      },
+      "aliases": {
+        "ru": [
+          "кожная сыпь",
+          "высыпания",
+          "крапивница"
+        ],
+        "uz": [
+          "to'shma",
+          "teri to'shmalari"
+        ]
+      },
+      "searchTokens": [
+        "сыпь",
+        "высыпания",
+        "to'shma",
+        "krasivka"
+      ],
+      "relatedDrugs": [
+        "loratadine",
+        "cetirizine",
+        "hydrocortisone",
+        "betamethasone",
+        "dexpanthenol"
+      ],
+      "category": "skin"
+    },
+    {
+      "id": "burns",
+      "labels": {
+        "ru": "ожог",
+        "uz": "kuyish"
+      },
+      "aliases": {
+        "ru": [
+          "термический ожог",
+          "химический ожог",
+          "ожог кожи"
+        ],
+        "uz": [
+          "kuyish",
+          "kuygan joy"
+        ]
+      },
+      "searchTokens": [
+        "ожог",
+        "kuyish",
+        "kuygan"
+      ],
+      "relatedDrugs": [
+        "dexpanthenol",
+        "hydrocortisone"
+      ],
+      "category": "skin"
+    },
+    {
+      "id": "wounds",
+      "labels": {
+        "ru": "раны",
+        "uz": "jarohat"
+      },
+      "aliases": {
+        "ru": [
+          "порез",
+          "садина",
+          "травма кожи"
+        ],
+        "uz": [
+          "jarohat",
+          "kesik",
+          "sadana"
+        ]
+      },
+      "searchTokens": [
+        "рана",
+        "порез",
+        "jarohat",
+        "kesik"
+      ],
+      "relatedDrugs": [
+        "dexpanthenol",
+        "povidone-iodine",
+        "chlorhexidine",
+        "hydrogen-peroxide"
+      ],
+      "category": "skin"
+    },
+    {
+      "id": "bacterial-infection",
+      "labels": {
+        "ru": "бактериальная инфекция",
+        "uz": "bakterial infeksiya"
+      },
+      "aliases": {
+        "ru": [
+          "бактериальное заболевание",
+          "инфекция бактериальная"
+        ],
+        "uz": [
+          "bakterial infeksiya",
+          "bakteriya infeksiyasi"
+        ]
+      },
+      "searchTokens": [
+        "бактериальная",
+        "инфекция",
+        "bakterial",
+        "infeksiya"
+      ],
+      "relatedDrugs": [
+        "amoxicillin",
+        "amoxicillin-clavulanate",
+        "azithromycin",
+        "clarithromycin",
+        "cefuroxime",
+        "ciprofloxacin"
+      ],
+      "category": "infection"
+    },
+    {
+      "id": "fungal-infection",
+      "labels": {
+        "ru": "грибковая инфекция",
+        "uz": "zamburug' infeksiyasi"
+      },
+      "aliases": {
+        "ru": [
+          "микоз",
+          "грибок",
+          "грибковое заболевание"
+        ],
+        "uz": [
+          "zamburug'",
+          "mikoz",
+          "zamburug' infeksiyasi"
+        ]
+      },
+      "searchTokens": [
+        "грибковая",
+        "грибок",
+        "микоз",
+        "zamburug'",
+        "mikoz"
+      ],
+      "relatedDrugs": [
+        "fluconazole",
+        "clotrimazole",
+        "terbinafine"
+      ],
+      "category": "infection"
+    },
+    {
+      "id": "viral-infection",
+      "labels": {
+        "ru": "вирусная инфекция",
+        "uz": "virusli infeksiya"
+      },
+      "aliases": {
+        "ru": [
+          "вирус",
+          "вирусное заболевание",
+          "вирусная"
+        ],
+        "uz": [
+          "virusli",
+          "virus",
+          "virusli kasallik"
+        ]
+      },
+      "searchTokens": [
+        "вирусная",
+        "вирус",
+        "virusli",
+        "virus"
+      ],
+      "relatedDrugs": [
+        "acyclovir",
+        "valacyclovir",
+        "oseltamivir",
+        "umifenovir",
+        "inosine-pranobex"
+      ],
+      "category": "infection"
+    }
+  ],
+  "symptomCategories": [
+    {
+      "id": "pain",
+      "labels": {
+        "ru": "боль",
+        "uz": "og'riq"
+      },
+      "description": {
+        "ru": "Болевые синдромы различной локализации",
+        "uz": "Turli joylashuvdagi og'riq sindromlari"
+      },
+      "symptoms": [
+        "headache",
+        "muscle-pain",
+        "toothache",
+        "joint-pain",
+        "abdominal-pain",
+        "sore-throat"
+      ]
+    },
+    {
+      "id": "respiratory",
+      "labels": {
+        "ru": "дыхательные",
+        "uz": "nafas olish"
+      },
+      "description": {
+        "ru": "Симптомы дыхательной системы",
+        "uz": "Nafas olish tizimi simptomlari"
+      },
+      "symptoms": [
+        "cough",
+        "dry-cough",
+        "wet-cough",
+        "runny-nose",
+        "nasal-congestion",
+        "throat-irritation"
+      ]
+    },
+    {
+      "id": "general",
+      "labels": {
+        "ru": "общие",
+        "uz": "umumiy"
+      },
+      "description": {
+        "ru": "Общие симптомы",
+        "uz": "Umumiy simptomlar"
+      },
+      "symptoms": [
+        "temperature",
+        "fever",
+        "weakness",
+        "malaise"
+      ]
+    },
+    {
+      "id": "allergy",
+      "labels": {
+        "ru": "аллергические",
+        "uz": "allergik"
+      },
+      "description": {
+        "ru": "Аллергические реакции и симптомы",
+        "uz": "Allergik reaksiyalar va simptomlar"
+      },
+      "symptoms": [
+        "allergy",
+        "sneezing",
+        "itching",
+        "watery-eyes"
+      ]
+    },
+    {
+      "id": "digestive",
+      "labels": {
+        "ru": "пищеварительные",
+        "uz": "hazm qilish"
+      },
+      "description": {
+        "ru": "Симптомы пищеварительной системы",
+        "uz": "Hazm qilish tizimi simptomlari"
+      },
+      "symptoms": [
+        "nausea",
+        "vomiting",
+        "diarrhea",
+        "constipation",
+        "heartburn",
+        "bloating"
+      ]
+    },
+    {
+      "id": "skin",
+      "labels": {
+        "ru": "кожные",
+        "uz": "teri"
+      },
+      "description": {
+        "ru": "Симптомы кожных поражений",
+        "uz": "Teri zararlanishi simptomlari"
+      },
+      "symptoms": [
+        "rash",
+        "burns",
+        "wounds",
+        "itching"
+      ]
+    },
+    {
+      "id": "infection",
+      "labels": {
+        "ru": "инфекционные",
+        "uz": "infeksion"
+      },
+      "description": {
+        "ru": "Инфекционные заболевания",
+        "uz": "Infeksion kasalliklar"
+      },
+      "symptoms": [
+        "bacterial-infection",
+        "fungal-infection",
+        "viral-infection"
+      ]
+    }
+  ],
+  "drugSymptomMappings": [
+    {
+      "drugId": "paracetamol",
+      "drugName": "Paracetamol",
+      "symptoms": [
+        "temperature",
+        "fever",
+        "headache",
+        "muscle-pain"
+      ],
+      "indications": [
+        "fever",
+        "mild-pain",
+        "moderate-pain"
+      ],
+      "confidence": "high",
+      "source": "official_instruction"
+    },
+    {
+      "drugId": "metamizole-sodium",
+      "drugName": "Metamizole Sodium",
+      "symptoms": [
+        "temperature",
+        "fever",
+        "headache",
+        "muscle-pain",
+        "severe-pain"
+      ],
+      "indications": [
+        "high-fever",
+        "severe-pain",
+        "colic"
+      ],
+      "confidence": "high",
+      "source": "official_instruction"
+    },
+    {
+      "drugId": "ibuprofen",
+      "drugName": "Ibuprofen",
+      "symptoms": [
+        "temperature",
+        "fever",
+        "headache",
+        "muscle-pain",
+        "toothache",
+        "joint-pain"
+      ],
+      "indications": [
+        "fever",
+        "inflammatory-pain",
+        "rheumatic-pain"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "acetylsalicylic-acid",
+      "drugName": "Acetylsalicylic Acid",
+      "symptoms": [
+        "temperature",
+        "fever",
+        "headache",
+        "muscle-pain"
+      ],
+      "indications": [
+        "fever",
+        "pain",
+        "inflammation"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "nimesulide",
+      "drugName": "Nimesulide",
+      "symptoms": [
+        "temperature",
+        "fever",
+        "headache",
+        "joint-pain",
+        "muscle-pain"
+      ],
+      "indications": [
+        "acute-pain",
+        "osteoarthritis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "naproxen",
+      "drugName": "Naproxen",
+      "symptoms": [
+        "headache",
+        "muscle-pain",
+        "joint-pain",
+        "toothache"
+      ],
+      "indications": [
+        "pain",
+        "inflammation",
+        "dysmenorrhea"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "diclofenac",
+      "drugName": "Diclofenac",
+      "symptoms": [
+        "headache",
+        "muscle-pain",
+        "joint-pain",
+        "toothache",
+        "abdominal-pain"
+      ],
+      "indications": [
+        "pain",
+        "inflammation",
+        "rheumatoid-arthritis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "meloxicam",
+      "drugName": "Meloxicam",
+      "symptoms": [
+        "joint-pain",
+        "muscle-pain"
+      ],
+      "indications": [
+        "osteoarthritis",
+        "rheumatoid-arthritis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "ketoprofen",
+      "drugName": "Ketoprofen",
+      "symptoms": [
+        "muscle-pain",
+        "joint-pain"
+      ],
+      "indications": [
+        "musculoskeletal-pain",
+        "soft-tissue-injuries"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "drotaverine",
+      "drugName": "Drotaverine",
+      "symptoms": [
+        "abdominal-pain"
+      ],
+      "indications": [
+        "spasms",
+        "colic",
+        "smooth-muscle-spasm"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "anzibel",
+      "drugName": "Анзибел",
+      "symptoms": [
+        "sore-throat",
+        "throat-irritation"
+      ],
+      "indications": [
+        "pharyngitis",
+        "tonsillitis",
+        "laryngitis"
+      ],
+      "confidence": "high",
+      "source": "official_instruction"
+    },
+    {
+      "drugId": "loratadine",
+      "drugName": "Loratadine",
+      "symptoms": [
+        "allergy",
+        "sneezing",
+        "itching",
+        "watery-eyes",
+        "runny-nose"
+      ],
+      "indications": [
+        "allergic-rhinitis",
+        "urticaria"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "desloratadine",
+      "drugName": "Desloratadine",
+      "symptoms": [
+        "allergy",
+        "sneezing",
+        "itching",
+        "watery-eyes"
+      ],
+      "indications": [
+        "allergic-rhinitis",
+        "chronic-urticaria"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "cetirizine",
+      "drugName": "Cetirizine",
+      "symptoms": [
+        "allergy",
+        "sneezing",
+        "itching",
+        "watery-eyes",
+        "runny-nose"
+      ],
+      "indications": [
+        "allergic-rhinitis",
+        "urticaria"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "levocetirizine",
+      "drugName": "Levocetirizine",
+      "symptoms": [
+        "allergy",
+        "sneezing",
+        "itching",
+        "watery-eyes"
+      ],
+      "indications": [
+        "allergic-rhinitis",
+        "urticaria"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "fexofenadine",
+      "drugName": "Fexofenadine",
+      "symptoms": [
+        "allergy",
+        "sneezing",
+        "itching",
+        "watery-eyes"
+      ],
+      "indications": [
+        "seasonal-allergic-rhinitis",
+        "chronic-urticaria"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "chloropyramine",
+      "drugName": "Chloropyramine",
+      "symptoms": [
+        "allergy",
+        "itching",
+        "rash"
+      ],
+      "indications": [
+        "allergic-reactions",
+        "urticaria"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "diphenhydramine",
+      "drugName": "Diphenhydramine",
+      "symptoms": [
+        "allergy",
+        "itching",
+        "rash"
+      ],
+      "indications": [
+        "allergic-reactions",
+        "insomnia"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "ketotifen",
+      "drugName": "Ketotifen",
+      "symptoms": [
+        "allergy",
+        "asthma"
+      ],
+      "indications": [
+        "allergic-rhinitis",
+        "bronchial-asthma"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "ambroxol",
+      "drugName": "Ambroxol",
+      "symptoms": [
+        "cough",
+        "wet-cough"
+      ],
+      "indications": [
+        "productive-cough",
+        "bronchitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "acetylcysteine",
+      "drugName": "Acetylcysteine",
+      "symptoms": [
+        "cough",
+        "wet-cough"
+      ],
+      "indications": [
+        "productive-cough",
+        "mucolytic"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "bromhexine",
+      "drugName": "Bromhexine",
+      "symptoms": [
+        "cough",
+        "wet-cough"
+      ],
+      "indications": [
+        "productive-cough",
+        "bronchitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "guaifenesin",
+      "drugName": "Guaifenesin",
+      "symptoms": [
+        "cough",
+        "wet-cough"
+      ],
+      "indications": [
+        "productive-cough",
+        "expectorant"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "carbocisteine",
+      "drugName": "Carbocisteine",
+      "symptoms": [
+        "cough",
+        "wet-cough"
+      ],
+      "indications": [
+        "productive-cough",
+        "copd"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "dextromethorphan",
+      "drugName": "Dextromethorphan",
+      "symptoms": [
+        "cough",
+        "dry-cough"
+      ],
+      "indications": [
+        "dry-cough",
+        "non-productive-cough"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "butamirate",
+      "drugName": "Butamirate",
+      "symptoms": [
+        "cough",
+        "dry-cough"
+      ],
+      "indications": [
+        "dry-cough",
+        "irritative-cough"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "xylometazoline",
+      "drugName": "Xylometazoline",
+      "symptoms": [
+        "runny-nose",
+        "nasal-congestion"
+      ],
+      "indications": [
+        "nasal-congestion",
+        "rhinitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "oxymetazoline",
+      "drugName": "Oxymetazoline",
+      "symptoms": [
+        "runny-nose",
+        "nasal-congestion"
+      ],
+      "indications": [
+        "nasal-congestion",
+        "rhinitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "naphazoline",
+      "drugName": "Naphazoline",
+      "symptoms": [
+        "runny-nose",
+        "nasal-congestion"
+      ],
+      "indications": [
+        "nasal-congestion",
+        "rhinitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "phenylephrine",
+      "drugName": "Phenylephrine",
+      "symptoms": [
+        "runny-nose",
+        "nasal-congestion"
+      ],
+      "indications": [
+        "nasal-congestion",
+        "sinusitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "amoxicillin",
+      "drugName": "Amoxicillin",
+      "symptoms": [
+        "bacterial-infection",
+        "sore-throat",
+        "temperature"
+      ],
+      "indications": [
+        "bacterial-infections",
+        "respiratory-tract-infections"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "amoxicillin-clavulanate",
+      "drugName": "Amoxicillin Clavulanate",
+      "symptoms": [
+        "bacterial-infection",
+        "sore-throat",
+        "temperature"
+      ],
+      "indications": [
+        "bacterial-infections",
+        "sinusitis",
+        "otitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "azithromycin",
+      "drugName": "Azithromycin",
+      "symptoms": [
+        "bacterial-infection",
+        "sore-throat",
+        "temperature"
+      ],
+      "indications": [
+        "respiratory-tract-infections",
+        "atypical-infections"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "cefuroxime",
+      "drugName": "Cefuroxime",
+      "symptoms": [
+        "bacterial-infection",
+        "sore-throat",
+        "temperature"
+      ],
+      "indications": [
+        "respiratory-tract-infections",
+        "uti"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "ciprofloxacin",
+      "drugName": "Ciprofloxacin",
+      "symptoms": [
+        "bacterial-infection",
+        "temperature"
+      ],
+      "indications": [
+        "uti",
+        "respiratory-infections",
+        "gastrointestinal-infections"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "acyclovir",
+      "drugName": "Acyclovir",
+      "symptoms": [
+        "viral-infection",
+        "rash"
+      ],
+      "indications": [
+        "herpes-simplex",
+        "varicella-zoster"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "valacyclovir",
+      "drugName": "Valacyclovir",
+      "symptoms": [
+        "viral-infection",
+        "rash"
+      ],
+      "indications": [
+        "herpes-simplex",
+        "shingles"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "oseltamivir",
+      "drugName": "Oseltamivir",
+      "symptoms": [
+        "viral-infection",
+        "temperature",
+        "cough"
+      ],
+      "indications": [
+        "influenza",
+        "flu"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "umifenovir",
+      "drugName": "Umifenovir",
+      "symptoms": [
+        "viral-infection",
+        "temperature",
+        "cough"
+      ],
+      "indications": [
+        "influenza",
+        "sars"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "fluconazole",
+      "drugName": "Fluconazole",
+      "symptoms": [
+        "fungal-infection"
+      ],
+      "indications": [
+        "candidiasis",
+        "cryptococcosis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "clotrimazole",
+      "drugName": "Clotrimazole",
+      "symptoms": [
+        "fungal-infection",
+        "itching",
+        "rash"
+      ],
+      "indications": [
+        "dermatomycosis",
+        "candidiasis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "terbinafine",
+      "drugName": "Terbinafine",
+      "symptoms": [
+        "fungal-infection",
+        "itching"
+      ],
+      "indications": [
+        "dermatomycosis",
+        "onychomycosis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "omeprazole",
+      "drugName": "Omeprazole",
+      "symptoms": [
+        "heartburn"
+      ],
+      "indications": [
+        "gerd",
+        "gastric-ulcer",
+        "duodenal-ulcer"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "pantoprazole",
+      "drugName": "Pantoprazole",
+      "symptoms": [
+        "heartburn"
+      ],
+      "indications": [
+        "gerd",
+        "gastric-ulcer"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "famotidine",
+      "drugName": "Famotidine",
+      "symptoms": [
+        "heartburn"
+      ],
+      "indications": [
+        "gerd",
+        "gastric-ulcer"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "domperidone",
+      "drugName": "Domperidone",
+      "symptoms": [
+        "nausea",
+        "vomiting"
+      ],
+      "indications": [
+        "nausea",
+        "vomiting",
+        "dyspepsia"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "metoclopramide",
+      "drugName": "Metoclopramide",
+      "symptoms": [
+        "nausea",
+        "vomiting"
+      ],
+      "indications": [
+        "nausea",
+        "vomiting",
+        "gastroparesis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "loperamide",
+      "drugName": "Loperamide",
+      "symptoms": [
+        "diarrhea"
+      ],
+      "indications": [
+        "acute-diarrhea",
+        "chronic-diarrhea"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "diosmectite",
+      "drugName": "Diosmectite",
+      "symptoms": [
+        "diarrhea"
+      ],
+      "indications": [
+        "acute-diarrhea"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "lactulose",
+      "drugName": "Lactulose",
+      "symptoms": [
+        "constipation"
+      ],
+      "indications": [
+        "constipation",
+        "hepatic-encephalopathy"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "simethicone",
+      "drugName": "Simethicone",
+      "symptoms": [
+        "bloating"
+      ],
+      "indications": [
+        "flatulence",
+        "bloating"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "hydrocortisone",
+      "drugName": "Hydrocortisone",
+      "symptoms": [
+        "rash",
+        "itching",
+        "inflammation"
+      ],
+      "indications": [
+        "eczema",
+        "dermatitis",
+        "allergic-skin-reactions"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "betamethasone",
+      "drugName": "Betamethasone",
+      "symptoms": [
+        "rash",
+        "itching",
+        "inflammation"
+      ],
+      "indications": [
+        "eczema",
+        "psoriasis",
+        "dermatitis"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "dexpanthenol",
+      "drugName": "Dexpanthenol",
+      "symptoms": [
+        "burns",
+        "wounds",
+        "rash"
+      ],
+      "indications": [
+        "wound-healing",
+        "burns",
+        "skin-irritation"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "povidone-iodine",
+      "drugName": "Povidone Iodine",
+      "symptoms": [
+        "wounds"
+      ],
+      "indications": [
+        "wound-disinfection",
+        "skin-antiseptic"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "chlorhexidine",
+      "drugName": "Chlorhexidine",
+      "symptoms": [
+        "wounds",
+        "sore-throat"
+      ],
+      "indications": [
+        "skin-antiseptic",
+        "oral-antiseptic"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    },
+    {
+      "drugId": "mupirocin",
+      "drugName": "Mupirocin",
+      "symptoms": [
+        "wounds",
+        "bacterial-infection"
+      ],
+      "indications": [
+        "bacterial-skin-infections",
+        "impetigo"
+      ],
+      "confidence": "medium",
+      "source": "drug_category_inference"
+    }
+  ],
+  "indicationMappings": [
+    {
+      "id": "fever",
+      "labels": {
+        "ru": "жар",
+        "uz": "qizish"
+      },
+      "symptoms": [
+        "temperature",
+        "fever"
+      ],
+      "drugs": [
+        "paracetamol",
+        "ibuprofen",
+        "metamizole-sodium",
+        "acetylsalicylic-acid",
+        "nimesulide"
+      ]
+    },
+    {
+      "id": "mild-pain",
+      "labels": {
+        "ru": "легкая боль",
+        "uz": "yengil og'riq"
+      },
+      "symptoms": [
+        "headache",
+        "muscle-pain"
+      ],
+      "drugs": [
+        "paracetamol",
+        "ibuprofen"
+      ]
+    },
+    {
+      "id": "moderate-pain",
+      "labels": {
+        "ru": "умеренная боль",
+        "uz": "o'rtacha og'riq"
+      },
+      "symptoms": [
+        "headache",
+        "muscle-pain",
+        "toothache"
+      ],
+      "drugs": [
+        "paracetamol",
+        "ibuprofen",
+        "naproxen"
+      ]
+    },
+    {
+      "id": "severe-pain",
+      "labels": {
+        "ru": "сильная боль",
+        "uz": "kuchli og'riq"
+      },
+      "symptoms": [
+        "headache",
+        "muscle-pain",
+        "joint-pain",
+        "abdominal-pain"
+      ],
+      "drugs": [
+        "metamizole-sodium",
+        "diclofenac",
+        "ketoprofen"
+      ]
+    },
+    {
+      "id": "inflammatory-pain",
+      "labels": {
+        "ru": "воспалительная боль",
+        "uz": "yallig'lanish og'rig'i"
+      },
+      "symptoms": [
+        "joint-pain",
+        "muscle-pain"
+      ],
+      "drugs": [
+        "ibuprofen",
+        "diclofenac",
+        "naproxen",
+        "nimesulide",
+        "meloxicam"
+      ]
+    },
+    {
+      "id": "cough",
+      "labels": {
+        "ru": "кашель",
+        "uz": "yo'tal"
+      },
+      "symptoms": [
+        "cough",
+        "dry-cough",
+        "wet-cough"
+      ],
+      "drugs": [
+        "ambroxol",
+        "acetylcysteine",
+        "bromhexine",
+        "dextromethorphan",
+        "butamirate",
+        "guaifenesin",
+        "carbocisteine"
+      ]
+    },
+    {
+      "id": "dry-cough",
+      "labels": {
+        "ru": "сухой кашель",
+        "uz": "quruq yo'tal"
+      },
+      "symptoms": [
+        "dry-cough"
+      ],
+      "drugs": [
+        "dextromethorphan",
+        "butamirate"
+      ]
+    },
+    {
+      "id": "productive-cough",
+      "labels": {
+        "ru": "влажный кашель",
+        "uz": "nam yo'tal"
+      },
+      "symptoms": [
+        "wet-cough"
+      ],
+      "drugs": [
+        "ambroxol",
+        "acetylcysteine",
+        "bromhexine",
+        "guaifenesin",
+        "carbocisteine"
+      ]
+    },
+    {
+      "id": "nasal-congestion",
+      "labels": {
+        "ru": "заложенность носа",
+        "uz": "burun bitishi"
+      },
+      "symptoms": [
+        "nasal-congestion",
+        "runny-nose"
+      ],
+      "drugs": [
+        "xylometazoline",
+        "oxymetazoline",
+        "naphazoline",
+        "phenylephrine"
+      ]
+    },
+    {
+      "id": "allergy",
+      "labels": {
+        "ru": "аллергия",
+        "uz": "allergiya"
+      },
+      "symptoms": [
+        "allergy",
+        "sneezing",
+        "itching",
+        "watery-eyes",
+        "runny-nose"
+      ],
+      "drugs": [
+        "loratadine",
+        "desloratadine",
+        "cetirizine",
+        "levocetirizine",
+        "fexofenadine",
+        "chloropyramine",
+        "diphenhydramine",
+        "ketotifen"
+      ]
+    },
+    {
+      "id": "bacterial-infection",
+      "labels": {
+        "ru": "бактериальная инфекция",
+        "uz": "bakterial infeksiya"
+      },
+      "symptoms": [
+        "bacterial-infection",
+        "temperature",
+        "sore-throat"
+      ],
+      "drugs": [
+        "amoxicillin",
+        "amoxicillin-clavulanate",
+        "azithromycin",
+        "clarithromycin",
+        "cefuroxime",
+        "ciprofloxacin",
+        "levofloxacin"
+      ]
+    },
+    {
+      "id": "viral-infection",
+      "labels": {
+        "ru": "вирусная инфекция",
+        "uz": "virusli infeksiya"
+      },
+      "symptoms": [
+        "viral-infection",
+        "temperature",
+        "cough"
+      ],
+      "drugs": [
+        "acyclovir",
+        "valacyclovir",
+        "oseltamivir",
+        "umifenovir",
+        "inosine-pranobex"
+      ]
+    },
+    {
+      "id": "fungal-infection",
+      "labels": {
+        "ru": "грибковая инфекция",
+        "uz": "zamburug' infeksiyasi"
+      },
+      "symptoms": [
+        "fungal-infection",
+        "itching",
+        "rash"
+      ],
+      "drugs": [
+        "fluconazole",
+        "clotrimazole",
+        "terbinafine"
+      ]
+    },
+    {
+      "id": "sore-throat",
+      "labels": {
+        "ru": "боль в горле",
+        "uz": "tomoq og'rig'i"
+      },
+      "symptoms": [
+        "sore-throat",
+        "throat-irritation"
+      ],
+      "drugs": [
+        "paracetamol",
+        "ibuprofen",
+        "anzibel",
+        "chlorhexidine",
+        "miramistin"
+      ]
+    },
+    {
+      "id": "diarrhea",
+      "labels": {
+        "ru": "диарея",
+        "uz": "ishal"
+      },
+      "symptoms": [
+        "diarrhea"
+      ],
+      "drugs": [
+        "loperamide",
+        "diosmectite",
+        "polymethylsiloxane-polyhydrate",
+        "saccharomyces-boulardii"
+      ]
+    },
+    {
+      "id": "constipation",
+      "labels": {
+        "ru": "запор",
+        "uz": "qabziyat"
+      },
+      "symptoms": [
+        "constipation"
+      ],
+      "drugs": [
+        "lactulose",
+        "macrogol",
+        "bisacodyl"
+      ]
+    },
+    {
+      "id": "heartburn",
+      "labels": {
+        "ru": "изжога",
+        "uz": "ko'ngil aynishi"
+      },
+      "symptoms": [
+        "heartburn"
+      ],
+      "drugs": [
+        "omeprazole",
+        "pantoprazole",
+        "famotidine"
+      ]
+    },
+    {
+      "id": "nausea",
+      "labels": {
+        "ru": "тошнота",
+        "uz": "ko'ngil aynishi"
+      },
+      "symptoms": [
+        "nausea",
+        "vomiting"
+      ],
+      "drugs": [
+        "domperidone",
+        "metoclopramide"
+      ]
+    },
+    {
+      "id": "bloating",
+      "labels": {
+        "ru": "вздутие",
+        "uz": "qorin shishishi"
+      },
+      "symptoms": [
+        "bloating"
+      ],
+      "drugs": [
+        "simethicone",
+        "activated-charcoal",
+        "pancreatin"
+      ]
+    },
+    {
+      "id": "skin-irritation",
+      "labels": {
+        "ru": "раздражение кожи",
+        "uz": "teri razdrazh qilishi"
+      },
+      "symptoms": [
+        "rash",
+        "itching",
+        "burns",
+        "wounds"
+      ],
+      "drugs": [
+        "hydrocortisone",
+        "betamethasone",
+        "dexpanthenol",
+        "povidone-iodine",
+        "chlorhexidine"
+      ]
+    }
+  ]
+}

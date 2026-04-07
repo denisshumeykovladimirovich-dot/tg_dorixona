@@ -1,0 +1,859 @@
+﻿$ErrorActionPreference = "Stop"
+
+# =========================
+# НАСТРОЙ ЗДЕСЬ
+# =========================
+$ProjectPath = "D:\idea\0_projects\AI assistent\0_tg_dorixona"      # <-- ВСТАВЬ СВОЙ ПУТЬ
+$BotToken    = "8299609674:AAFh7RiZbbT10xtKfZ-o9Zbl-nN4sPXbVrI"
+$BotUsername = "SalesDataUzBot"   # <-- без @
+
+# =========================
+# ПРОВЕРКИ
+# =========================
+Write-Host "Проверяю Node.js и npm..." -ForegroundColor Cyan
+
+try {
+  node -v | Out-Null
+} catch {
+  Write-Host "Node.js не найден. Установи Node.js LTS и запусти скрипт снова." -ForegroundColor Red
+  exit 1
+}
+
+try {
+  npm -v | Out-Null
+} catch {
+  Write-Host "npm не найден. Установи Node.js LTS и запусти скрипт снова." -ForegroundColor Red
+  exit 1
+}
+
+# =========================
+# СОЗДАНИЕ ПАПОК
+# =========================
+Write-Host "Создаю структуру проекта..." -ForegroundColor Cyan
+
+New-Item -ItemType Directory -Force -Path $ProjectPath | Out-Null
+New-Item -ItemType Directory -Force -Path "$ProjectPath\src" | Out-Null
+New-Item -ItemType Directory -Force -Path "$ProjectPath\src\core" | Out-Null
+New-Item -ItemType Directory -Force -Path "$ProjectPath\src\storage" | Out-Null
+New-Item -ItemType Directory -Force -Path "$ProjectPath\src\utils" | Out-Null
+New-Item -ItemType Directory -Force -Path "$ProjectPath\data" | Out-Null
+
+Set-Location $ProjectPath
+
+# =========================
+# PACKAGE.JSON
+# =========================
+@'
+{
+  "name": "tg-dorixona",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Clinicsonline Safety Check Telegram Bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  }
+}
+'@ | Set-Content -Path "$ProjectPath\package.json" -Encoding UTF8
+
+# =========================
+# TSCONFIG
+# =========================
+@'
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}
+'@ | Set-Content -Path "$ProjectPath\tsconfig.json" -Encoding UTF8
+
+# =========================
+# GITIGNORE
+# =========================
+@'
+node_modules
+dist
+.env
+'@ | Set-Content -Path "$ProjectPath\.gitignore" -Encoding UTF8
+
+# =========================
+# ENV
+# =========================
+@"
+BOT_TOKEN=$BotToken
+BOT_USERNAME=$BotUsername
+APP_ENV=development
+"@ | Set-Content -Path "$ProjectPath\.env" -Encoding UTF8
+
+@'
+BOT_TOKEN=PASTE_YOUR_BOT_TOKEN_HERE
+BOT_USERNAME=your_bot_username
+APP_ENV=development
+'@ | Set-Content -Path "$ProjectPath\.env.example" -Encoding UTF8
+
+# =========================
+# README
+# =========================
+@'
+# tg_dorixona
+
+## Запуск
+
+1. Убедись, что в `.env` заполнены:
+   - BOT_TOKEN
+   - BOT_USERNAME
+
+2. Установи зависимости:
+   npm install
+
+3. Запусти:
+   npm run dev
+
+## Что умеет MVP
+
+- /start
+- ввод лекарств через запятую
+- rule-based анализ
+- понятное объяснение
+- семейная карточка
+- deep link вида /start card_<id>
+- shared purchase mode
+- история
+- напоминания (демо)
+'@ | Set-Content -Path "$ProjectPath\README.md" -Encoding UTF8
+
+# =========================
+# DATA DB JSON
+# =========================
+@'
+{
+  "cards": [],
+  "history": [],
+  "reminders": [],
+  "tracking": [],
+  "purchaseState": {}
+}
+'@ | Set-Content -Path "$ProjectPath\data\db.json" -Encoding UTF8
+
+# =========================
+# SRC/UTILS/IDS.TS
+# =========================
+@'
+import { randomUUID } from "crypto";
+
+export function shortId(): string {
+  return randomUUID().replace(/-/g, "").slice(0, 12);
+}
+'@ | Set-Content -Path "$ProjectPath\src\utils\ids.ts" -Encoding UTF8
+
+# =========================
+# SRC/STORAGE/DB.TS
+# =========================
+@'
+import fs from "fs";
+import path from "path";
+
+const dbPath = path.resolve(process.cwd(), "data", "db.json");
+
+type DBShape = {
+  cards: any[];
+  history: any[];
+  reminders: any[];
+  tracking: any[];
+  purchaseState: Record<string, string[]>;
+};
+
+function ensureDb() {
+  if (!fs.existsSync(dbPath)) {
+    fs.mkdirSync(path.dirname(dbPath), { recursive: true });
+    fs.writeFileSync(
+      dbPath,
+      JSON.stringify(
+        {
+          cards: [],
+          history: [],
+          reminders: [],
+          tracking: [],
+          purchaseState: {}
+        },
+        null,
+        2
+      ),
+      "utf-8"
+    );
+  }
+}
+
+export function readDb(): DBShape {
+  ensureDb();
+  return JSON.parse(fs.readFileSync(dbPath, "utf-8"));
+}
+
+export function writeDb(data: DBShape): void {
+  ensureDb();
+  fs.writeFileSync(dbPath, JSON.stringify(data, null, 2), "utf-8");
+}
+'@ | Set-Content -Path "$ProjectPath\src\storage\db.ts" -Encoding UTF8
+
+# =========================
+# SRC/CORE/MEDICATIONCATALOG.TS
+# =========================
+@'
+export type Medication = {
+  id: string;
+  slug: string;
+  name: string;
+  generic: string;
+  category: string;
+  role: string;
+  synonyms: string[];
+};
+
+export const MEDICATIONS: Medication[] = [
+  {
+    id: "m1",
+    slug: "paracetamol",
+    name: "Парацетамол",
+    generic: "Paracetamol",
+    category: "Жаропонижающее",
+    role: "снижает температуру",
+    synonyms: ["парацетамол", "панадол", "panadol", "paracetamol"]
+  },
+  {
+    id: "m2",
+    slug: "ibuprofen",
+    name: "Ибупрофен / Нурофен",
+    generic: "Ibuprofen",
+    category: "НПВП",
+    role: "снижает боль и жар",
+    synonyms: ["ибупрофен", "нурофен", "ibuprofen", "nurofen"]
+  },
+  {
+    id: "m3",
+    slug: "amoxicillin",
+    name: "Амоксициллин",
+    generic: "Amoxicillin",
+    category: "Антибиотик",
+    role: "борется с бактериальной инфекцией",
+    synonyms: ["амоксициллин", "amoxicillin"]
+  },
+  {
+    id: "m4",
+    slug: "amoxiclav",
+    name: "Амоксиклав",
+    generic: "Amoxicillin + Clavulanic acid",
+    category: "Антибиотик",
+    role: "защищенный антибиотик",
+    synonyms: ["амоксиклав", "amoxiclav"]
+  },
+  {
+    id: "m5",
+    slug: "azithromycin",
+    name: "Азитромицин / Сумамед",
+    generic: "Azithromycin",
+    category: "Антибиотик",
+    role: "макролидный антибиотик",
+    synonyms: ["азитромицин", "сумамед", "azithromycin", "sumamed"]
+  },
+  {
+    id: "m6",
+    slug: "cetirizine",
+    name: "Цетиризин / Зиртек",
+    generic: "Cetirizine",
+    category: "Антигистамин",
+    role: "снимает аллергические симптомы",
+    synonyms: ["цетиризин", "зиртек", "cetirizine", "zyrtec", "zirtek"]
+  },
+  {
+    id: "m7",
+    slug: "loratadine",
+    name: "Лоратадин / Кларитин",
+    generic: "Loratadine",
+    category: "Антигистамин",
+    role: "снимает аллергические симптомы",
+    synonyms: ["лоратадин", "кларитин", "loratadine", "claritin", "klaritin"]
+  },
+  {
+    id: "m8",
+    slug: "salbutamol",
+    name: "Сальбутамол / Вентолин",
+    generic: "Salbutamol",
+    category: "Бронхолитик",
+    role: "снимает бронхоспазм",
+    synonyms: ["сальбутамол", "вентолин", "salbutamol", "ventolin"]
+  },
+  {
+    id: "m9",
+    slug: "budesonide",
+    name: "Будесонид / Пульмикорт",
+    generic: "Budesonide",
+    category: "Стероид",
+    role: "снижает воспаление в дыхательных путях",
+    synonyms: ["будесонид", "пульмикорт", "budesonide", "pulmicort"]
+  },
+  {
+    id: "m10",
+    slug: "montelukast",
+    name: "Монтелукаст / Сингуляр",
+    generic: "Montelukast",
+    category: "Контроль астмы",
+    role: "используется для контроля симптомов",
+    synonyms: ["монтелукаст", "сингуляр", "montelukast", "singulair"]
+  }
+];
+
+export function parseMedications(input: string): Medication[] {
+  const parts = input
+    .split(",")
+    .map((x) => x.trim().toLowerCase())
+    .filter(Boolean);
+
+  const found: Medication[] = [];
+
+  for (const part of parts) {
+    const med = MEDICATIONS.find((m) =>
+      m.synonyms.some((s) => s.toLowerCase().includes(part) || part.includes(s.toLowerCase()))
+    );
+    if (med && !found.some((f) => f.id === med.id)) {
+      found.push(med);
+    }
+  }
+
+  return found;
+}
+'@ | Set-Content -Path "$ProjectPath\src\core\medicationCatalog.ts" -Encoding UTF8
+
+# =========================
+# SRC/CORE/ANALYSISENGINE.TS
+# =========================
+@'
+import { Medication } from "./medicationCatalog";
+
+export type AnalysisResult = {
+  status: "safe" | "caution" | "attention";
+  riskScore: number;
+  summary: string;
+  explanation: string;
+  monitoring: string[];
+  doctorQuestions: string[];
+  comparison: string[];
+};
+
+export function analyzeMedications(meds: Medication[]): AnalysisResult {
+  const slugs = meds.map((m) => m.slug);
+  const categories = meds.map((m) => m.category);
+
+  let status: AnalysisResult["status"] = "safe";
+  let riskScore = 2;
+  let summary = "Критичных рисков не обнаружено.";
+  let explanation = "Выбранные препараты не показывают явного конфликтного сочетания по базовым правилам.";
+  const monitoring: string[] = ["общее самочувствие", "температура", "сыпь", "затруднение дыхания"];
+  const doctorQuestions: string[] = [];
+  const comparison: string[] = [];
+
+  const antibioticsCount = categories.filter((c) => c === "Антибиотик").length;
+  const antihistamineCount = categories.filter((c) => c === "Антигистамин").length;
+
+  if (antibioticsCount >= 2) {
+    status = "attention";
+    riskScore = 9;
+    summary = "Есть сочетание антибиотиков, которое требует обязательного уточнения.";
+    explanation = "В списке обнаружено два антибактериальных препарата. Такие схемы иногда используются врачом осознанно, но родителю важно дополнительно уточнить логику назначения.";
+    doctorQuestions.push("Почему назначены два антибиотика одновременно?");
+  }
+
+  if (antihistamineCount >= 2 && status !== "attention") {
+    status = "caution";
+    riskScore = 6;
+    summary = "Есть перекрытие антигистаминных препаратов.";
+    explanation = "В списке есть два препарата одного класса. Это не всегда ошибка, но может потребовать уточнения у врача.";
+    doctorQuestions.push("Нужно ли принимать оба антигистаминных препарата?");
+  }
+
+  const hasParacetamol = slugs.includes("paracetamol");
+  const hasIbuprofen = slugs.includes("ibuprofen");
+
+  if (hasParacetamol && hasIbuprofen) {
+    if (status !== "attention") {
+      status = "caution";
+      riskScore = Math.max(riskScore, 5);
+      summary = "Парацетамол и ибупрофен можно использовать только по понятной схеме.";
+      explanation = "Эти препараты действуют по-разному и иногда применяются в одной схеме, но важно не путать интервалы приема и не превышать назначение врача.";
+    }
+    monitoring.push("боль в животе");
+    doctorQuestions.push("Как правильно чередовать парацетамол и ибупрофен?");
+    comparison.push("Парацетамол и ибупрофен — не одно и то же. Они работают по-разному.");
+  }
+
+  const hasSalbutamol = slugs.includes("salbutamol");
+  const hasBudesonide = slugs.includes("budesonide");
+
+  if (hasSalbutamol && hasBudesonide) {
+    if (status === "safe") {
+      summary = "Обнаружена стандартная дыхательная связка.";
+      explanation = "Один препарат помогает быстро снять спазм, другой уменьшает воспаление. Это разные роли, а не дублирование.";
+      riskScore = 3;
+    }
+    comparison.push("Сальбутамол снимает спазм, будесонид работает на воспаление. Это разные роли.");
+  }
+
+  const hasAmoxicillin = slugs.includes("amoxicillin");
+  const hasAmoxiclav = slugs.includes("amoxiclav");
+
+  if (hasAmoxicillin && hasAmoxiclav) {
+    status = "attention";
+    riskScore = 9;
+    summary = "Есть вероятное дублирование по амоксициллину.";
+    explanation = "Амоксиклав уже содержит амоксициллин, поэтому сочетание с отдельным амоксициллином требует обязательного уточнения.";
+    doctorQuestions.push("Нужно ли принимать амоксициллин отдельно, если уже назначен Амоксиклав?");
+    comparison.push("Амоксиклав содержит амоксициллин, поэтому это может быть перекрытие.");
+  }
+
+  const hasCetirizine = slugs.includes("cetirizine");
+  const hasLoratadine = slugs.includes("loratadine");
+
+  if (hasCetirizine && hasLoratadine) {
+    comparison.push("Цетиризин и лоратадин — оба антигистаминные, но это разные действующие вещества.");
+  }
+
+  const hasMontelukast = slugs.includes("montelukast");
+  if (hasMontelukast) {
+    monitoring.push("сон и поведение");
+    doctorQuestions.push("На какие изменения сна или поведения стоит обратить внимание?");
+  }
+
+  if (comparison.length === 0) {
+    comparison.push("Явного дублирования по базовым правилам не найдено.");
+  }
+
+  return {
+    status,
+    riskScore,
+    summary,
+    explanation,
+    monitoring: Array.from(new Set(monitoring)),
+    doctorQuestions: Array.from(new Set(doctorQuestions)),
+    comparison
+  };
+}
+'@ | Set-Content -Path "$ProjectPath\src\core\analysisEngine.ts" -Encoding UTF8
+
+# =========================
+# SRC/CORE/FAMILYCARDENGINE.TS
+# =========================
+@'
+import { shortId } from "../utils/ids";
+import { readDb, writeDb } from "../storage/db";
+
+export type FamilyCard = {
+  id: string;
+  userId: number;
+  childName: string;
+  age: string;
+  symptoms: string;
+  medications: string[];
+  analysis: any;
+  createdAt: number;
+};
+
+export function createFamilyCard(input: Omit<FamilyCard, "id" | "createdAt">): FamilyCard {
+  const db = readDb();
+  const card: FamilyCard = {
+    ...input,
+    id: shortId(),
+    createdAt: Date.now()
+  };
+  db.cards.push(card);
+  db.history.push({
+    userId: input.userId,
+    cardId: card.id,
+    timestamp: Date.now()
+  });
+  writeDb(db);
+  return card;
+}
+
+export function getFamilyCard(cardId: string): FamilyCard | undefined {
+  const db = readDb();
+  return db.cards.find((x: FamilyCard) => x.id === cardId);
+}
+
+export function getUserHistory(userId: number): FamilyCard[] {
+  const db = readDb();
+  const items = db.history
+    .filter((h: any) => h.userId === userId)
+    .sort((a: any, b: any) => b.timestamp - a.timestamp)
+    .slice(0, 10);
+
+  return items
+    .map((h: any) => db.cards.find((c: FamilyCard) => c.id === h.cardId))
+    .filter(Boolean);
+}
+
+export function getShareLink(botUsername: string, cardId: string): string {
+  return `https://t.me/${botUsername}?start=card_${cardId}`;
+}
+'@ | Set-Content -Path "$ProjectPath\src\core\familyCardEngine.ts" -Encoding UTF8
+
+# =========================
+# SRC/CORE/PHARMACYENGINE.TS
+# =========================
+@'
+export function getArzonSearchLink(query: string): string {
+  return `https://arzonapteka.uz/search?q=${encodeURIComponent(query)}`;
+}
+
+export function getCombinedPurchaseLink(medications: string[]): string {
+  return getArzonSearchLink(medications.join(" "));
+}
+'@ | Set-Content -Path "$ProjectPath\src\core\pharmacyEngine.ts" -Encoding UTF8
+
+# =========================
+# SRC/CORE/TRACKINGENGINE.TS
+# =========================
+@'
+import { readDb, writeDb } from "../storage/db";
+
+export function trackEvent(userId: number, action: string, payload: Record<string, any> = {}) {
+  const db = readDb();
+  db.tracking.push({
+    userId,
+    action,
+    payload,
+    timestamp: Date.now()
+  });
+  writeDb(db);
+}
+'@ | Set-Content -Path "$ProjectPath\src\core\trackingEngine.ts" -Encoding UTF8
+
+# =========================
+# SRC/CORE/REMINDERENGINE.TS
+# =========================
+@'
+import { readDb, writeDb } from "../storage/db";
+
+export function addReminder(userId: number, cardId: string, runAt: number) {
+  const db = readDb();
+  db.reminders.push({
+    userId,
+    cardId,
+    runAt,
+    sent: false
+  });
+  writeDb(db);
+}
+
+export function getPendingReminders(now: number) {
+  const db = readDb();
+  return db.reminders.filter((r: any) => !r.sent && r.runAt <= now);
+}
+
+export function markReminderSent(userId: number, cardId: string) {
+  const db = readDb();
+  const item = db.reminders.find((r: any) => r.userId === userId && r.cardId === cardId && !r.sent);
+  if (item) item.sent = true;
+  writeDb(db);
+}
+'@ | Set-Content -Path "$ProjectPath\src\core\reminderEngine.ts" -Encoding UTF8
+
+# =========================
+# SRC/INDEX.TS
+# =========================
+@'
+import "dotenv/config";
+import cron from "node-cron";
+import { Telegraf, Markup } from "telegraf";
+import { parseMedications } from "./core/medicationCatalog";
+import { analyzeMedications } from "./core/analysisEngine";
+import { addReminder, getPendingReminders, markReminderSent } from "./core/reminderEngine";
+import { createFamilyCard, getFamilyCard, getShareLink, getUserHistory } from "./core/familyCardEngine";
+import { getCombinedPurchaseLink } from "./core/pharmacyEngine";
+import { readDb, writeDb } from "./storage/db";
+import { trackEvent } from "./core/trackingEngine";
+
+const token = process.env.BOT_TOKEN;
+const botUsername = process.env.BOT_USERNAME || "your_bot_username";
+
+if (!token || token === "PASTE_YOUR_BOT_TOKEN_HERE") {
+  throw new Error("Укажи BOT_TOKEN в .env");
+}
+
+const bot = new Telegraf(token);
+
+type PendingDraft = {
+  childName?: string;
+  age?: string;
+  symptoms?: string;
+  medicationsInput?: string;
+  medications?: string[];
+  analysis?: any;
+};
+
+const draftMap = new Map<number, PendingDraft>();
+const stepMap = new Map<number, string>();
+
+function statusEmoji(status: string) {
+  if (status === "attention") return "🔴";
+  if (status === "caution") return "🟡";
+  return "🟢";
+}
+
+bot.start(async (ctx) => {
+  const userId = ctx.from.id;
+  const text = ctx.message.text ?? "";
+  const parts = text.split(" ");
+  const startArg = parts.length > 1 ? parts[1] : "";
+
+  if (startArg && startArg.startsWith("card_")) {
+    const cardId = startArg.replace("card_", "");
+    const card = getFamilyCard(cardId);
+
+    if (!card) {
+      await ctx.reply("Карточка не найдена.");
+      return;
+    }
+
+    trackEvent(userId, "open_card", { cardId });
+
+    const db = readDb();
+    const checked = db.purchaseState[cardId] || [];
+
+    const items = card.medications
+      .map((m) => `${checked.includes(m) ? "☑" : "☐"} ${m}`)
+      .join("\n");
+
+    await ctx.reply(
+      `🛒 Список для покупки\n\n${items}\n\nСтатус: ${statusEmoji(card.analysis.status)} ${card.analysis.summary}`,
+      Markup.inlineKeyboard([
+        [Markup.button.callback("Переключить 1", `toggle_${cardId}_0`)],
+        [Markup.button.callback("Переключить 2", `toggle_${cardId}_1`)],
+        [Markup.button.url("Купить всё в ArzonApteka", getCombinedPurchaseLink(card.medications))],
+        [Markup.button.url("Поделиться", getShareLink(botUsername, card.id))]
+      ])
+    );
+    return;
+  }
+
+  draftMap.delete(userId);
+  stepMap.set(userId, "child_name");
+
+  await ctx.reply(
+    "Привет. Я помогу понять сочетание лекарств простым языком.\n\nСначала напиши имя ребенка."
+  );
+});
+
+bot.command("history", async (ctx) => {
+  const history = getUserHistory(ctx.from.id);
+
+  if (history.length === 0) {
+    await ctx.reply("История пока пустая.");
+    return;
+  }
+
+  const text = history
+    .map((h, idx) => {
+      return `${idx + 1}. ${h.childName}, ${h.age}\nЛекарства: ${h.medications.join(", ")}\nID: ${h.id}`;
+    })
+    .join("\n\n");
+
+  await ctx.reply(`📚 Ваши последние проверки:\n\n${text}`);
+});
+
+bot.on("text", async (ctx) => {
+  const userId = ctx.from.id;
+  const currentStep = stepMap.get(userId) || "child_name";
+  const input = ctx.message.text.trim();
+
+  let draft = draftMap.get(userId) || {};
+
+  if (currentStep === "child_name") {
+    draft.childName = input;
+    draftMap.set(userId, draft);
+    stepMap.set(userId, "age");
+    await ctx.reply("Укажи возраст ребенка.");
+    return;
+  }
+
+  if (currentStep === "age") {
+    draft.age = input;
+    draftMap.set(userId, draft);
+    stepMap.set(userId, "symptoms");
+    await ctx.reply("Коротко напиши симптомы.");
+    return;
+  }
+
+  if (currentStep === "symptoms") {
+    draft.symptoms = input;
+    draftMap.set(userId, draft);
+    stepMap.set(userId, "medications");
+    await ctx.reply("Теперь введи лекарства через запятую.\nНапример: нурофен, парацетамол");
+    return;
+  }
+
+  if (currentStep === "medications") {
+    const meds = parseMedications(input);
+
+    if (meds.length === 0) {
+      await ctx.reply("Не смог распознать лекарства. Попробуй, например: нурофен, парацетамол");
+      return;
+    }
+
+    const analysis = analyzeMedications(meds);
+
+    draft.medicationsInput = input;
+    draft.medications = meds.map((m) => m.name);
+    draft.analysis = analysis;
+    draftMap.set(userId, draft);
+
+    const card = createFamilyCard({
+      userId,
+      childName: draft.childName || "Ребенок",
+      age: draft.age || "не указан",
+      symptoms: draft.symptoms || "",
+      medications: draft.medications,
+      analysis
+    });
+
+    addReminder(userId, card.id, Date.now() + 6 * 60 * 60 * 1000);
+    trackEvent(userId, "create_card", { cardId: card.id, meds: draft.medications });
+
+    const summaryText =
+`${statusEmoji(analysis.status)} ${analysis.summary}
+
+Почему:
+${analysis.explanation}
+
+Сравнение:
+${analysis.comparison.map((x) => `— ${x}`).join("\n")}
+
+На что смотреть дома:
+${analysis.monitoring.map((x) => `— ${x}`).join("\n")}
+
+Что спросить у врача:
+${analysis.doctorQuestions.length ? analysis.doctorQuestions.map((x) => `— ${x}`).join("\n") : "— Дополнительно уточните схему приема при следующем контакте с врачом."}
+
+👶 Семейная карточка:
+Имя: ${card.childName}
+Возраст: ${card.age}
+Симптомы: ${card.symptoms}
+Лекарства: ${card.medications.join(", ")}
+
+Справочно: этот отчет не заменяет консультацию врача.`;
+
+    await ctx.reply(
+      summaryText,
+      Markup.inlineKeyboard([
+        [Markup.button.url("🛒 Купить всё в ArzonApteka", getCombinedPurchaseLink(card.medications))],
+        [Markup.button.url("🔗 Поделиться карточкой", getShareLink(botUsername, card.id))]
+      ])
+    );
+
+    stepMap.delete(userId);
+    draftMap.delete(userId);
+    return;
+  }
+});
+
+bot.action(/toggle_(.+)_(\d+)/, async (ctx) => {
+  const match = ctx.match;
+  const cardId = match[1];
+  const index = Number(match[2]);
+  const card = getFamilyCard(cardId);
+
+  if (!card) {
+    await ctx.answerCbQuery("Карточка не найдена");
+    return;
+  }
+
+  const medName = card.medications[index];
+  if (!medName) {
+    await ctx.answerCbQuery("Нет такого пункта");
+    return;
+  }
+
+  const db = readDb();
+  const current = db.purchaseState[cardId] || [];
+
+  if (current.includes(medName)) {
+    db.purchaseState[cardId] = current.filter((x: string) => x !== medName);
+  } else {
+    db.purchaseState[cardId] = [...current, medName];
+  }
+
+  writeDb(db);
+  trackEvent(ctx.from.id, "toggle_purchase_item", { cardId, medName });
+
+  await ctx.answerCbQuery("Список обновлен");
+
+  const checked = db.purchaseState[cardId] || [];
+  const items = card.medications
+    .map((m) => `${checked.includes(m) ? "☑" : "☐"} ${m}`)
+    .join("\n");
+
+  await ctx.editMessageText(
+    `🛒 Список для покупки\n\n${items}\n\nСтатус: ${statusEmoji(card.analysis.status)} ${card.analysis.summary}`,
+    Markup.inlineKeyboard([
+      [Markup.button.callback("Переключить 1", `toggle_${cardId}_0`)],
+      [Markup.button.callback("Переключить 2", `toggle_${cardId}_1`)],
+      [Markup.button.url("Купить всё в ArzonApteka", getCombinedPurchaseLink(card.medications))],
+      [Markup.button.url("Поделиться", getShareLink(botUsername, card.id))]
+    ])
+  );
+});
+
+cron.schedule("*/5 * * * *", async () => {
+  const reminders = getPendingReminders(Date.now());
+
+  for (const reminder of reminders) {
+    try {
+      await bot.telegram.sendMessage(
+        reminder.userId,
+        "Напоминание: вы проверяли лекарства. Всё ли прошло нормально? Нужно снова посмотреть карточку?"
+      );
+      markReminderSent(reminder.userId, reminder.cardId);
+    } catch (err) {
+      console.error("Не удалось отправить напоминание:", err);
+    }
+  }
+});
+
+bot.launch().then(() => {
+  console.log("Bot started");
+});
+
+process.once("SIGINT", () => bot.stop("SIGINT"));
+process.once("SIGTERM", () => bot.stop("SIGTERM"));
+'@ | Set-Content -Path "$ProjectPath\src\index.ts" -Encoding UTF8
+
+# =========================
+# УСТАНОВКА ЗАВИСИМОСТЕЙ
+# =========================
+Write-Host "Устанавливаю зависимости..." -ForegroundColor Cyan
+npm install telegraf dotenv uuid dayjs node-cron
+npm install -D typescript tsx @types/node
+
+# =========================
+# ПРОБНАЯ СБОРКА
+# =========================
+Write-Host "Проверяю сборку..." -ForegroundColor Cyan
+npm run build
+
+Write-Host ""
+Write-Host "ГОТОВО." -ForegroundColor Green
+Write-Host "Проект создан в: $ProjectPath" -ForegroundColor Yellow
+Write-Host ""
+Write-Host "Дальше:" -ForegroundColor Cyan
+Write-Host "1. Проверь .env" -ForegroundColor White
+Write-Host "2. Запусти: npm run dev" -ForegroundColor White
+Write-Host "3. Открой Telegram и напиши /start боту" -ForegroundColor White

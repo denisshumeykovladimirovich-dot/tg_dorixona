@@ -1,0 +1,529 @@
+{
+  "id": "desloratadine",
+  "schemaVersion": 1,
+  "reviewStatus": "draft_verified",
+  "needsManualReview": false,
+  "reviewReason": null,
+  "canonicalName": {
+    "ru": "Дезлоратадин",
+    "uz": "Дезлоратадин",
+    "en": "Desloratadine"
+  },
+  "identity": {
+    "activeSubstance": {
+      "ru": "Дезлоратадин",
+      "uz": "Дезлоратадин",
+      "en": "Desloratadine"
+    },
+    "drugForm": [],
+    "dosageForms": [
+      "таблетки 5 мг",
+      "сироп"
+    ],
+    "strengths": [
+      "5 мг"
+    ]
+  },
+  "source": {
+    "sourceType": "official_instruction",
+    "title": "Дезлоратадин - инструкция по медицинскому применению",
+    "organization": "Регистр лекарственных средств России (РЛС)",
+    "country": "RU",
+    "language": "ru",
+    "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+    "accessDate": "2026-03-31",
+    "evidenceLevel": "official_primary"
+  },
+  "sections": {
+    "composition": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "indications": {
+      "structured": [
+        {
+          "content": "Аллергический ринит (сезонный и круглогодичный)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "desloratadine-indications-ru-0"
+        },
+        {
+          "content": "Крапивница (хроническая идиопатическая)",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "desloratadine-indications-ru-1"
+        },
+        {
+          "content": "Аллергический конъюнктивит",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "desloratadine-indications-ru-2"
+        },
+        {
+          "content": "Сенная лихорадка",
+          "contentType": "indication",
+          "language": "ru",
+          "sourceRef": "desloratadine-indications-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "desloratadine-indications-ru-0",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергический ринит (сезонный и круглогодичный)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-indications-ru-1",
+          "section": "indications",
+          "language": "ru",
+          "text": "Крапивница (хроническая идиопатическая)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-indications-ru-2",
+          "section": "indications",
+          "language": "ru",
+          "text": "Аллергический конъюнктивит",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-indications-ru-3",
+          "section": "indications",
+          "language": "ru",
+          "text": "Сенная лихорадка",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "contraindications": {
+      "structured": [
+        {
+          "content": "Гиперчувствительность к дезлоратадину",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "desloratadine-contraindications-ru-0"
+        },
+        {
+          "content": "Период лактации",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "desloratadine-contraindications-ru-1"
+        },
+        {
+          "content": "Детский возраст до 1 года (для сиропа), до 12 лет (для таблеток)",
+          "contentType": "contraindication",
+          "language": "ru",
+          "sourceRef": "desloratadine-contraindications-ru-2"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "desloratadine-contraindications-ru-0",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Гиперчувствительность к дезлоратадину",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-contraindications-ru-1",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Период лактации",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-contraindications-ru-2",
+          "section": "contraindications",
+          "language": "ru",
+          "text": "Детский возраст до 1 года (для сиропа), до 12 лет (для таблеток)",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "dosageAndAdministration": {
+      "structured": {
+        "general": [],
+        "adults": [
+          {
+            "content": "Взрослым и подросткам старше 12 лет: по 5 мг (1 таблетка) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "desloratadine-dosage-adults-ru-0"
+          },
+          {
+            "content": "Таблетки принимать внутрь, независимо от приема пищи, запивая водой",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "desloratadine-dosage-adults-ru-1"
+          }
+        ],
+        "children": [
+          {
+            "content": "Детям 6-12 лет: по 2,5 мг (1/2 таблетки) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "desloratadine-dosage-children-ru-0"
+          },
+          {
+            "content": "Детям 1-5 лет: по 1,25 мг (2,5 мл сиропа) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "desloratadine-dosage-children-ru-1"
+          },
+          {
+            "content": "Детям 6-11 месяцев: по 1 мг (2 мл сиропа) 1 раз в сутки",
+            "contentType": "dosage",
+            "language": "ru",
+            "sourceRef": "desloratadine-dosage-children-ru-2"
+          }
+        ],
+        "ageSpecific": [],
+        "routeSpecific": []
+      },
+      "sourceFragments": [
+        {
+          "fragmentId": "desloratadine-dosage-adults-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Взрослым и подросткам старше 12 лет: по 5 мг (1 таблетка) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-dosage-adults-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Таблетки принимать внутрь, независимо от приема пищи, запивая водой",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-dosage-children-ru-0",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6-12 лет: по 2,5 мг (1/2 таблетки) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-dosage-children-ru-1",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 1-5 лет: по 1,25 мг (2,5 мл сиропа) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-dosage-children-ru-2",
+          "section": "dosageAndAdministration",
+          "language": "ru",
+          "text": "Детям 6-11 месяцев: по 1 мг (2 мл сиропа) 1 раз в сутки",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "sideEffects": {
+      "structured": [
+        {
+          "content": "Со стороны ЦНС: сонливость, головная боль, головокружение",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "desloratadine-sideEffects-ru-0"
+        },
+        {
+          "content": "Со стороны ЖКТ: сухость во рту, тошнота",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "desloratadine-sideEffects-ru-1"
+        },
+        {
+          "content": "Аллергические реакции: кожная сыпь, крапивница",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "desloratadine-sideEffects-ru-2"
+        },
+        {
+          "content": "Усталость",
+          "contentType": "sideEffect",
+          "language": "ru",
+          "sourceRef": "desloratadine-sideEffects-ru-3"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "desloratadine-sideEffects-ru-0",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЦНС: сонливость, головная боль, головокружение",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-sideEffects-ru-1",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Со стороны ЖКТ: сухость во рту, тошнота",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-sideEffects-ru-2",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Аллергические реакции: кожная сыпь, крапивница",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        },
+        {
+          "fragmentId": "desloratadine-sideEffects-ru-3",
+          "section": "sideEffects",
+          "language": "ru",
+          "text": "Усталость",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "interactions": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "specialWarnings": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "pregnancy": {
+      "structured": [
+        {
+          "content": "Применять только по назначению врача",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "desloratadine-pregnancy-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "desloratadine-pregnancy-ru-0",
+          "section": "pregnancy",
+          "language": "ru",
+          "text": "Применять только по назначению врача",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "lactation": {
+      "structured": [
+        {
+          "content": "Противопоказано",
+          "contentType": "warning",
+          "language": "ru",
+          "sourceRef": "desloratadine-lactation-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "desloratadine-lactation-ru-0",
+          "section": "lactation",
+          "language": "ru",
+          "text": "Противопоказано",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    },
+    "overdose": {
+      "structured": [],
+      "sourceFragments": []
+    },
+    "storage": {
+      "structured": [
+        {
+          "content": "Хранить при температуре не выше 30°C. Хранить в недоступном для детей месте",
+          "contentType": "instruction",
+          "language": "ru",
+          "sourceRef": "desloratadine-storage-ru-0"
+        }
+      ],
+      "sourceFragments": [
+        {
+          "fragmentId": "desloratadine-storage-ru-0",
+          "section": "storage",
+          "language": "ru",
+          "text": "Хранить при температуре не выше 30°C. Хранить в недоступном для детей месте",
+          "sourceRef": {
+            "url": "https://www.rlsnet.ru/drugs/desloratadin-4568",
+            "title": "Дезлоратадин - инструкция по медицинскому применению",
+            "page": null,
+            "anchor": "",
+            "retrievedAt": "2026-03-31"
+          },
+          "confidence": "high",
+          "isVerbatim": true
+        }
+      ]
+    }
+  },
+  "extractions": {
+    "shortUserLabel": {
+      "ru": "Антигистаминное",
+      "uz": "Antigistamin"
+    },
+    "symptoms": {
+      "ru": [],
+      "uz": []
+    },
+    "symptomTags": [],
+    "commonUseCases": [],
+    "ageSummary": {
+      "ru": "Требуется проверка возрастных ограничений",
+      "uz": "Yosh cheklovlarini tekshirish talab qilinadi"
+    },
+    "interactionSummary": {
+      "ru": "Требуется проверка взаимодействий",
+      "uz": "O'zaro ta'sirlarni tekshirish talab qilinadi"
+    },
+    "riskSignals": [],
+    "botSafeSummary": {
+      "ru": "Антигистаминное. Прочее.",
+      "uz": "Antigistamin. Прочее."
+    }
+  },
+  "llmContextBlocks": []
+}

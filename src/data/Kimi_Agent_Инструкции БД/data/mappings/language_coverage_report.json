@@ -1,0 +1,51 @@
+{
+  "reportDate": "2026-03-31T19:29:07Z",
+  "phase": "PHASE 1",
+  "totalDrugs": 30,
+  "languageCoverage": {
+    "ru": {
+      "count": 30,
+      "percentage": 100.0,
+      "status": "complete",
+      "note": "Все препараты имеют официальное RU название"
+    },
+    "uz": {
+      "count": 30,
+      "percentage": 100.0,
+      "status": "transliterated",
+      "note": "Все препараты имеют UZ транслитерацию (требуется проверка носителем)"
+    },
+    "en": {
+      "count": 30,
+      "percentage": 100.0,
+      "status": "complete",
+      "note": "Все препараты имеют международное EN название"
+    }
+  },
+  "manualReviewRequired": {
+    "uz": {
+      "count": 2,
+      "drugs": [
+        "acetylsalicylic-acid",
+        "mefenamic-acid"
+      ],
+      "reason": "Требуется проверка официального UZ названия носителем языка"
+    }
+  },
+  "filesCreated": [
+    {
+      "path": "/mnt/okcomputer/output/data/mappings/aliases_map.json",
+      "description": "Карта псевдонимов препаратов с RU/UZ/EN названиями"
+    },
+    {
+      "path": "/mnt/okcomputer/output/data/mappings/therapeutic_classes.json",
+      "description": "Терапевтическая классификация препаратов"
+    }
+  ],
+  "summary": {
+    "ruCoverage": "100% (30/30)",
+    "uzCoverage": "100% (30/30) - транслитерация",
+    "enCoverage": "100% (30/30)",
+    "needsManualReview": "2 препарата (acetylsalicylic-acid, mefenamic-acid)"
+  }
+}

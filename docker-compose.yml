@@ -1,0 +1,32 @@
+services:
+  bot-prod:
+    container_name: tg-bot-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.production
+    restart: always
+    volumes:
+      - ./data/prod:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  bot-staging:
+    container_name: tg-bot-staging
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.staging
+    restart: always
+    volumes:
+      - ./data/staging:/app/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"

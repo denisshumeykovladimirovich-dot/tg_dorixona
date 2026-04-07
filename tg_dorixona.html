@@ -1,0 +1,401 @@
+import React, { useState, useEffect, useMemo } from 'react';
+import { 
+  ShieldCheck, AlertTriangle, Info, ChevronLeft, User, Stethoscope, 
+  Phone, MessageSquare, CheckCircle2, X, ArrowRight, AlertCircle, 
+  Zap, Activity, Heart, Search, Filter, HelpCircle, ClipboardCheck,
+  Bell, FileText, ChevronRight
+} from 'lucide-react';
+
+// --- PRODUCTION-READY DATA MODEL (MAPPED FROM analysis_response.json) ---
+const MEDICATIONS_CATALOG = [
+  { id: "m1", slug: "paracetamol", name: "Парацетамол", generic: "Paracetamol", category: "Жаропонижающее", role: "Контроль температуры", color: "emerald" },
+  { id: "m2", slug: "ibuprofen", name: "Ибупрофен (Нурофен)", generic: "Ibuprofen", category: "НПВП", role: "Снятие боли и жара", color: "blue" },
+  { id: "m3", slug: "amoxicillin", name: "Амоксициллин", generic: "Amoxicillin", category: "Антибиотик", role: "Борьба с инфекцией", color: "indigo" },
+  { id: "m4", slug: "amoxicillin_clavulanate", name: "Амоксиклав", generic: "Amoxicillin + Clavulanic acid", category: "Антибиотик", role: "Защищенный антибиотик", color: "indigo" },
+  { id: "m5", slug: "azithromycin", name: "Азитромицин (Сумамед)", generic: "Azithromycin", category: "Антибиотик", role: "Макролидный антибиотик", color: "violet" },
+  { id: "m6", slug: "cetirizine", name: "Цетиризин (Зиртек)", generic: "Cetirizine", category: "Антигистамин", role: "Снятие аллергии", color: "teal" },
+  { id: "m7", slug: "loratadine", name: "Лоратадин (Кларитин)", generic: "Loratadine", category: "Антигистамин", role: "Снятие аллергии", color: "teal" },
+  { id: "m8", slug: "salbutamol", name: "Сальбутамол (Вентолин)", generic: "Salbutamol", category: "Бронхолитик", role: "Снятие спазма", color: "orange" },
+  { id: "m9", slug: "budesonide", name: "Будесонид (Пульмикорт)", generic: "Budesonide", category: "Стероид", role: "Лечение воспаления", color: "rose" },
+  { id: "m10", slug: "montelukast", name: "Монтелукаст (Сингуляр)", generic: "Montelukast", category: "Контроль астмы", role: "Профилактика приступов", color: "amber" }
+];
+
+// Mock response generation based on the production schema structure
+const generateAnalysis = (selectedIds) => {
+  const selected = MEDICATIONS_CATALOG.filter(m => selectedIds.includes(m.id));
+  const slugs = selected.map(m => m.slug);
+  
+  // Base skeleton based on analysis_response.json
+  const result = {
+    meta: { analysis_id: "cli-" + Math.random().toString(16).slice(2, 10), created_at: new Date().toISOString(), language: "ru", data_confidence: "high" },
+    overall_assessment: { status: "safe", risk_score: 2, summary_short: "Критичных рисков не обнаружено.", summary_detailed: "Выбранные препараты имеют хорошую совместимость при соблюдении дозировок.", key_flags: ["COMPATIBLE"] },
+    medications: selected.map(m => ({
+      id: m.id,
+      name: m.name,
+      generic_name: m.generic,
+      category: m.category,
+      role_in_therapy: m.role,
+      parent_explanation: `Этот препарат помогает ${m.role.toLowerCase()}. Важно следовать инструкции врача.`,
+      doctor_questions: [`Какова оптимальная длительность приема ${m.name}?`],
+      warnings: ["Соблюдайте возрастную дозировку"]
+    })),
+    interactions: [],
+    duplicates: [],
+    monitoring: { 
+      what_to_watch: ["Общее самочувствие", "Температуру тела"], 
+      when_to_seek_help: ["Появление отеков", "Затрудненное дыхание", "Острая боль"] 
+    },
+    doctor_guidance: { questions_to_ask: [], why_discussion_is_needed: "Проверка проведена по базе стандартных взаимодействий." },
+    cta: { primary: { label: "Обсудить с врачом", action: "consult" }, secondary: { label: "Найти педиатра", action: "search" } }
+  };
+
+  // Logic: Duplicate Antibiotics (Scenario B)
+  const antibiotics = selected.filter(m => m.category === "Антибиотик");
+  if (antibiotics.length > 1) {
+    result.overall_assessment = {
+      status: "attention",
+      risk_score: 9,
+      summary_short: "Внимание: Дублирование антибиотиков.",
+      summary_detailed: "Обнаружен прием двух антибактериальных средств одновременно. Это может привести к чрезмерной нагрузке на ЖКТ и печень.",
+      key_flags: ["DUPLICATE_ANTIBIOTIC", "GI_RISK"]
+    };
+    result.interactions.push({
+      id: "int_antibiotic",
+      severity: "attention",
+      type: "duplicate",
+      summary: "Одновременный прием антибиотиков",
+      parent_explanation: "Прием двух разных антибиотиков сразу — это сложная схема, которая требует обязательного подтверждения врачом во избежание передозировки.",
+      recommended_action: "Discuss with doctor",
+      sources: ["Drugs.com", "MedlinePlus"]
+    });
+    result.doctor_guidance.questions_to_ask.push("Почему назначено два антибиотика одновременно?");
+  }
+
+  // Logic: Paracetamol + Ibuprofen (Scenario A)
+  if (slugs.includes('paracetamol') && slugs.includes('ibuprofen')) {
+    result.overall_assessment.status = result.overall_assessment.status === 'attention' ? 'attention' : 'caution';
+    result.overall_assessment.risk_score += 2;
+    result.interactions.push({
+      id: "int_fever",
+      severity: "caution",
+      type: "monitoring",
+      summary: "Сочетание жаропонижающих",
+      parent_explanation: "Эти препараты можно использовать в одной схеме, но важно чередовать их прием, чтобы не нагружать почки и желудок.",
+      recommended_action: "Discuss with doctor"
+    });
+    result.monitoring.what_to_watch.push("Боль в животе");
+    result.doctor_guidance.questions_to_ask.push("По какой схеме чередовать Ибупрофен и Парацетамол?");
+  }
+
+  // Logic: Respiratory (Scenario D)
+  if (slugs.includes('salbutamol') && slugs.includes('budesonide')) {
+    result.interactions.push({
+      id: "int_resp",
+      severity: "info",
+      type: "class_overlap",
+      summary: "Комплексная терапия дыхания",
+      parent_explanation: "Один препарат снимает спазм сразу, второй — лечит воспаление. Это эффективная стандартная связка.",
+      recommended_action: "Discuss with doctor"
+    });
+    result.monitoring.what_to_watch.push("Техника ингаляции");
+  }
+
+  return result;
+};
+
+export default function App() {
+  const [view, setView] = useState('landing'); // landing, form, results
+  const [selectedIds, setSelectedIds] = useState([]);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [analysisData, setAnalysisData] = useState(null);
+
+  const toggleMed = (id) => {
+    setSelectedIds(prev => prev.includes(id) ? prev.filter(i => i !== id) : (prev.length < 5 ? [...prev, id] : prev));
+  };
+
+  const handleAnalyze = () => {
+    setIsAnalyzing(true);
+    setTimeout(() => {
+      const result = generateAnalysis(selectedIds);
+      setAnalysisData(result);
+      setIsAnalyzing(false);
+      setView('results');
+      window.scrollTo(0, 0);
+    }, 1800);
+  };
+
+  // --- SUB-COMPONENTS ---
+
+  const Badge = ({ children, color = "blue" }) => {
+    const colors = {
+      blue: "bg-blue-50 text-blue-700",
+      emerald: "bg-emerald-50 text-emerald-700",
+      rose: "bg-rose-50 text-rose-700",
+      amber: "bg-amber-50 text-amber-700",
+      indigo: "bg-indigo-50 text-indigo-700",
+      slate: "bg-slate-100 text-slate-600"
+    };
+    return <span className={`px-2.5 py-1 rounded-full text-[10px] font-black uppercase tracking-widest ${colors[color] || colors.blue}`}>{children}</span>;
+  };
+
+  // --- MAIN VIEWS ---
+
+  if (view === 'landing') {
+    return (
+      <div className="min-h-screen bg-white font-sans text-slate-900">
+        <nav className="h-16 px-6 flex items-center justify-between border-b border-slate-50 sticky top-0 bg-white/80 backdrop-blur-md z-50">
+          <div className="flex items-center gap-2 font-bold text-xl tracking-tighter">
+            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white"><ShieldCheck size={20}/></div>
+            Clinicsonline<span className="text-blue-600">.safe</span>
+          </div>
+          <button onClick={() => setView('form')} className="bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-blue-100 hover:bg-blue-700 transition-all">Проверить</button>
+        </nav>
+
+        <section className="px-6 py-20 text-center max-w-4xl mx-auto">
+          <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-xs font-bold uppercase mb-8">
+            <Zap size={14} className="fill-blue-700" /> Ваша «третья сторона» в аптеке
+          </div>
+          <h1 className="text-5xl md:text-7xl font-black text-slate-950 mb-8 leading-[1.05]">
+            Поймите рецепт <br /> 
+            <span className="text-blue-600 underline decoration-blue-100 underline-offset-8">лучше врача</span>
+          </h1>
+          <p className="text-xl text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+            Интеллектуальная поддержка для родителей: расшифровка назначений, поиск дублей и подготовка к разговору со специалистом.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button onClick={() => setView('form')} className="w-full sm:w-auto bg-slate-950 text-white px-12 py-6 rounded-[2rem] font-bold text-xl shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-3">
+              Проверить назначения <ArrowRight />
+            </button>
+          </div>
+          <div className="mt-16 flex justify-center gap-8 opacity-40">
+             <div className="flex items-center gap-2 font-black text-xs uppercase tracking-tighter"><Activity size={16}/> Medical Data</div>
+             <div className="flex items-center gap-2 font-black text-xs uppercase tracking-tighter"><ShieldCheck size={16}/> Safe Protocol</div>
+             <div className="flex items-center gap-2 font-black text-xs uppercase tracking-tighter"><User size={16}/> Pro Doctor</div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  if (view === 'form') {
+    return (
+      <div className="min-h-screen bg-slate-50 py-12 px-4">
+        <div className="max-w-xl mx-auto">
+          <button onClick={() => setView('landing')} className="flex items-center gap-2 text-slate-400 font-bold mb-8 hover:text-slate-900 transition-colors">
+            <ChevronLeft size={20}/> Назад
+          </button>
+          
+          <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-sm border border-slate-100">
+            <h2 className="text-3xl font-black text-slate-900 mb-4">Выберите лекарства</h2>
+            <p className="text-slate-500 mb-10 leading-relaxed font-medium">
+              Отметьте препараты из рецепта вашего ребенка для глубокого анализа совместимости.
+            </p>
+
+            <div className="space-y-2 mb-12">
+              {MEDICATIONS_CATALOG.map(med => {
+                const isSelected = selectedIds.includes(med.id);
+                return (
+                  <button 
+                    key={med.id}
+                    onClick={() => toggleMed(med.id)}
+                    className={`w-full p-4 rounded-2xl border-2 text-left flex items-center justify-between transition-all group ${
+                      isSelected ? 'bg-blue-600 border-blue-600 text-white' : 'bg-slate-50 border-transparent hover:border-slate-200'
+                    }`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${isSelected ? 'bg-white/20' : 'bg-white shadow-sm'}`}>
+                         <Activity size={18} className={isSelected ? 'text-white' : 'text-slate-400'} />
+                      </div>
+                      <div>
+                        <div className="font-bold">{med.name}</div>
+                        <div className={`text-[10px] font-black uppercase tracking-widest ${isSelected ? 'text-blue-100' : 'text-slate-400'}`}>{med.category}</div>
+                      </div>
+                    </div>
+                    {isSelected ? <CheckCircle2 size={24}/> : <div className="w-6 h-6 rounded-full border-2 border-slate-200 group-hover:border-slate-300"></div>}
+                  </button>
+                );
+              })}
+            </div>
+
+            <button 
+              disabled={selectedIds.length === 0 || isAnalyzing}
+              onClick={handleAnalyze}
+              className={`w-full py-6 rounded-[2rem] font-black text-xl flex items-center justify-center gap-3 transition-all ${
+                selectedIds.length === 0 || isAnalyzing 
+                  ? 'bg-slate-200 text-slate-400 cursor-not-allowed' 
+                  : 'bg-blue-600 text-white shadow-xl shadow-blue-200 hover:scale-[1.02]'
+              }`}
+            >
+              {isAnalyzing ? (
+                <>
+                  <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  Анализируем...
+                </>
+              ) : `Анализировать (${selectedIds.length})`}
+            </button>
+          </div>
+          <p className="mt-8 text-center text-[10px] text-slate-400 leading-relaxed max-w-xs mx-auto">
+            Сервис носит справочный характер. Окончательное решение о лечении принимает ваш лечащий врач.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (view === 'results' && analysisData) {
+    const { overall_assessment, medications, interactions, monitoring, doctor_guidance, meta } = analysisData;
+    const isAttention = overall_assessment.status === 'attention';
+    const isCaution = overall_assessment.status === 'caution';
+
+    return (
+      <div className="min-h-screen bg-slate-50 py-12 px-4 pb-32">
+        <div className="max-w-2xl mx-auto">
+          
+          {/* OVERALL STATUS HEADER */}
+          <div className={`p-8 md:p-12 rounded-[3.5rem] mb-8 text-white shadow-2xl relative overflow-hidden ${
+            isAttention ? 'bg-rose-600' : isCaution ? 'bg-amber-500' : 'bg-emerald-600'
+          }`}>
+             <div className="relative z-10">
+                <div className="flex justify-between items-start mb-10">
+                  <div className="bg-white/20 p-4 rounded-3xl backdrop-blur-md">
+                    {isAttention ? <AlertCircle size={40}/> : isCaution ? <AlertTriangle size={40}/> : <ShieldCheck size={40}/>}
+                  </div>
+                  <button onClick={() => setView('form')} className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"><X size={20}/></button>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                   <Badge color="slate">Риск: {overall_assessment.risk_score}/10</Badge>
+                   {overall_assessment.key_flags.map(f => <Badge key={f} color="slate">{f}</Badge>)}
+                </div>
+                <h1 className="text-3xl md:text-5xl font-black mb-4 leading-[1.1]">{overall_assessment.summary_short}</h1>
+                <p className="text-white/80 font-medium leading-relaxed">{overall_assessment.summary_detailed}</p>
+             </div>
+             <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-[80px]" />
+          </div>
+
+          <div className="space-y-6">
+            
+            {/* INTERACTIONS SECTION */}
+            {interactions.length > 0 && (
+              <section className="bg-white rounded-[2.5rem] p-8 md:p-10 border border-slate-100 shadow-sm">
+                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-400 mb-8">
+                  <Activity size={16} className="text-blue-600" /> Анализ взаимодействий
+                </div>
+                <div className="space-y-8">
+                   {interactions.map((inter, i) => (
+                     <div key={i} className="relative pl-6">
+                        <div className={`absolute left-0 top-0 bottom-0 w-1 rounded-full ${inter.severity === 'attention' ? 'bg-rose-500' : 'bg-amber-500'}`} />
+                        <h3 className="text-xl font-black text-slate-900 mb-3">{inter.summary}</h3>
+                        <p className="text-slate-600 leading-relaxed mb-6">{inter.parent_explanation}</p>
+                        <div className="bg-blue-50/50 p-5 rounded-2xl border border-blue-50">
+                           <div className="flex items-center gap-2 font-bold text-blue-900 mb-1">
+                             <HelpCircle size={16} /> Совет:
+                           </div>
+                           <p className="text-blue-800 text-sm italic leading-relaxed">«{doctor_guidance.questions_to_ask[i] || "Уточните необходимость совместного приема препаратов у вашего врача."}»</p>
+                        </div>
+                     </div>
+                   ))}
+                </div>
+              </section>
+            )}
+
+            {/* MEDICATIONS DETAIL SECTION */}
+            <section className="bg-white rounded-[2.5rem] p-8 md:p-10 border border-slate-100 shadow-sm">
+              <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-slate-400 mb-8">
+                <FileText size={16} className="text-indigo-600" /> Понятная расшифровка
+              </div>
+              <div className="space-y-10">
+                {medications.map(med => (
+                  <div key={med.id} className="group">
+                    <div className="flex justify-between items-start mb-4">
+                       <div>
+                         <h4 className="text-2xl font-black text-slate-900 leading-none mb-2">{med.name}</h4>
+                         <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{med.category} • {med.generic_name}</p>
+                       </div>
+                    </div>
+                    <div className="space-y-4">
+                       <p className="text-slate-600 leading-relaxed text-lg">
+                         <span className="font-bold text-slate-800">Роль:</span> {med.parent_explanation}
+                       </p>
+                       <div className="flex flex-wrap gap-2">
+                          {med.warnings.map((w, idx) => (
+                            <span key={idx} className="bg-slate-50 text-slate-500 px-3 py-1.5 rounded-xl text-xs font-bold border border-slate-100">{w}</span>
+                          ))}
+                       </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* MONITORING CHECKLIST */}
+            <section className="bg-slate-900 rounded-[3rem] p-10 text-white shadow-2xl">
+               <h2 className="text-2xl font-black mb-8 flex items-center gap-3">
+                 <Bell className="text-blue-400" /> Чек-лист для родителей
+               </h2>
+               <div className="space-y-10">
+                  <div>
+                    <h4 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-4">Что отслеживать дома:</h4>
+                    <div className="grid gap-3">
+                      {monitoring.what_to_watch.map((item, i) => (
+                        <div key={i} className="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/10">
+                           <div className="w-2 h-2 rounded-full bg-blue-500" />
+                           <span className="text-slate-200 font-medium">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-black uppercase tracking-[0.2em] text-rose-400 mb-4">Когда срочно звонить врачу:</h4>
+                    <div className="grid gap-3">
+                      {monitoring.when_to_seek_help.map((item, i) => (
+                        <div key={i} className="flex items-center gap-3 bg-rose-500/10 p-4 rounded-2xl border border-rose-500/20">
+                           <AlertCircle size={16} className="text-rose-500" />
+                           <span className="text-rose-100 font-medium">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+               </div>
+            </section>
+
+            {/* CLINIC CONNECTION (BUSINESS BLOCK) */}
+            <section className="p-10 md:p-14 bg-blue-600 rounded-[3.5rem] text-white shadow-2xl relative overflow-hidden group">
+               <div className="absolute top-0 right-0 w-80 h-80 bg-white/20 rounded-full blur-[100px] group-hover:bg-white/30 transition-all duration-700" />
+               <div className="relative z-10">
+                  <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight">Хотите обсудить этот отчет с врачом?</h2>
+                  <p className="text-blue-100 text-lg mb-10 max-w-lg leading-relaxed font-medium">
+                    Наши педиатры в Clinicsonline помогут окончательно убедиться в безопасности назначений и ответят на ваши вопросы.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <button className="bg-white text-blue-600 px-8 py-5 rounded-[2rem] font-black text-xl flex items-center justify-center gap-3 shadow-xl hover:scale-105 transition-all">
+                      <MessageSquare size={24} /> Задать вопрос
+                    </button>
+                    <button className="bg-blue-500 text-white border border-blue-400 px-8 py-5 rounded-[2rem] font-black text-xl flex items-center justify-center gap-3 hover:bg-blue-400 transition-all">
+                      <User size={24} /> Найти педиатра
+                    </button>
+                  </div>
+               </div>
+            </section>
+
+          </div>
+          
+          <div className="mt-12 text-center">
+             <p className="text-xs text-slate-400 mb-4">Анализ # {meta.analysis_id} • Данные от {new Date(meta.created_at).toLocaleDateString()}</p>
+             <button onClick={() => setView('form')} className="text-blue-600 font-black text-xs uppercase tracking-widest hover:text-blue-800 transition-colors">
+               Новая проверка
+             </button>
+          </div>
+        </div>
+
+        {/* STICKY BOTTOM ACTION BAR */}
+        <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/80 backdrop-blur-lg border-t border-slate-100 flex justify-center z-50">
+           <button className="w-full max-w-2xl bg-slate-900 text-white py-5 rounded-3xl font-black text-lg flex items-center justify-center gap-3 shadow-2xl">
+             <ClipboardCheck /> Скачать PDF для врача
+           </button>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
